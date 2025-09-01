@@ -1,0 +1,122 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{60FC5A84-174B-460F-AF7D-E4245A6F596E}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <RootNamespace>Photon.Pun</RootNamespace>
+    <AssemblyName>PhotonUnityNetworking</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <NoStdLib>true</NoStdLib>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <NoStdLib>true</NoStdLib>
+  </PropertyGroup>
+  <ItemGroup />
+  <ItemGroup>
+    <AppDesigner Include="Properties\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="ConnectMethod.cs" />
+    <Compile Include="CustomTypes.cs" />
+    <Compile Include="DefaultPool.cs" />
+    <Compile Include="InstantiateParameters.cs" />
+    <Compile Include="IOnPhotonViewControllerChange.cs" />
+    <Compile Include="IOnPhotonViewOwnerChange.cs" />
+    <Compile Include="IOnPhotonViewPreNetDestroy.cs" />
+    <Compile Include="IPhotonViewCallback.cs" />
+    <Compile Include="IPunInstantiateMagicCallback.cs" />
+    <Compile Include="IPunObservable.cs" />
+    <Compile Include="IPunOwnershipCallbacks.cs" />
+    <Compile Include="IPunPrefabPool.cs" />
+    <Compile Include="MonoBehaviourPun.cs" />
+    <Compile Include="MonoBehaviourPunCallbacks.cs" />
+    <Compile Include="NestedComponentUtilities.cs" />
+    <Compile Include="OwnershipOption.cs" />
+    <Compile Include="PhotonAnimatorView.cs" />
+    <Compile Include="PhotonHandler.cs" />
+    <Compile Include="PhotonMessageInfo.cs" />
+    <Compile Include="PhotonNetwork.cs" />
+    <Compile Include="PhotonRigidbody2DView.cs" />
+    <Compile Include="PhotonRigidbodyView.cs" />
+    <Compile Include="PhotonStream.cs" />
+    <Compile Include="PhotonStreamQueue.cs" />
+    <Compile Include="PhotonTransformView.cs" />
+    <Compile Include="PhotonTransformViewClassic.cs" />
+    <Compile Include="PhotonTransformViewPositionControl.cs" />
+    <Compile Include="PhotonTransformViewPositionModel.cs" />
+    <Compile Include="PhotonTransformViewRotationControl.cs" />
+    <Compile Include="PhotonTransformViewRotationModel.cs" />
+    <Compile Include="PhotonTransformViewScaleControl.cs" />
+    <Compile Include="PhotonTransformViewScaleModel.cs" />
+    <Compile Include="PhotonView.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="PunEvent.cs" />
+    <Compile Include="PunExtensions.cs" />
+    <Compile Include="PunLogLevel.cs" />
+    <Compile Include="PunRPC.cs" />
+    <Compile Include="RpcTarget.cs" />
+    <Compile Include="SceneManagerHelper.cs" />
+    <Compile Include="ServerSettings.cs" />
+    <Compile Include="ViewSynchronization.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\mscorlib\mscorlib.csproj">
+      <Project>{60fc5a84-174b-460f-af7d-e4245a6f5968}</Project>
+      <Name>mscorlib</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Photon3Unity3D\Photon3Unity3D.csproj">
+      <Project>{60fc5a84-174b-460f-af7d-e4245a6f596c}</Project>
+      <Name>Photon3Unity3D</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\PhotonRealtime\PhotonRealtime.csproj">
+      <Project>{60fc5a84-174b-460f-af7d-e4245a6f596d}</Project>
+      <Name>PhotonRealtime</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\System.Core\System.Core.csproj">
+      <Project>{60fc5a84-174b-460f-af7d-e4245a6f597d}</Project>
+      <Name>System.Core</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\System\System.csproj">
+      <Project>{60fc5a84-174b-460f-af7d-e4245a6f5980}</Project>
+      <Name>System</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\UnityEngine.AnimationModule\UnityEngine.AnimationModule.csproj">
+      <Project>{60fc5a84-174b-460f-af7d-e4245a6f59a3}</Project>
+      <Name>UnityEngine.AnimationModule</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\UnityEngine.CoreModule\UnityEngine.CoreModule.csproj">
+      <Project>{60fc5a84-174b-460f-af7d-e4245a6f59aa}</Project>
+      <Name>UnityEngine.CoreModule</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\UnityEngine.Physics2DModule\UnityEngine.Physics2DModule.csproj">
+      <Project>{60fc5a84-174b-460f-af7d-e4245a6f59bc}</Project>
+      <Name>UnityEngine.Physics2DModule</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\UnityEngine.PhysicsModule\UnityEngine.PhysicsModule.csproj">
+      <Project>{60fc5a84-174b-460f-af7d-e4245a6f59bd}</Project>
+      <Name>UnityEngine.PhysicsModule</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>

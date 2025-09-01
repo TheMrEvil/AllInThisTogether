@@ -1,0 +1,38 @@
+﻿using System;
+
+namespace UnityEngine.TextCore.LowLevel
+{
+	// Token: 0x02000008 RID: 8
+	[Flags]
+	internal enum GlyphRasterModes
+	{
+		// Token: 0x04000039 RID: 57
+		RASTER_MODE_8BIT = 1,
+		// Token: 0x0400003A RID: 58
+		RASTER_MODE_MONO = 2,
+		// Token: 0x0400003B RID: 59
+		RASTER_MODE_NO_HINTING = 4,
+		// Token: 0x0400003C RID: 60
+		RASTER_MODE_HINTED = 8,
+		// Token: 0x0400003D RID: 61
+		RASTER_MODE_BITMAP = 16,
+		// Token: 0x0400003E RID: 62
+		RASTER_MODE_SDF = 32,
+		// Token: 0x0400003F RID: 63
+		RASTER_MODE_SDFAA = 64,
+		// Token: 0x04000040 RID: 64
+		RASTER_MODE_MSDF = 256,
+		// Token: 0x04000041 RID: 65
+		RASTER_MODE_MSDFA = 512,
+		// Token: 0x04000042 RID: 66
+		RASTER_MODE_1X = 4096,
+		// Token: 0x04000043 RID: 67
+		RASTER_MODE_8X = 8192,
+		// Token: 0x04000044 RID: 68
+		RASTER_MODE_16X = 16384,
+		// Token: 0x04000045 RID: 69
+		RASTER_MODE_32X = 32768,
+		// Token: 0x04000046 RID: 70
+		RASTER_MODE_COLOR = 65536
+	}
+}

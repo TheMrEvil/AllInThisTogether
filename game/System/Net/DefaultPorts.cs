@@ -1,0 +1,23 @@
+﻿using System;
+
+namespace System.Net
+{
+	// Token: 0x020005FA RID: 1530
+	internal enum DefaultPorts
+	{
+		// Token: 0x04001C18 RID: 7192
+		DEFAULT_FTP_PORT = 21,
+		// Token: 0x04001C19 RID: 7193
+		DEFAULT_GOPHER_PORT = 70,
+		// Token: 0x04001C1A RID: 7194
+		DEFAULT_HTTP_PORT = 80,
+		// Token: 0x04001C1B RID: 7195
+		DEFAULT_HTTPS_PORT = 443,
+		// Token: 0x04001C1C RID: 7196
+		DEFAULT_NNTP_PORT = 119,
+		// Token: 0x04001C1D RID: 7197
+		DEFAULT_SMTP_PORT = 25,
+		// Token: 0x04001C1E RID: 7198
+		DEFAULT_TELNET_PORT = 23
+	}
+}

@@ -1,0 +1,216 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{60FC5A84-174B-460F-AF7D-E4245A6F5998}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <RootNamespace>UnityEngine.ProBuilder</RootNamespace>
+    <AssemblyName>Unity.ProBuilder</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <NoStdLib>true</NoStdLib>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <NoStdLib>true</NoStdLib>
+  </PropertyGroup>
+  <ItemGroup />
+  <ItemGroup>
+    <AppDesigner Include="Properties\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="-PrivateImplementationDetails-.cs" />
+    <Compile Include="ActionResult.cs" />
+    <Compile Include="ArrayUtility.cs" />
+    <Compile Include="AutoUnwrapSettings.cs" />
+    <Compile Include="Axis.cs" />
+    <Compile Include="BezierPoint.cs" />
+    <Compile Include="BezierShape.cs" />
+    <Compile Include="BezierTangentDirection.cs" />
+    <Compile Include="BezierTangentMode.cs" />
+    <Compile Include="Bounds2D.cs" />
+    <Compile Include="BuiltinMaterials.cs" />
+    <Compile Include="Changelog.cs" />
+    <Compile Include="ChangelogEntry.cs" />
+    <Compile Include="CIELabColor.cs" />
+    <Compile Include="Clipping.cs" />
+    <Compile Include="ColliderBehaviour.cs" />
+    <Compile Include="ColliderType.cs" />
+    <Compile Include="ColorPalette.cs" />
+    <Compile Include="ColorUtility.cs" />
+    <Compile Include="ComponentMode.cs" />
+    <Compile Include="CullingMode.cs" />
+    <Compile Include="Edge.cs" />
+    <Compile Include="EdgeLookup.cs" />
+    <Compile Include="EdgeUtility.cs" />
+    <Compile Include="EditLevel.cs" />
+    <Compile Include="Entity.cs" />
+    <Compile Include="EntityBehaviour.cs" />
+    <Compile Include="EntityType.cs" />
+    <Compile Include="ExtrudeMethod.cs" />
+    <Compile Include="Face.cs" />
+    <Compile Include="FaceRebuildData.cs" />
+    <Compile Include="HandleAxis.cs" />
+    <Compile Include="HandleConstraint2D.cs" />
+    <Compile Include="HandleOrientation.cs" />
+    <Compile Include="HandleUtility.cs" />
+    <Compile Include="HSVColor.cs" />
+    <Compile Include="IHasDefault.cs" />
+    <Compile Include="IndexFormat.cs" />
+    <Compile Include="InternalUtility.cs" />
+    <Compile Include="IntVec2.cs" />
+    <Compile Include="IntVec3.cs" />
+    <Compile Include="IntVec4.cs" />
+    <Compile Include="Log.cs" />
+    <Compile Include="LogLevel.cs" />
+    <Compile Include="LogOutput.cs" />
+    <Compile Include="MaterialUtility.cs" />
+    <Compile Include="Math.cs" />
+    <Compile Include="MeshArrays.cs" />
+    <Compile Include="MeshHandle.cs" />
+    <Compile Include="MeshHandles.cs" />
+    <Compile Include="MeshOperations\AppendElements.cs" />
+    <Compile Include="MeshOperations\Bevel.cs" />
+    <Compile Include="MeshOperations\CombineMeshes.cs" />
+    <Compile Include="MeshOperations\ConnectElements.cs" />
+    <Compile Include="MeshOperations\ConnectFaceRebuildData.cs" />
+    <Compile Include="MeshOperations\DeleteElements.cs" />
+    <Compile Include="MeshOperations\ElementSelection.cs" />
+    <Compile Include="MeshOperations\ExtrudeElements.cs" />
+    <Compile Include="MeshOperations\InternalMeshUtility.cs" />
+    <Compile Include="MeshOperations\MergeElements.cs" />
+    <Compile Include="MeshOperations\MeshImporter.cs" />
+    <Compile Include="MeshOperations\MeshImportSettings.cs" />
+    <Compile Include="MeshOperations\MeshTransform.cs" />
+    <Compile Include="MeshOperations\MeshValidation.cs" />
+    <Compile Include="MeshOperations\QuadUtility.cs" />
+    <Compile Include="MeshOperations\Subdivision.cs" />
+    <Compile Include="MeshOperations\SurfaceTopology.cs" />
+    <Compile Include="MeshOperations\Triangulation.cs" />
+    <Compile Include="MeshOperations\UVEditing.cs" />
+    <Compile Include="MeshOperations\VertexEditing.cs" />
+    <Compile Include="MeshSyncState.cs" />
+    <Compile Include="MeshUtility.cs" />
+    <Compile Include="Normal.cs" />
+    <Compile Include="Normals.cs" />
+    <Compile Include="ObjectPool.cs" />
+    <Compile Include="PickerOptions.cs" />
+    <Compile Include="PivotLocation.cs" />
+    <Compile Include="PivotPoint.cs" />
+    <Compile Include="PolyShape.cs" />
+    <Compile Include="PreferenceDictionary.cs" />
+    <Compile Include="PreferenceKeys.cs" />
+    <Compile Include="ProBuilderMesh.cs" />
+    <Compile Include="ProBuilderSnapping.cs" />
+    <Compile Include="ProGridsConditionalSnapAttribute.cs" />
+    <Compile Include="ProGridsNoSnapAttribute.cs" />
+    <Compile Include="Projection.cs" />
+    <Compile Include="ProjectionAxis.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="RaycastHit.cs" />
+    <Compile Include="RectSelectMode.cs" />
+    <Compile Include="RefreshMask.cs" />
+    <Compile Include="SceneSelection.cs" />
+    <Compile Include="SelectionModifierBehavior.cs" />
+    <Compile Include="SelectionPicker.cs" />
+    <Compile Include="SelectionPickerRenderer.cs" />
+    <Compile Include="SelectMode.cs" />
+    <Compile Include="SelectPathFaces.cs" />
+    <Compile Include="SemVer.cs" />
+    <Compile Include="ShapeFactory.cs" />
+    <Compile Include="ShapeGenerator.cs" />
+    <Compile Include="Shapes\Arch.cs" />
+    <Compile Include="Shapes\Cone.cs" />
+    <Compile Include="Shapes\Cube.cs" />
+    <Compile Include="Shapes\Cylinder.cs" />
+    <Compile Include="Shapes\Door.cs" />
+    <Compile Include="Shapes\Pipe.cs" />
+    <Compile Include="Shapes\Plane.cs" />
+    <Compile Include="Shapes\Prism.cs" />
+    <Compile Include="Shapes\ProBuilderShape.cs" />
+    <Compile Include="Shapes\Shape.cs" />
+    <Compile Include="Shapes\ShapeAttribute.cs" />
+    <Compile Include="Shapes\Sphere.cs" />
+    <Compile Include="Shapes\Sprite.cs" />
+    <Compile Include="Shapes\Stairs.cs" />
+    <Compile Include="Shapes\StepGenerationType.cs" />
+    <Compile Include="Shapes\Torus.cs" />
+    <Compile Include="ShapeType.cs" />
+    <Compile Include="SharedVertex.cs" />
+    <Compile Include="SimpleTuple.2.cs" />
+    <Compile Include="SimpleTuple.cs" />
+    <Compile Include="Smoothing.cs" />
+    <Compile Include="SortMethod.cs" />
+    <Compile Include="Spline.cs" />
+    <Compile Include="Submesh.cs" />
+    <Compile Include="Transform2D.cs" />
+    <Compile Include="TransformUtility.cs" />
+    <Compile Include="Triangle.cs" />
+    <Compile Include="TriggerBehaviour.cs" />
+    <Compile Include="UnwrapParameters.cs" />
+    <Compile Include="UvUnwrapping.cs" />
+    <Compile Include="Vector2Mask.cs" />
+    <Compile Include="Vector3Mask.cs" />
+    <Compile Include="VectorHash.cs" />
+    <Compile Include="Vertex.cs" />
+    <Compile Include="VertexPickerEntry.cs" />
+    <Compile Include="VertexPositioning.cs" />
+    <Compile Include="WindingOrder.cs" />
+    <Compile Include="WingedEdge.cs" />
+    <Compile Include="WingedEdgeEnumerator.cs" />
+    <Compile Include="XYZColor.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\mscorlib\mscorlib.csproj">
+      <Project>{60fc5a84-174b-460f-af7d-e4245a6f5968}</Project>
+      <Name>mscorlib</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\System.Core\System.Core.csproj">
+      <Project>{60fc5a84-174b-460f-af7d-e4245a6f597d}</Project>
+      <Name>System.Core</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\System\System.csproj">
+      <Project>{60fc5a84-174b-460f-af7d-e4245a6f5980}</Project>
+      <Name>System</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Unity.ProBuilder.KdTree\Unity.ProBuilder.KdTree.csproj">
+      <Project>{60fc5a84-174b-460f-af7d-e4245a6f5999}</Project>
+      <Name>Unity.ProBuilder.KdTree</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Unity.ProBuilder.Poly2Tri\Unity.ProBuilder.Poly2Tri.csproj">
+      <Project>{60fc5a84-174b-460f-af7d-e4245a6f599a}</Project>
+      <Name>Unity.ProBuilder.Poly2Tri</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\UnityEngine.CoreModule\UnityEngine.CoreModule.csproj">
+      <Project>{60fc5a84-174b-460f-af7d-e4245a6f59aa}</Project>
+      <Name>UnityEngine.CoreModule</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\UnityEngine.ParticleSystemModule\UnityEngine.ParticleSystemModule.csproj">
+      <Project>{60fc5a84-174b-460f-af7d-e4245a6f59ba}</Project>
+      <Name>UnityEngine.ParticleSystemModule</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\UnityEngine.PhysicsModule\UnityEngine.PhysicsModule.csproj">
+      <Project>{60fc5a84-174b-460f-af7d-e4245a6f59bd}</Project>
+      <Name>UnityEngine.PhysicsModule</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>

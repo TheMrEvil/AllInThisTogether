@@ -1,0 +1,162 @@
+﻿using System;
+using System.IO;
+
+namespace System.Xml
+{
+	// Token: 0x02000032 RID: 50
+	internal class HtmlEncodedRawTextWriterIndent : HtmlEncodedRawTextWriter
+	{
+		// Token: 0x0600018F RID: 399 RVA: 0x0000C0E5 File Offset: 0x0000A2E5
+		public HtmlEncodedRawTextWriterIndent(TextWriter writer, XmlWriterSettings settings) : base(writer, settings)
+		{
+			this.Init(settings);
+		}
+
+		// Token: 0x06000190 RID: 400 RVA: 0x0000C0F6 File Offset: 0x0000A2F6
+		public HtmlEncodedRawTextWriterIndent(Stream stream, XmlWriterSettings settings) : base(stream, settings)
+		{
+			this.Init(settings);
+		}
+
+		// Token: 0x06000191 RID: 401 RVA: 0x0000C107 File Offset: 0x0000A307
+		public override void WriteDocType(string name, string pubid, string sysid, string subset)
+		{
+			base.WriteDocType(name, pubid, sysid, subset);
+			this.endBlockPos = this.bufPos;
+		}
+
+		// Token: 0x06000192 RID: 402 RVA: 0x0000C120 File Offset: 0x0000A320
+		public override void WriteStartElement(string prefix, string localName, string ns)
+		{
+			if (this.trackTextContent && this.inTextContent)
+			{
+				base.ChangeTextContentMark(false);
+			}
+			this.elementScope.Push((byte)this.currentElementProperties);
+			if (ns.Length == 0)
+			{
+				this.currentElementProperties = (ElementProperties)HtmlEncodedRawTextWriter.elementPropertySearch.FindCaseInsensitiveString(localName);
+				if (this.endBlockPos == this.bufPos && (this.currentElementProperties & ElementProperties.BLOCK_WS) != ElementProperties.DEFAULT)
+				{
+					this.WriteIndent();
+				}
+				this.indentLevel++;
+				char[] bufChars = this.bufChars;
+				int bufPos = this.bufPos;
+				this.bufPos = bufPos + 1;
+				bufChars[bufPos] = 60;
+			}
+			else
+			{
+				this.currentElementProperties = (ElementProperties)192U;
+				if (this.endBlockPos == this.bufPos)
+				{
+					this.WriteIndent();
+				}
+				this.indentLevel++;
+				char[] bufChars2 = this.bufChars;
+				int bufPos = this.bufPos;
+				this.bufPos = bufPos + 1;
+				bufChars2[bufPos] = 60;
+				if (prefix.Length != 0)
+				{
+					base.RawText(prefix);
+					char[] bufChars3 = this.bufChars;
+					bufPos = this.bufPos;
+					this.bufPos = bufPos + 1;
+					bufChars3[bufPos] = 58;
+				}
+			}
+			base.RawText(localName);
+			this.attrEndPos = this.bufPos;
+		}
+
+		// Token: 0x06000193 RID: 403 RVA: 0x0000C23C File Offset: 0x0000A43C
+		internal override void StartElementContent()
+		{
+			char[] bufChars = this.bufChars;
+			int bufPos = this.bufPos;
+			this.bufPos = bufPos + 1;
+			bufChars[bufPos] = 62;
+			this.contentPos = this.bufPos;
+			if ((this.currentElementProperties & ElementProperties.HEAD) != ElementProperties.DEFAULT)
+			{
+				this.WriteIndent();
+				base.WriteMetaElement();
+				this.endBlockPos = this.bufPos;
+				return;
+			}
+			if ((this.currentElementProperties & ElementProperties.BLOCK_WS) != ElementProperties.DEFAULT)
+			{
+				this.endBlockPos = this.bufPos;
+			}
+		}
+
+		// Token: 0x06000194 RID: 404 RVA: 0x0000C2AC File Offset: 0x0000A4AC
+		internal override void WriteEndElement(string prefix, string localName, string ns)
+		{
+			this.indentLevel--;
+			bool flag = (this.currentElementProperties & ElementProperties.BLOCK_WS) > ElementProperties.DEFAULT;
+			if (flag && this.endBlockPos == this.bufPos && this.contentPos != this.bufPos)
+			{
+				this.WriteIndent();
+			}
+			base.WriteEndElement(prefix, localName, ns);
+			this.contentPos = 0;
+			if (flag)
+			{
+				this.endBlockPos = this.bufPos;
+			}
+		}
+
+		// Token: 0x06000195 RID: 405 RVA: 0x0000C318 File Offset: 0x0000A518
+		public override void WriteStartAttribute(string prefix, string localName, string ns)
+		{
+			if (this.newLineOnAttributes)
+			{
+				base.RawText(this.newLineChars);
+				this.indentLevel++;
+				this.WriteIndent();
+				this.indentLevel--;
+			}
+			base.WriteStartAttribute(prefix, localName, ns);
+		}
+
+		// Token: 0x06000196 RID: 406 RVA: 0x0000C364 File Offset: 0x0000A564
+		protected override void FlushBuffer()
+		{
+			this.endBlockPos = ((this.endBlockPos == this.bufPos) ? 1 : 0);
+			base.FlushBuffer();
+		}
+
+		// Token: 0x06000197 RID: 407 RVA: 0x0000C384 File Offset: 0x0000A584
+		private void Init(XmlWriterSettings settings)
+		{
+			this.indentLevel = 0;
+			this.indentChars = settings.IndentChars;
+			this.newLineOnAttributes = settings.NewLineOnAttributes;
+		}
+
+		// Token: 0x06000198 RID: 408 RVA: 0x0000C3A8 File Offset: 0x0000A5A8
+		private void WriteIndent()
+		{
+			base.RawText(this.newLineChars);
+			for (int i = this.indentLevel; i > 0; i--)
+			{
+				base.RawText(this.indentChars);
+			}
+		}
+
+		// Token: 0x040005F4 RID: 1524
+		private int indentLevel;
+
+		// Token: 0x040005F5 RID: 1525
+		private int endBlockPos;
+
+		// Token: 0x040005F6 RID: 1526
+		private string indentChars;
+
+		// Token: 0x040005F7 RID: 1527
+		private bool newLineOnAttributes;
+	}
+}

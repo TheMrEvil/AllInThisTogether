@@ -1,0 +1,106 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{60FC5A84-174B-460F-AF7D-E4245A6F5983}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <RootNamespace>System.IO.Compression</RootNamespace>
+    <AssemblyName>System.IO.Compression</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <NoStdLib>true</NoStdLib>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <NoStdLib>true</NoStdLib>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+  </PropertyGroup>
+  <ItemGroup />
+  <ItemGroup>
+    <AppDesigner Include="Properties\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="-PrivateImplementationDetails-.cs" />
+    <Compile Include="Consts.cs" />
+    <Compile Include="Interop.cs" />
+    <Compile Include="Microsoft\Win32\SafeHandles\SafeBrotliDecoderHandle.cs" />
+    <Compile Include="Microsoft\Win32\SafeHandles\SafeBrotliEncoderHandle.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="SR.cs" />
+    <Compile Include="System\IO\Compression\BlockType.cs" />
+    <Compile Include="System\IO\Compression\BrotliDecoder.cs" />
+    <Compile Include="System\IO\Compression\BrotliEncoder.cs" />
+    <Compile Include="System\IO\Compression\BrotliEncoderOperation.cs" />
+    <Compile Include="System\IO\Compression\BrotliEncoderParameter.cs" />
+    <Compile Include="System\IO\Compression\BrotliStream.cs" />
+    <Compile Include="System\IO\Compression\BrotliUtils.cs" />
+    <Compile Include="System\IO\Compression\CheckSumAndSizeWriteStream.cs" />
+    <Compile Include="System\IO\Compression\CopyEncoder.cs" />
+    <Compile Include="System\IO\Compression\Crc32Helper.cs" />
+    <Compile Include="System\IO\Compression\DeflateInput.cs" />
+    <Compile Include="System\IO\Compression\DeflateManagedStream.cs" />
+    <Compile Include="System\IO\Compression\DeflaterManaged.cs" />
+    <Compile Include="System\IO\Compression\FastEncoder.cs" />
+    <Compile Include="System\IO\Compression\FastEncoderStatics.cs" />
+    <Compile Include="System\IO\Compression\FastEncoderWindow.cs" />
+    <Compile Include="System\IO\Compression\HuffmanTree.cs" />
+    <Compile Include="System\IO\Compression\IFileFormatReader.cs" />
+    <Compile Include="System\IO\Compression\IFileFormatWriter.cs" />
+    <Compile Include="System\IO\Compression\InflaterManaged.cs" />
+    <Compile Include="System\IO\Compression\InflaterState.cs" />
+    <Compile Include="System\IO\Compression\InputBuffer.cs" />
+    <Compile Include="System\IO\Compression\Match.cs" />
+    <Compile Include="System\IO\Compression\MatchState.cs" />
+    <Compile Include="System\IO\Compression\OutputBuffer.cs" />
+    <Compile Include="System\IO\Compression\OutputWindow.cs" />
+    <Compile Include="System\IO\Compression\PositionPreservingWriteOnlyStreamWrapper.cs" />
+    <Compile Include="System\IO\Compression\SubReadStream.cs" />
+    <Compile Include="System\IO\Compression\WrappedStream.cs" />
+    <Compile Include="System\IO\Compression\Zip64EndOfCentralDirectoryLocator.cs" />
+    <Compile Include="System\IO\Compression\Zip64EndOfCentralDirectoryRecord.cs" />
+    <Compile Include="System\IO\Compression\Zip64ExtraField.cs" />
+    <Compile Include="System\IO\Compression\ZipArchive.cs" />
+    <Compile Include="System\IO\Compression\ZipArchiveEntry.cs" />
+    <Compile Include="System\IO\Compression\ZipArchiveMode.cs" />
+    <Compile Include="System\IO\Compression\ZipCentralDirectoryFileHeader.cs" />
+    <Compile Include="System\IO\Compression\ZipEndOfCentralDirectoryBlock.cs" />
+    <Compile Include="System\IO\Compression\ZipGenericExtraField.cs" />
+    <Compile Include="System\IO\Compression\ZipHelper.cs" />
+    <Compile Include="System\IO\Compression\ZipLocalFileHeader.cs" />
+    <Compile Include="System\IO\Compression\ZipVersionMadeByPlatform.cs" />
+    <Compile Include="System\IO\Compression\ZipVersionNeededValues.cs" />
+    <Compile Include="System\Runtime\CompilerServices\FriendAccessAllowedAttribute.cs" />
+    <Compile Include="System\Threading\Tasks\TaskToApm.cs" />
+    <Compile Include="Unity\ThrowStub.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\mscorlib\mscorlib.csproj">
+      <Project>{60fc5a84-174b-460f-af7d-e4245a6f5968}</Project>
+      <Name>mscorlib</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\System\System.csproj">
+      <Project>{60fc5a84-174b-460f-af7d-e4245a6f5980}</Project>
+      <Name>System</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>

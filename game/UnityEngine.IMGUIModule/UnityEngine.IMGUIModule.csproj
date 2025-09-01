@@ -1,0 +1,118 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{60FC5A84-174B-460F-AF7D-E4245A6F59B4}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <RootNamespace>UnityEngine.IMGUIModule</RootNamespace>
+    <AssemblyName>UnityEngine.IMGUIModule</AssemblyName>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <NoStdLib>true</NoStdLib>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <NoStdLib>true</NoStdLib>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+  </PropertyGroup>
+  <ItemGroup />
+  <ItemGroup>
+    <AppDesigner Include="Properties\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="-PrivateImplementationDetails-.cs" />
+    <Compile Include="Microsoft\CodeAnalysis\EmbeddedAttribute.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="System\Runtime\CompilerServices\IsReadOnlyAttribute.cs" />
+    <Compile Include="UnityEngine\Event.cs" />
+    <Compile Include="UnityEngine\EventCommandNames.cs" />
+    <Compile Include="UnityEngine\EventInterests.cs" />
+    <Compile Include="UnityEngine\EventModifiers.cs" />
+    <Compile Include="UnityEngine\EventType.cs" />
+    <Compile Include="UnityEngine\ExitGUIException.cs" />
+    <Compile Include="UnityEngine\FocusType.cs" />
+    <Compile Include="UnityEngine\GUI.cs" />
+    <Compile Include="UnityEngine\GUIAspectSizer.cs" />
+    <Compile Include="UnityEngine\GUIClip.cs" />
+    <Compile Include="UnityEngine\GUIContent.cs" />
+    <Compile Include="UnityEngine\GUIDebugger.cs" />
+    <Compile Include="UnityEngine\GUIElement.cs" />
+    <Compile Include="UnityEngine\GUIGridSizer.cs" />
+    <Compile Include="UnityEngine\GUILayer.cs" />
+    <Compile Include="UnityEngine\GUILayout.cs" />
+    <Compile Include="UnityEngine\GUILayoutEntry.cs" />
+    <Compile Include="UnityEngine\GUILayoutGroup.cs" />
+    <Compile Include="UnityEngine\GUILayoutOption.cs" />
+    <Compile Include="UnityEngine\GUILayoutUtility.cs" />
+    <Compile Include="UnityEngine\GUIScrollGroup.cs" />
+    <Compile Include="UnityEngine\GUISettings.cs" />
+    <Compile Include="UnityEngine\GUISkin.cs" />
+    <Compile Include="UnityEngine\GUIStateObjects.cs" />
+    <Compile Include="UnityEngine\GUIStyle.cs" />
+    <Compile Include="UnityEngine\GUIStyleState.cs" />
+    <Compile Include="UnityEngine\GUITargetAttribute.cs" />
+    <Compile Include="UnityEngine\GUITexture.cs" />
+    <Compile Include="UnityEngine\GUIUtility.cs" />
+    <Compile Include="UnityEngine\GUIWordWrapSizer.cs" />
+    <Compile Include="UnityEngine\ImagePosition.cs" />
+    <Compile Include="UnityEngine\ObjectGUIState.cs" />
+    <Compile Include="UnityEngine\PlatformSelection.cs" />
+    <Compile Include="UnityEngine\PointerType.cs" />
+    <Compile Include="UnityEngine\ScaleMode.cs" />
+    <Compile Include="UnityEngine\ScrollViewState.cs" />
+    <Compile Include="UnityEngine\SliderHandler.cs" />
+    <Compile Include="UnityEngine\SliderState.cs" />
+    <Compile Include="UnityEngine\TextClipping.cs" />
+    <Compile Include="UnityEngine\TextEditor.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\mscorlib\mscorlib.csproj">
+      <Project>{60fc5a84-174b-460f-af7d-e4245a6f5968}</Project>
+      <Name>mscorlib</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\System.Core\System.Core.csproj">
+      <Project>{60fc5a84-174b-460f-af7d-e4245a6f597d}</Project>
+      <Name>System.Core</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\System\System.csproj">
+      <Project>{60fc5a84-174b-460f-af7d-e4245a6f5980}</Project>
+      <Name>System</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\UnityEngine.CoreModule\UnityEngine.CoreModule.csproj">
+      <Project>{60fc5a84-174b-460f-af7d-e4245a6f59aa}</Project>
+      <Name>UnityEngine.CoreModule</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\UnityEngine.InputLegacyModule\UnityEngine.InputLegacyModule.csproj">
+      <Project>{60fc5a84-174b-460f-af7d-e4245a6f59b5}</Project>
+      <Name>UnityEngine.InputLegacyModule</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\UnityEngine.SharedInternalsModule\UnityEngine.SharedInternalsModule.csproj">
+      <Project>{60fc5a84-174b-460f-af7d-e4245a6f59c1}</Project>
+      <Name>UnityEngine.SharedInternalsModule</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\UnityEngine.TextRenderingModule\UnityEngine.TextRenderingModule.csproj">
+      <Project>{60fc5a84-174b-460f-af7d-e4245a6f59cb}</Project>
+      <Name>UnityEngine.TextRenderingModule</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>

@@ -1,0 +1,90 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{60FC5A84-174B-460F-AF7D-E4245A6F5971}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <RootNamespace>QFSW.QC.Extras</RootNamespace>
+    <AssemblyName>QFSW.QC.Extras</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <NoStdLib>true</NoStdLib>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <NoStdLib>true</NoStdLib>
+  </PropertyGroup>
+  <ItemGroup />
+  <ItemGroup>
+    <AppDesigner Include="Properties\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="CSharpCompiler\CodeCompiler.cs" />
+    <Compile Include="CSharpCompiler\CustomDynamicDriver.cs" />
+    <Compile Include="CSharpCompiler\CustomReportPrinter.cs" />
+    <Compile Include="CSharpCompiler\ScriptBundleLoader.cs" />
+    <Compile Include="DeferredSynchronizeInvoke.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="QFSW\QC\DynamicCodeCommands.cs" />
+    <Compile Include="QFSW\QC\Extras\ApplicationCommands.cs" />
+    <Compile Include="QFSW\QC\Extras\CoroutineCommands.cs" />
+    <Compile Include="QFSW\QC\Extras\FileCommands.cs" />
+    <Compile Include="QFSW\QC\Extras\GraphicsCommands.cs" />
+    <Compile Include="QFSW\QC\Extras\KeyBinderModule.cs" />
+    <Compile Include="QFSW\QC\Extras\MegaCommands.cs" />
+    <Compile Include="QFSW\QC\Extras\SceneCommands.cs" />
+    <Compile Include="QFSW\QC\Extras\ScreenCommands.cs" />
+    <Compile Include="QFSW\QC\Extras\TimeCommands.cs" />
+    <Compile Include="QFSW\QC\Extras\TypeCommands.cs" />
+    <Compile Include="QFSW\QC\Extras\UtilCommands.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\mcs\mcs.csproj">
+      <Project>{60fc5a84-174b-460f-af7d-e4245a6f5965}</Project>
+      <Name>mcs</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\mscorlib\mscorlib.csproj">
+      <Project>{60fc5a84-174b-460f-af7d-e4245a6f5968}</Project>
+      <Name>mscorlib</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\QFSW.QC\QFSW.QC.csproj">
+      <Project>{60fc5a84-174b-460f-af7d-e4245a6f5970}</Project>
+      <Name>QFSW.QC</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\System.Core\System.Core.csproj">
+      <Project>{60fc5a84-174b-460f-af7d-e4245a6f597d}</Project>
+      <Name>System.Core</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\System\System.csproj">
+      <Project>{60fc5a84-174b-460f-af7d-e4245a6f5980}</Project>
+      <Name>System</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\UnityEngine.CoreModule\UnityEngine.CoreModule.csproj">
+      <Project>{60fc5a84-174b-460f-af7d-e4245a6f59aa}</Project>
+      <Name>UnityEngine.CoreModule</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\UnityEngine.ScreenCaptureModule\UnityEngine.ScreenCaptureModule.csproj">
+      <Project>{60fc5a84-174b-460f-af7d-e4245a6f59c0}</Project>
+      <Name>UnityEngine.ScreenCaptureModule</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>

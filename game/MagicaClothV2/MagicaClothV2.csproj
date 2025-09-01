@@ -1,0 +1,173 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{60FC5A84-174B-460F-AF7D-E4245A6F5963}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <RootNamespace>MagicaClothV2</RootNamespace>
+    <AssemblyName>MagicaClothV2</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <NoStdLib>true</NoStdLib>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <NoStdLib>true</NoStdLib>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+  </PropertyGroup>
+  <ItemGroup />
+  <ItemGroup>
+    <AppDesigner Include="Properties\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="MagicaCloth2\AABB.cs" />
+    <Compile Include="MagicaCloth2\AngleConstraint.cs" />
+    <Compile Include="MagicaCloth2\CheckSliderSerializeData.cs" />
+    <Compile Include="MagicaCloth2\ClothBehaviour.cs" />
+    <Compile Include="MagicaCloth2\ClothDebugSettings.cs" />
+    <Compile Include="MagicaCloth2\ClothManager.cs" />
+    <Compile Include="MagicaCloth2\ClothNormalAxis.cs" />
+    <Compile Include="MagicaCloth2\ClothParameters.cs" />
+    <Compile Include="MagicaCloth2\ClothProcess.cs" />
+    <Compile Include="MagicaCloth2\ClothSerializeData.cs" />
+    <Compile Include="MagicaCloth2\ClothSerializeData2.cs" />
+    <Compile Include="MagicaCloth2\ClothUpdateMode.cs" />
+    <Compile Include="MagicaCloth2\ColliderCollisionConstraint.cs" />
+    <Compile Include="MagicaCloth2\ColliderComponent.cs" />
+    <Compile Include="MagicaCloth2\ColliderManager.cs" />
+    <Compile Include="MagicaCloth2\CurveSerializeData.cs" />
+    <Compile Include="MagicaCloth2\CustomSkinningSettings.cs" />
+    <Compile Include="MagicaCloth2\DataChunk.cs" />
+    <Compile Include="MagicaCloth2\DataUtility.cs" />
+    <Compile Include="MagicaCloth2\Define.cs" />
+    <Compile Include="MagicaCloth2\Develop.cs" />
+    <Compile Include="MagicaCloth2\DistanceConstraint.cs" />
+    <Compile Include="MagicaCloth2\ExBitFlag16.cs" />
+    <Compile Include="MagicaCloth2\ExBitFlag8.cs" />
+    <Compile Include="MagicaCloth2\ExCostSortedList1.cs" />
+    <Compile Include="MagicaCloth2\ExCostSortedList4.cs" />
+    <Compile Include="MagicaCloth2\ExNativeArray.cs" />
+    <Compile Include="MagicaCloth2\ExProcessingList.cs" />
+    <Compile Include="MagicaCloth2\ExSimpleNativeArray.cs" />
+    <Compile Include="MagicaCloth2\ExTransformAccessArray.cs" />
+    <Compile Include="MagicaCloth2\FixedList128BytesExtensions.cs" />
+    <Compile Include="MagicaCloth2\FixedList32BytesExtensions.cs" />
+    <Compile Include="MagicaCloth2\FixedList4096BytesExtensions.cs" />
+    <Compile Include="MagicaCloth2\FixedList512BytesExtensions.cs" />
+    <Compile Include="MagicaCloth2\FixedList64BytesExtensions.cs" />
+    <Compile Include="MagicaCloth2\GizmoSerializeData.cs" />
+    <Compile Include="MagicaCloth2\GridMap.cs" />
+    <Compile Include="MagicaCloth2\ICount.cs" />
+    <Compile Include="MagicaCloth2\IDataValidate.cs" />
+    <Compile Include="MagicaCloth2\IManager.cs" />
+    <Compile Include="MagicaCloth2\InertiaConstraint.cs" />
+    <Compile Include="MagicaCloth2\IntAABB.cs" />
+    <Compile Include="MagicaCloth2\InterlockUtility.cs" />
+    <Compile Include="MagicaCloth2\ITransform.cs" />
+    <Compile Include="MagicaCloth2\IValid.cs" />
+    <Compile Include="MagicaCloth2\JobUtility.cs" />
+    <Compile Include="MagicaCloth2\MagicaCapsuleCollider.cs" />
+    <Compile Include="MagicaCloth2\MagicaCloth.cs" />
+    <Compile Include="MagicaCloth2\MagicaClothCanceledException.cs" />
+    <Compile Include="MagicaCloth2\MagicaClothProcessingException.cs" />
+    <Compile Include="MagicaCloth2\MagicaManager.cs" />
+    <Compile Include="MagicaCloth2\MagicaPlaneCollider.cs" />
+    <Compile Include="MagicaCloth2\MagicaSphereCollider.cs" />
+    <Compile Include="MagicaCloth2\MathExtensions.cs" />
+    <Compile Include="MagicaCloth2\MathUtility.cs" />
+    <Compile Include="MagicaCloth2\MeshUtility.cs" />
+    <Compile Include="MagicaCloth2\MotionConstraint.cs" />
+    <Compile Include="MagicaCloth2\MultiDataBuilder.cs" />
+    <Compile Include="MagicaCloth2\NativeArrayExtensions.cs" />
+    <Compile Include="MagicaCloth2\NativeMultiHashMapExtensions.cs" />
+    <Compile Include="MagicaCloth2\NativeReferenceExtensions.cs" />
+    <Compile Include="MagicaCloth2\NormalAlignmentSettings.cs" />
+    <Compile Include="MagicaCloth2\ReductionSettings.cs" />
+    <Compile Include="MagicaCloth2\ReductionWorkData.cs" />
+    <Compile Include="MagicaCloth2\RenderData.cs" />
+    <Compile Include="MagicaCloth2\RenderManager.cs" />
+    <Compile Include="MagicaCloth2\RenderSetupData.cs" />
+    <Compile Include="MagicaCloth2\ResultCode.cs" />
+    <Compile Include="MagicaCloth2\SameDistanceReduction.cs" />
+    <Compile Include="MagicaCloth2\SelectionData.cs" />
+    <Compile Include="MagicaCloth2\SelfCollisionConstraint.cs" />
+    <Compile Include="MagicaCloth2\ShapeDistanceReduction.cs" />
+    <Compile Include="MagicaCloth2\SimpleDistanceReduction.cs" />
+    <Compile Include="MagicaCloth2\SimulationManager.cs" />
+    <Compile Include="MagicaCloth2\StaticStringBuilder.cs" />
+    <Compile Include="MagicaCloth2\StepReductionBase.cs" />
+    <Compile Include="MagicaCloth2\TeamManager.cs" />
+    <Compile Include="MagicaCloth2\TetherConstraint.cs" />
+    <Compile Include="MagicaCloth2\TimeSpan.cs" />
+    <Compile Include="MagicaCloth2\TransformData.cs" />
+    <Compile Include="MagicaCloth2\TransformManager.cs" />
+    <Compile Include="MagicaCloth2\TransformRecord.cs" />
+    <Compile Include="MagicaCloth2\TriangleBendingConstraint.cs" />
+    <Compile Include="MagicaCloth2\UnityTimeSpan.cs" />
+    <Compile Include="MagicaCloth2\VertexAttribute.cs" />
+    <Compile Include="MagicaCloth2\VirtualMesh.cs" />
+    <Compile Include="MagicaCloth2\VirtualMeshBoneWeight.cs" />
+    <Compile Include="MagicaCloth2\VirtualMeshManager.cs" />
+    <Compile Include="MagicaCloth2\VirtualMeshPrimitive.cs" />
+    <Compile Include="MagicaCloth2\VirtualMeshRaycastHit.cs" />
+    <Compile Include="MagicaCloth2\VirtualMeshTransform.cs" />
+    <Compile Include="Microsoft\CodeAnalysis\EmbeddedAttribute.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="System\Runtime\CompilerServices\IsUnmanagedAttribute.cs" />
+    <Compile Include="__JobReflectionRegistrationOutput__2386719812.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\mscorlib\mscorlib.csproj">
+      <Project>{60fc5a84-174b-460f-af7d-e4245a6f5968}</Project>
+      <Name>mscorlib</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\System.Core\System.Core.csproj">
+      <Project>{60fc5a84-174b-460f-af7d-e4245a6f597d}</Project>
+      <Name>System.Core</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\System\System.csproj">
+      <Project>{60fc5a84-174b-460f-af7d-e4245a6f5980}</Project>
+      <Name>System</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Unity.Burst\Unity.Burst.csproj">
+      <Project>{60fc5a84-174b-460f-af7d-e4245a6f5990}</Project>
+      <Name>Unity.Burst</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Unity.Collections\Unity.Collections.csproj">
+      <Project>{60fc5a84-174b-460f-af7d-e4245a6f5992}</Project>
+      <Name>Unity.Collections</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Unity.Mathematics\Unity.Mathematics.csproj">
+      <Project>{60fc5a84-174b-460f-af7d-e4245a6f5994}</Project>
+      <Name>Unity.Mathematics</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\UnityEngine.CoreModule\UnityEngine.CoreModule.csproj">
+      <Project>{60fc5a84-174b-460f-af7d-e4245a6f59aa}</Project>
+      <Name>UnityEngine.CoreModule</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\UnityEngine.JSONSerializeModule\UnityEngine.JSONSerializeModule.csproj">
+      <Project>{60fc5a84-174b-460f-af7d-e4245a6f59b7}</Project>
+      <Name>UnityEngine.JSONSerializeModule</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>

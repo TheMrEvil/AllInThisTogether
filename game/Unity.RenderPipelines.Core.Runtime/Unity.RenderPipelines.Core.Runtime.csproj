@@ -1,0 +1,342 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{60FC5A84-174B-460F-AF7D-E4245A6F599C}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <RootNamespace>Unity.RenderPipelines.Core.Runtime</RootNamespace>
+    <AssemblyName>Unity.RenderPipelines.Core.Runtime</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <NoStdLib>true</NoStdLib>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <NoStdLib>true</NoStdLib>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+  </PropertyGroup>
+  <ItemGroup />
+  <ItemGroup>
+    <AppDesigner Include="Properties\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="-PrivateImplementationDetails-.cs" />
+    <Compile Include="Microsoft\CodeAnalysis\EmbeddedAttribute.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="SceneRenderPipeline.cs" />
+    <Compile Include="System\Runtime\CompilerServices\IsUnmanagedAttribute.cs" />
+    <Compile Include="UnityEngine\Experimental\Rendering\DebugProbeShadingMode.cs" />
+    <Compile Include="UnityEngine\Experimental\Rendering\ProbeBrickIndex.cs" />
+    <Compile Include="UnityEngine\Experimental\Rendering\ProbeBrickPool.cs" />
+    <Compile Include="UnityEngine\Experimental\Rendering\ProbeCellIndices.cs" />
+    <Compile Include="UnityEngine\Experimental\Rendering\ProbeDilationSettings.cs" />
+    <Compile Include="UnityEngine\Experimental\Rendering\ProbeReferenceVolume.cs" />
+    <Compile Include="UnityEngine\Experimental\Rendering\ProbeReferenceVolumeProfile.cs" />
+    <Compile Include="UnityEngine\Experimental\Rendering\ProbeVolume.cs" />
+    <Compile Include="UnityEngine\Experimental\Rendering\ProbeVolumeAsset.cs" />
+    <Compile Include="UnityEngine\Experimental\Rendering\ProbeVolumeBakingProcessSettings.cs" />
+    <Compile Include="UnityEngine\Experimental\Rendering\ProbeVolumeDebug.cs" />
+    <Compile Include="UnityEngine\Experimental\Rendering\ProbeVolumePerSceneData.cs" />
+    <Compile Include="UnityEngine\Experimental\Rendering\ProbeVolumeSceneData.cs" />
+    <Compile Include="UnityEngine\Experimental\Rendering\ProbeVolumeShadingParameters.cs" />
+    <Compile Include="UnityEngine\Experimental\Rendering\ProbeVolumeSHBands.cs" />
+    <Compile Include="UnityEngine\Experimental\Rendering\ProbeVolumeState.cs" />
+    <Compile Include="UnityEngine\Experimental\Rendering\ProbeVolumeSystemParameters.cs" />
+    <Compile Include="UnityEngine\Experimental\Rendering\ProbeVolumeTextureMemoryBudget.cs" />
+    <Compile Include="UnityEngine\Experimental\Rendering\RendererList.cs" />
+    <Compile Include="UnityEngine\Experimental\Rendering\RendererListDesc.cs" />
+    <Compile Include="UnityEngine\Experimental\Rendering\RenderGraphModule\ComputeBufferDesc.cs" />
+    <Compile Include="UnityEngine\Experimental\Rendering\RenderGraphModule\ComputeBufferHandle.cs" />
+    <Compile Include="UnityEngine\Experimental\Rendering\RenderGraphModule\ComputeBufferPool.cs" />
+    <Compile Include="UnityEngine\Experimental\Rendering\RenderGraphModule\ComputeBufferResource.cs" />
+    <Compile Include="UnityEngine\Experimental\Rendering\RenderGraphModule\DepthAccess.cs" />
+    <Compile Include="UnityEngine\Experimental\Rendering\RenderGraphModule\FastMemoryDesc.cs" />
+    <Compile Include="UnityEngine\Experimental\Rendering\RenderGraphModule\IRenderGraphResource.cs" />
+    <Compile Include="UnityEngine\Experimental\Rendering\RenderGraphModule\IRenderGraphResourcePool.cs" />
+    <Compile Include="UnityEngine\Experimental\Rendering\RenderGraphModule\RendererListHandle.cs" />
+    <Compile Include="UnityEngine\Experimental\Rendering\RenderGraphModule\RendererListResource.cs" />
+    <Compile Include="UnityEngine\Experimental\Rendering\RenderGraphModule\RenderFunc.cs" />
+    <Compile Include="UnityEngine\Experimental\Rendering\RenderGraphModule\RenderGraph.cs" />
+    <Compile Include="UnityEngine\Experimental\Rendering\RenderGraphModule\RenderGraphBuilder.cs" />
+    <Compile Include="UnityEngine\Experimental\Rendering\RenderGraphModule\RenderGraphContext.cs" />
+    <Compile Include="UnityEngine\Experimental\Rendering\RenderGraphModule\RenderGraphDebugData.cs" />
+    <Compile Include="UnityEngine\Experimental\Rendering\RenderGraphModule\RenderGraphDebugParams.cs" />
+    <Compile Include="UnityEngine\Experimental\Rendering\RenderGraphModule\RenderGraphDefaultResources.cs" />
+    <Compile Include="UnityEngine\Experimental\Rendering\RenderGraphModule\RenderGraphExecution.cs" />
+    <Compile Include="UnityEngine\Experimental\Rendering\RenderGraphModule\RenderGraphLogger.cs" />
+    <Compile Include="UnityEngine\Experimental\Rendering\RenderGraphModule\RenderGraphLogIndent.cs" />
+    <Compile Include="UnityEngine\Experimental\Rendering\RenderGraphModule\RenderGraphObjectPool.cs" />
+    <Compile Include="UnityEngine\Experimental\Rendering\RenderGraphModule\RenderGraphParameters.cs" />
+    <Compile Include="UnityEngine\Experimental\Rendering\RenderGraphModule\RenderGraphPass.2.cs" />
+    <Compile Include="UnityEngine\Experimental\Rendering\RenderGraphModule\RenderGraphPass.cs" />
+    <Compile Include="UnityEngine\Experimental\Rendering\RenderGraphModule\RenderGraphProfileId.cs" />
+    <Compile Include="UnityEngine\Experimental\Rendering\RenderGraphModule\RenderGraphProfilingScope.cs" />
+    <Compile Include="UnityEngine\Experimental\Rendering\RenderGraphModule\RenderGraphResource.cs" />
+    <Compile Include="UnityEngine\Experimental\Rendering\RenderGraphModule\RenderGraphResourcePool.cs" />
+    <Compile Include="UnityEngine\Experimental\Rendering\RenderGraphModule\RenderGraphResourceRegistry.cs" />
+    <Compile Include="UnityEngine\Experimental\Rendering\RenderGraphModule\RenderGraphResourceType.cs" />
+    <Compile Include="UnityEngine\Experimental\Rendering\RenderGraphModule\ResourceHandle.cs" />
+    <Compile Include="UnityEngine\Experimental\Rendering\RenderGraphModule\TextureDesc.cs" />
+    <Compile Include="UnityEngine\Experimental\Rendering\RenderGraphModule\TextureHandle.cs" />
+    <Compile Include="UnityEngine\Experimental\Rendering\RenderGraphModule\TexturePool.cs" />
+    <Compile Include="UnityEngine\Experimental\Rendering\RenderGraphModule\TextureResource.cs" />
+    <Compile Include="UnityEngine\Experimental\Rendering\RenderGraphModule\TextureSizeMode.cs" />
+    <Compile Include="UnityEngine\Experimental\Rendering\VirtualOffsetSettings.cs" />
+    <Compile Include="UnityEngine\LightAnchor.cs" />
+    <Compile Include="UnityEngine\Rendering\AdditionalPropertyAttribute.cs" />
+    <Compile Include="UnityEngine\Rendering\AnimationCurveParameter.cs" />
+    <Compile Include="UnityEngine\Rendering\APVConstantBufferRegister.cs" />
+    <Compile Include="UnityEngine\Rendering\ArrayExtensions.cs" />
+    <Compile Include="UnityEngine\Rendering\AtlasAllocator.cs" />
+    <Compile Include="UnityEngine\Rendering\AtlasAllocatorDynamic.cs" />
+    <Compile Include="UnityEngine\Rendering\BitArray128.cs" />
+    <Compile Include="UnityEngine\Rendering\BitArray16.cs" />
+    <Compile Include="UnityEngine\Rendering\BitArray256.cs" />
+    <Compile Include="UnityEngine\Rendering\BitArray32.cs" />
+    <Compile Include="UnityEngine\Rendering\BitArray64.cs" />
+    <Compile Include="UnityEngine\Rendering\BitArray8.cs" />
+    <Compile Include="UnityEngine\Rendering\BitArrayUtilities.cs" />
+    <Compile Include="UnityEngine\Rendering\Blitter.cs" />
+    <Compile Include="UnityEngine\Rendering\BoolParameter.cs" />
+    <Compile Include="UnityEngine\Rendering\BufferedRTHandleSystem.cs" />
+    <Compile Include="UnityEngine\Rendering\CameraCaptureBridge.cs" />
+    <Compile Include="UnityEngine\Rendering\CameraSwitcher.cs" />
+    <Compile Include="UnityEngine\Rendering\ClampedFloatParameter.cs" />
+    <Compile Include="UnityEngine\Rendering\ClampedIntParameter.cs" />
+    <Compile Include="UnityEngine\Rendering\ClearFlag.cs" />
+    <Compile Include="UnityEngine\Rendering\ColorParameter.cs" />
+    <Compile Include="UnityEngine\Rendering\ColorUtils.cs" />
+    <Compile Include="UnityEngine\Rendering\CommandBufferPool.cs" />
+    <Compile Include="UnityEngine\Rendering\ComponentSingleton.cs" />
+    <Compile Include="UnityEngine\Rendering\ConstantBuffer.2.cs" />
+    <Compile Include="UnityEngine\Rendering\ConstantBuffer.cs" />
+    <Compile Include="UnityEngine\Rendering\ConstantBufferBase.cs" />
+    <Compile Include="UnityEngine\Rendering\ConstantBufferSingleton.cs" />
+    <Compile Include="UnityEngine\Rendering\CoreMatrixUtils.cs" />
+    <Compile Include="UnityEngine\Rendering\CoreProfileId.cs" />
+    <Compile Include="UnityEngine\Rendering\CoreRPHelpURLAttribute.cs" />
+    <Compile Include="UnityEngine\Rendering\CoreUnsafeUtils.cs" />
+    <Compile Include="UnityEngine\Rendering\CoreUtils.cs" />
+    <Compile Include="UnityEngine\Rendering\CubemapParameter.cs" />
+    <Compile Include="UnityEngine\Rendering\DebugAction.cs" />
+    <Compile Include="UnityEngine\Rendering\DebugActionDesc.cs" />
+    <Compile Include="UnityEngine\Rendering\DebugActionRepeatMode.cs" />
+    <Compile Include="UnityEngine\Rendering\DebugActionState.cs" />
+    <Compile Include="UnityEngine\Rendering\DebugManager.cs" />
+    <Compile Include="UnityEngine\Rendering\DebugShapes.cs" />
+    <Compile Include="UnityEngine\Rendering\DebugUI.cs" />
+    <Compile Include="UnityEngine\Rendering\DebugUpdater.cs" />
+    <Compile Include="UnityEngine\Rendering\DelegateUtility.cs" />
+    <Compile Include="UnityEngine\Rendering\DepthBits.cs" />
+    <Compile Include="UnityEngine\Rendering\DictionaryPool.cs" />
+    <Compile Include="UnityEngine\Rendering\DisplayInfoAttribute.cs" />
+    <Compile Include="UnityEngine\Rendering\DocumentationInfo.cs" />
+    <Compile Include="UnityEngine\Rendering\DocumentationUtils.cs" />
+    <Compile Include="UnityEngine\Rendering\DynamicArray.cs" />
+    <Compile Include="UnityEngine\Rendering\DynamicArrayExtensions.cs" />
+    <Compile Include="UnityEngine\Rendering\DynamicResolutionHandler.cs" />
+    <Compile Include="UnityEngine\Rendering\DynamicResolutionType.cs" />
+    <Compile Include="UnityEngine\Rendering\DynamicResScalePolicyType.cs" />
+    <Compile Include="UnityEngine\Rendering\DynamicResScalerSlot.cs" />
+    <Compile Include="UnityEngine\Rendering\DynamicResUpscaleFilter.cs" />
+    <Compile Include="UnityEngine\Rendering\FieldPacking.cs" />
+    <Compile Include="UnityEngine\Rendering\FieldPrecision.cs" />
+    <Compile Include="UnityEngine\Rendering\FloatParameter.cs" />
+    <Compile Include="UnityEngine\Rendering\FloatRangeParameter.cs" />
+    <Compile Include="UnityEngine\Rendering\FreeCamera.cs" />
+    <Compile Include="UnityEngine\Rendering\FSRUtils.cs" />
+    <Compile Include="UnityEngine\Rendering\GenerateHLSL.cs" />
+    <Compile Include="UnityEngine\Rendering\GenericPool.cs" />
+    <Compile Include="UnityEngine\Rendering\GlobalDynamicResolutionSettings.cs" />
+    <Compile Include="UnityEngine\Rendering\HableCurve.cs" />
+    <Compile Include="UnityEngine\Rendering\HaltonSequence.cs" />
+    <Compile Include="UnityEngine\Rendering\Hammersley.cs" />
+    <Compile Include="UnityEngine\Rendering\HashSetPool.cs" />
+    <Compile Include="UnityEngine\Rendering\HLSLArray.cs" />
+    <Compile Include="UnityEngine\Rendering\IAdditionalData.cs" />
+    <Compile Include="UnityEngine\Rendering\IBitArray.cs" />
+    <Compile Include="UnityEngine\Rendering\IDebugData.cs" />
+    <Compile Include="UnityEngine\Rendering\IntParameter.cs" />
+    <Compile Include="UnityEngine\Rendering\IVirtualTexturingEnabledRenderPipeline.cs" />
+    <Compile Include="UnityEngine\Rendering\IVolume.cs" />
+    <Compile Include="UnityEngine\Rendering\LayerMaskParameter.cs" />
+    <Compile Include="UnityEngine\Rendering\LensFlareCommonSRP.cs" />
+    <Compile Include="UnityEngine\Rendering\LensFlareComponentSRP.cs" />
+    <Compile Include="UnityEngine\Rendering\LensFlareDataElementSRP.cs" />
+    <Compile Include="UnityEngine\Rendering\LensFlareDataSRP.cs" />
+    <Compile Include="UnityEngine\Rendering\ListBuffer.cs" />
+    <Compile Include="UnityEngine\Rendering\ListBufferExtensions.cs" />
+    <Compile Include="UnityEngine\Rendering\ListChangedEventArgs.cs" />
+    <Compile Include="UnityEngine\Rendering\ListChangedEventHandler.cs" />
+    <Compile Include="UnityEngine\Rendering\ListPool.cs" />
+    <Compile Include="UnityEngine\Rendering\LookDev\IDataProvider.cs" />
+    <Compile Include="UnityEngine\Rendering\LookDev\Sky.cs" />
+    <Compile Include="UnityEngine\Rendering\LookDev\StageRuntimeInterface.cs" />
+    <Compile Include="UnityEngine\Rendering\MaterialQuality.cs" />
+    <Compile Include="UnityEngine\Rendering\MaterialQualityUtilities.cs" />
+    <Compile Include="UnityEngine\Rendering\MaxFloatParameter.cs" />
+    <Compile Include="UnityEngine\Rendering\MaxIntParameter.cs" />
+    <Compile Include="UnityEngine\Rendering\MeshGizmo.cs" />
+    <Compile Include="UnityEngine\Rendering\MinFloatParameter.cs" />
+    <Compile Include="UnityEngine\Rendering\MinIntParameter.cs" />
+    <Compile Include="UnityEngine\Rendering\MousePositionDebug.cs" />
+    <Compile Include="UnityEngine\Rendering\MSAASamples.cs" />
+    <Compile Include="UnityEngine\Rendering\NoInterpClampedFloatParameter.cs" />
+    <Compile Include="UnityEngine\Rendering\NoInterpClampedIntParameter.cs" />
+    <Compile Include="UnityEngine\Rendering\NoInterpColorParameter.cs" />
+    <Compile Include="UnityEngine\Rendering\NoInterpCubemapParameter.cs" />
+    <Compile Include="UnityEngine\Rendering\NoInterpFloatParameter.cs" />
+    <Compile Include="UnityEngine\Rendering\NoInterpFloatRangeParameter.cs" />
+    <Compile Include="UnityEngine\Rendering\NoInterpIntParameter.cs" />
+    <Compile Include="UnityEngine\Rendering\NoInterpMaxFloatParameter.cs" />
+    <Compile Include="UnityEngine\Rendering\NoInterpMaxIntParameter.cs" />
+    <Compile Include="UnityEngine\Rendering\NoInterpMinFloatParameter.cs" />
+    <Compile Include="UnityEngine\Rendering\NoInterpMinIntParameter.cs" />
+    <Compile Include="UnityEngine\Rendering\NoInterpRenderTextureParameter.cs" />
+    <Compile Include="UnityEngine\Rendering\NoInterpTextureParameter.cs" />
+    <Compile Include="UnityEngine\Rendering\NoInterpVector2Parameter.cs" />
+    <Compile Include="UnityEngine\Rendering\NoInterpVector3Parameter.cs" />
+    <Compile Include="UnityEngine\Rendering\NoInterpVector4Parameter.cs" />
+    <Compile Include="UnityEngine\Rendering\ObjectParameter.cs" />
+    <Compile Include="UnityEngine\Rendering\ObjectPool.cs" />
+    <Compile Include="UnityEngine\Rendering\ObservableList.cs" />
+    <Compile Include="UnityEngine\Rendering\PackingAttribute.cs" />
+    <Compile Include="UnityEngine\Rendering\PackingRules.cs" />
+    <Compile Include="UnityEngine\Rendering\PerformDynamicRes.cs" />
+    <Compile Include="UnityEngine\Rendering\PowerOfTwoTextureAtlas.cs" />
+    <Compile Include="UnityEngine\Rendering\ProfilingSample.cs" />
+    <Compile Include="UnityEngine\Rendering\ProfilingSampler.cs" />
+    <Compile Include="UnityEngine\Rendering\ProfilingScope.cs" />
+    <Compile Include="UnityEngine\Rendering\ReloadAttribute.cs" />
+    <Compile Include="UnityEngine\Rendering\ReloadGroupAttribute.cs" />
+    <Compile Include="UnityEngine\Rendering\RenderPipelineResources.cs" />
+    <Compile Include="UnityEngine\Rendering\RenderTextureParameter.cs" />
+    <Compile Include="UnityEngine\Rendering\RTHandle.cs" />
+    <Compile Include="UnityEngine\Rendering\RTHandleProperties.cs" />
+    <Compile Include="UnityEngine\Rendering\RTHandles.cs" />
+    <Compile Include="UnityEngine\Rendering\RTHandleSystem.cs" />
+    <Compile Include="UnityEngine\Rendering\ScaleFunc.cs" />
+    <Compile Include="UnityEngine\Rendering\SerializableEnum.cs" />
+    <Compile Include="UnityEngine\Rendering\SerializedDictionary.2.cs" />
+    <Compile Include="UnityEngine\Rendering\SerializedDictionary.cs" />
+    <Compile Include="UnityEngine\Rendering\ShaderGenUInt4.cs" />
+    <Compile Include="UnityEngine\Rendering\ShaderVariablesProbeVolumes.cs" />
+    <Compile Include="UnityEngine\Rendering\SphericalHarmonicsL1.cs" />
+    <Compile Include="UnityEngine\Rendering\SphericalHarmonicsL2Utils.cs" />
+    <Compile Include="UnityEngine\Rendering\SRPLensFlareBlendMode.cs" />
+    <Compile Include="UnityEngine\Rendering\SRPLensFlareDistribution.cs" />
+    <Compile Include="UnityEngine\Rendering\SRPLensFlareType.cs" />
+    <Compile Include="UnityEngine\Rendering\SurfaceDataAttributes.cs" />
+    <Compile Include="UnityEngine\Rendering\Texture2DAtlas.cs" />
+    <Compile Include="UnityEngine\Rendering\Texture2DAtlasDynamic.cs" />
+    <Compile Include="UnityEngine\Rendering\Texture2DParameter.cs" />
+    <Compile Include="UnityEngine\Rendering\Texture3DParameter.cs" />
+    <Compile Include="UnityEngine\Rendering\TextureCurve.cs" />
+    <Compile Include="UnityEngine\Rendering\TextureCurveParameter.cs" />
+    <Compile Include="UnityEngine\Rendering\TextureParameter.cs" />
+    <Compile Include="UnityEngine\Rendering\TextureXR.cs" />
+    <Compile Include="UnityEngine\Rendering\TileLayoutUtils.cs" />
+    <Compile Include="UnityEngine\Rendering\TProfilingSampler.cs" />
+    <Compile Include="UnityEngine\Rendering\UI\DebugUIHandlerBitField.cs" />
+    <Compile Include="UnityEngine\Rendering\UI\DebugUIHandlerButton.cs" />
+    <Compile Include="UnityEngine\Rendering\UI\DebugUIHandlerCanvas.cs" />
+    <Compile Include="UnityEngine\Rendering\UI\DebugUIHandlerColor.cs" />
+    <Compile Include="UnityEngine\Rendering\UI\DebugUIHandlerContainer.cs" />
+    <Compile Include="UnityEngine\Rendering\UI\DebugUIHandlerEnumField.cs" />
+    <Compile Include="UnityEngine\Rendering\UI\DebugUIHandlerEnumHistory.cs" />
+    <Compile Include="UnityEngine\Rendering\UI\DebugUIHandlerFloatField.cs" />
+    <Compile Include="UnityEngine\Rendering\UI\DebugUIHandlerFoldout.cs" />
+    <Compile Include="UnityEngine\Rendering\UI\DebugUIHandlerGroup.cs" />
+    <Compile Include="UnityEngine\Rendering\UI\DebugUIHandlerHBox.cs" />
+    <Compile Include="UnityEngine\Rendering\UI\DebugUIHandlerIndirectFloatField.cs" />
+    <Compile Include="UnityEngine\Rendering\UI\DebugUIHandlerIndirectToggle.cs" />
+    <Compile Include="UnityEngine\Rendering\UI\DebugUIHandlerIntField.cs" />
+    <Compile Include="UnityEngine\Rendering\UI\DebugUIHandlerMessageBox.cs" />
+    <Compile Include="UnityEngine\Rendering\UI\DebugUIHandlerPanel.cs" />
+    <Compile Include="UnityEngine\Rendering\UI\DebugUIHandlerPersistentCanvas.cs" />
+    <Compile Include="UnityEngine\Rendering\UI\DebugUIHandlerRow.cs" />
+    <Compile Include="UnityEngine\Rendering\UI\DebugUIHandlerToggle.cs" />
+    <Compile Include="UnityEngine\Rendering\UI\DebugUIHandlerToggleHistory.cs" />
+    <Compile Include="UnityEngine\Rendering\UI\DebugUIHandlerUIntField.cs" />
+    <Compile Include="UnityEngine\Rendering\UI\DebugUIHandlerValue.cs" />
+    <Compile Include="UnityEngine\Rendering\UI\DebugUIHandlerVBox.cs" />
+    <Compile Include="UnityEngine\Rendering\UI\DebugUIHandlerVector2.cs" />
+    <Compile Include="UnityEngine\Rendering\UI\DebugUIHandlerVector3.cs" />
+    <Compile Include="UnityEngine\Rendering\UI\DebugUIHandlerVector4.cs" />
+    <Compile Include="UnityEngine\Rendering\UI\DebugUIHandlerWidget.cs" />
+    <Compile Include="UnityEngine\Rendering\UI\DebugUIPrefabBundle.cs" />
+    <Compile Include="UnityEngine\Rendering\UI\UIFoldout.cs" />
+    <Compile Include="UnityEngine\Rendering\UnsafeGenericPool.cs" />
+    <Compile Include="UnityEngine\Rendering\Vector2Parameter.cs" />
+    <Compile Include="UnityEngine\Rendering\Vector3Parameter.cs" />
+    <Compile Include="UnityEngine\Rendering\Vector4Parameter.cs" />
+    <Compile Include="UnityEngine\Rendering\Volume.cs" />
+    <Compile Include="UnityEngine\Rendering\VolumeComponent.cs" />
+    <Compile Include="UnityEngine\Rendering\VolumeComponentDeprecated.cs" />
+    <Compile Include="UnityEngine\Rendering\VolumeComponentMenu.cs" />
+    <Compile Include="UnityEngine\Rendering\VolumeComponentMenuForRenderPipeline.cs" />
+    <Compile Include="UnityEngine\Rendering\VolumeIsolationScope.cs" />
+    <Compile Include="UnityEngine\Rendering\VolumeManager.cs" />
+    <Compile Include="UnityEngine\Rendering\VolumeParameter.2.cs" />
+    <Compile Include="UnityEngine\Rendering\VolumeParameter.cs" />
+    <Compile Include="UnityEngine\Rendering\VolumeProfile.cs" />
+    <Compile Include="UnityEngine\Rendering\VolumeStack.cs" />
+    <Compile Include="UnityEngine\Rendering\XRGraphics.cs" />
+    <Compile Include="UnityEngine\Rendering\XRGraphicsAutomatedTests.cs" />
+    <Compile Include="UnityEngine\Rendering\XRUtils.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\mscorlib\mscorlib.csproj">
+      <Project>{60fc5a84-174b-460f-af7d-e4245a6f5968}</Project>
+      <Name>mscorlib</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\System.Core\System.Core.csproj">
+      <Project>{60fc5a84-174b-460f-af7d-e4245a6f597d}</Project>
+      <Name>System.Core</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\System\System.csproj">
+      <Project>{60fc5a84-174b-460f-af7d-e4245a6f5980}</Project>
+      <Name>System</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\UnityEngine.CoreModule\UnityEngine.CoreModule.csproj">
+      <Project>{60fc5a84-174b-460f-af7d-e4245a6f59aa}</Project>
+      <Name>UnityEngine.CoreModule</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\UnityEngine.IMGUIModule\UnityEngine.IMGUIModule.csproj">
+      <Project>{60fc5a84-174b-460f-af7d-e4245a6f59b4}</Project>
+      <Name>UnityEngine.IMGUIModule</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\UnityEngine.InputLegacyModule\UnityEngine.InputLegacyModule.csproj">
+      <Project>{60fc5a84-174b-460f-af7d-e4245a6f59b5}</Project>
+      <Name>UnityEngine.InputLegacyModule</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\UnityEngine.PhysicsModule\UnityEngine.PhysicsModule.csproj">
+      <Project>{60fc5a84-174b-460f-af7d-e4245a6f59bd}</Project>
+      <Name>UnityEngine.PhysicsModule</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\UnityEngine.UI\UnityEngine.UI.csproj">
+      <Project>{60fc5a84-174b-460f-af7d-e4245a6f59ce}</Project>
+      <Name>UnityEngine.UI</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>

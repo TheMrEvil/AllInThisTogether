@@ -1,0 +1,488 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{60FC5A84-174B-460F-AF7D-E4245A6F594D}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <RootNamespace>Assembly-CSharp-firstpass</RootNamespace>
+    <AssemblyName>Assembly-CSharp-firstpass</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <NoStdLib>true</NoStdLib>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <NoStdLib>true</NoStdLib>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+  </PropertyGroup>
+  <ItemGroup />
+  <ItemGroup>
+    <AppDesigner Include="Properties\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="-PrivateImplementationDetails-.cs" />
+    <Compile Include="BackgroundColorAttribute.cs" />
+    <Compile Include="BookCurlPro\AutoFlip.cs" />
+    <Compile Include="BookCurlPro\BookPro.cs" />
+    <Compile Include="BookCurlPro\BookUtility.cs" />
+    <Compile Include="BookCurlPro\Examples\AddPagesDynamically.cs" />
+    <Compile Include="BookCurlPro\Examples\BotAnimationControl.cs" />
+    <Compile Include="BookCurlPro\Examples\FastForwardFlipper.cs" />
+    <Compile Include="BookCurlPro\FlipMode.cs" />
+    <Compile Include="BookCurlPro\PageFlipper.cs" />
+    <Compile Include="BookCurlPro\Paper.cs" />
+    <Compile Include="BookCurlPro\Tween.cs" />
+    <Compile Include="Coffee\UIExtensions\BaseMeshEffect.cs" />
+    <Compile Include="Coffee\UIExtensions\BlurMode.cs" />
+    <Compile Include="Coffee\UIExtensions\ColorMode.cs" />
+    <Compile Include="Coffee\UIExtensions\EffectArea.cs" />
+    <Compile Include="Coffee\UIExtensions\EffectAreaExtensions.cs" />
+    <Compile Include="Coffee\UIExtensions\EffectMode.cs" />
+    <Compile Include="Coffee\UIExtensions\EffectPlayer.cs" />
+    <Compile Include="Coffee\UIExtensions\IParameterTexture.cs" />
+    <Compile Include="Coffee\UIExtensions\MaterialCache.cs" />
+    <Compile Include="Coffee\UIExtensions\Matrix2x3.cs" />
+    <Compile Include="Coffee\UIExtensions\ParameterTexture.cs" />
+    <Compile Include="Coffee\UIExtensions\ShadowStyle.cs" />
+    <Compile Include="Coffee\UIExtensions\UIDissolve.cs" />
+    <Compile Include="Coffee\UIExtensions\UIEffect.cs" />
+    <Compile Include="Coffee\UIExtensions\UIEffectBase.cs" />
+    <Compile Include="Coffee\UIExtensions\UIEffectCapturedImage.cs" />
+    <Compile Include="Coffee\UIExtensions\UIFlip.cs" />
+    <Compile Include="Coffee\UIExtensions\UIGradient.cs" />
+    <Compile Include="Coffee\UIExtensions\UIHsvModifier.cs" />
+    <Compile Include="Coffee\UIExtensions\UIShadow.cs" />
+    <Compile Include="Coffee\UIExtensions\UIShiny.cs" />
+    <Compile Include="Coffee\UIExtensions\UITransitionEffect.cs" />
+    <Compile Include="DiscordRpc.cs" />
+    <Compile Include="EasyColliderRotateDuplicate.cs" />
+    <Compile Include="ECE\BoxColliderData.cs" />
+    <Compile Include="ECE\CapsuleColliderData.cs" />
+    <Compile Include="ECE\CAPSULE_COLLIDER_METHOD.cs" />
+    <Compile Include="ECE\COLLIDER_HOLDER.cs" />
+    <Compile Include="ECE\COLLIDER_ORIENTATION.cs" />
+    <Compile Include="ECE\CREATE_COLLIDER_TYPE.cs" />
+    <Compile Include="ECE\CYLINDER_ORIENTATION.cs" />
+    <Compile Include="ECE\EasyColliderCreator.cs" />
+    <Compile Include="ECE\EasyColliderData.cs" />
+    <Compile Include="ECE\EasyColliderProperties.cs" />
+    <Compile Include="ECE\EasyColliderQuickHull.cs" />
+    <Compile Include="ECE\ECE_WINDOW_TAB.cs" />
+    <Compile Include="ECE\GIZMO_TYPE.cs" />
+    <Compile Include="ECE\MeshColliderData.cs" />
+    <Compile Include="ECE\MESH_COLLIDER_METHOD.cs" />
+    <Compile Include="ECE\NORMAL_OFFSET.cs" />
+    <Compile Include="ECE\RENDER_POINT_TYPE.cs" />
+    <Compile Include="ECE\SKINNED_MESH_COLLIDER_TYPE.cs" />
+    <Compile Include="ECE\SKINNED_MESH_DEPENETRATE_ORDER.cs" />
+    <Compile Include="ECE\SphereColliderData.cs" />
+    <Compile Include="ECE\SPHERE_COLLIDER_METHOD.cs" />
+    <Compile Include="ECE\VERTEX_SNAP_METHOD.cs" />
+    <Compile Include="ECE\VHACD_CONVERSION.cs" />
+    <Compile Include="ECE\VHACD_RESULT_METHOD.cs" />
+    <Compile Include="EditorIKList.cs" />
+    <Compile Include="FEasing.cs" />
+    <Compile Include="FHierarchyIcons.cs" />
+    <Compile Include="FIMSpace\AnimationTools\AnimationGenerateUtils.cs" />
+    <Compile Include="FIMSpace\AnimationTools\LegAnimationClipMotion.cs" />
+    <Compile Include="FIMSpace\AnimationTools\SkeletonRecognize.cs" />
+    <Compile Include="FIMSpace\Basics\EFUpdateClock.cs" />
+    <Compile Include="FIMSpace\Basics\FAnimationClips.cs" />
+    <Compile Include="FIMSpace\Basics\FAnimator.cs" />
+    <Compile Include="FIMSpace\Basics\FBasic_FreeCameraBehaviour.cs" />
+    <Compile Include="FIMSpace\FAnimatorMethods.cs" />
+    <Compile Include="FIMSpace\FColorMethods.cs" />
+    <Compile Include="FIMSpace\FDebug.cs" />
+    <Compile Include="FIMSpace\FDebug_PerformanceTest.cs" />
+    <Compile Include="FIMSpace\FEditor\FGUI_Finders.cs" />
+    <Compile Include="FIMSpace\FEngineering.cs" />
+    <Compile Include="FIMSpace\FImp_ColliderData_Base.cs" />
+    <Compile Include="FIMSpace\FImp_ColliderData_Box.cs" />
+    <Compile Include="FIMSpace\FImp_ColliderData_Capsule.cs" />
+    <Compile Include="FIMSpace\FImp_ColliderData_Mesh.cs" />
+    <Compile Include="FIMSpace\FImp_ColliderData_Sphere.cs" />
+    <Compile Include="FIMSpace\FImp_ColliderData_Terrain.cs" />
+    <Compile Include="FIMSpace\FLogicMethods.cs" />
+    <Compile Include="FIMSpace\FStringMethods.cs" />
+    <Compile Include="FIMSpace\FTail\FTail_Skinning.cs" />
+    <Compile Include="FIMSpace\FTail\FTail_SkinningVertexData.cs" />
+    <Compile Include="FIMSpace\FTail\TailAnimator2.cs" />
+    <Compile Include="FIMSpace\FTail\TailAnimatorWind.cs" />
+    <Compile Include="FIMSpace\FTail\TailCollisionHelper.cs" />
+    <Compile Include="FIMSpace\FTools\FAnimationClipsPack.cs" />
+    <Compile Include="FIMSpace\FTools\FContainerBase.cs" />
+    <Compile Include="FIMSpace\FTools\FElasticTransform.cs" />
+    <Compile Include="FIMSpace\FTools\FIK_CCDProcessor.cs" />
+    <Compile Include="FIMSpace\FTools\FIK_IKBoneBase.cs" />
+    <Compile Include="FIMSpace\FTools\FIK_IKProcessor.cs" />
+    <Compile Include="FIMSpace\FTools\FIK_ProcessorBase.cs" />
+    <Compile Include="FIMSpace\FTools\FimpIK_Arm.cs" />
+    <Compile Include="FIMSpace\FTools\FimpIK_Limb.cs" />
+    <Compile Include="FIMSpace\FTools\FMuscle_Angle.cs" />
+    <Compile Include="FIMSpace\FTools\FMuscle_Eulers.cs" />
+    <Compile Include="FIMSpace\FTools\FMuscle_Float.cs" />
+    <Compile Include="FIMSpace\FTools\FMuscle_Motor.cs" />
+    <Compile Include="FIMSpace\FTools\FMuscle_Quaternion.cs" />
+    <Compile Include="FIMSpace\FTools\FMuscle_Vector3.cs" />
+    <Compile Include="FIMSpace\FTools\FTools_IKProcessorek.cs" />
+    <Compile Include="FIMSpace\FTools\UniRotateBone.cs" />
+    <Compile Include="FIMSpace\FTransformMethods.cs" />
+    <Compile Include="FIMSpace\FVectorMethods.cs" />
+    <Compile Include="FIMSpace\Generating\FGenerators.cs" />
+    <Compile Include="FIMSpace\Generating\FGeneratorsGizmosDrawer.cs" />
+    <Compile Include="FIMSpace\Generating\MinMax.cs" />
+    <Compile Include="FIMSpace\Generating\MinMaxF.cs" />
+    <Compile Include="FIMSpace\Generating\PrefabReference.cs" />
+    <Compile Include="FIMSpace\Generating\Searchable.cs" />
+    <Compile Include="FPD_FixedCurveWindowAttribute.cs" />
+    <Compile Include="FPD_HeaderAttribute.cs" />
+    <Compile Include="FPD_HorizontalLineAttribute.cs" />
+    <Compile Include="FPD_IndentAttribute.cs" />
+    <Compile Include="FPD_LayersAttribute.cs" />
+    <Compile Include="FPD_OverridableFloatAttribute.cs" />
+    <Compile Include="FPD_SuffixAttribute.cs" />
+    <Compile Include="FPD_WidthAttribute.cs" />
+    <Compile Include="IFHierarchyIcon.cs" />
+    <Compile Include="JesseStiller\TerrainFormerExtension\TerrainFormer.cs" />
+    <Compile Include="JesseStiller\TerrainFormerExtension\TerrainSetNeighbours.cs" />
+    <Compile Include="KuwaharaFilter\AnisotropicKuwaharaEffect.cs" />
+    <Compile Include="KuwaharaFilter\ConstantBufferVariable.cs" />
+    <Compile Include="LightProbeRuntime.cs" />
+    <Compile Include="MECExtensionMethods2.cs" />
+    <Compile Include="MEC\CoroutineHandle.cs" />
+    <Compile Include="MEC\DebugInfoType.cs" />
+    <Compile Include="MEC\MECExtensionMethods1.cs" />
+    <Compile Include="MEC\Segment.cs" />
+    <Compile Include="MEC\SingletonBehavior.cs" />
+    <Compile Include="MEC\Timing.cs" />
+    <Compile Include="MiniTools\BetterGizmos\BetterGizmos.cs" />
+    <Compile Include="MiniTools\BetterGizmos\Example\BetterGizmos_ExampleScript.cs" />
+    <Compile Include="MiniTools\BetterGizmos\VerticesTables.cs" />
+    <Compile Include="NavMeshCleaner.cs" />
+    <Compile Include="NVBoids.cs" />
+    <Compile Include="ObjectRotate.cs" />
+    <Compile Include="Onager\FXMesh\FXMesh.cs" />
+    <Compile Include="Onager\FXMesh\FXMeshSettings.cs" />
+    <Compile Include="Onager\FXMesh\FXParticle.cs" />
+    <Compile Include="Packer.cs" />
+    <Compile Include="PrefabLightmapData.cs" />
+    <Compile Include="ProGrids\Axis.cs" />
+    <Compile Include="ProGrids\PGExtensions.cs" />
+    <Compile Include="ProGrids\pg_Constant.cs" />
+    <Compile Include="ProGrids\pg_Enum.cs" />
+    <Compile Include="ProGrids\pg_Util.cs" />
+    <Compile Include="ProGrids\ProGridsConditionalSnapAttribute.cs" />
+    <Compile Include="ProGrids\ProGridsNoSnapAttribute.cs" />
+    <Compile Include="ProGrids\SnapUnit.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="RootMotion\AvatarUtility.cs" />
+    <Compile Include="RootMotion\Axis.cs" />
+    <Compile Include="RootMotion\AxisTools.cs" />
+    <Compile Include="RootMotion\Baker.cs" />
+    <Compile Include="RootMotion\BakerHumanoidQT.cs" />
+    <Compile Include="RootMotion\BakerMuscle.cs" />
+    <Compile Include="RootMotion\BakerTransform.cs" />
+    <Compile Include="RootMotion\BakerUtilities.cs" />
+    <Compile Include="RootMotion\BipedLimbOrientations.cs" />
+    <Compile Include="RootMotion\BipedNaming.cs" />
+    <Compile Include="RootMotion\BipedReferences.cs" />
+    <Compile Include="RootMotion\CameraController.cs" />
+    <Compile Include="RootMotion\CameraControllerFPS.cs" />
+    <Compile Include="RootMotion\Comments.cs" />
+    <Compile Include="RootMotion\DemoGUIMessage.cs" />
+    <Compile Include="RootMotion\Demos\AimBoxing.cs" />
+    <Compile Include="RootMotion\Demos\AimSwing.cs" />
+    <Compile Include="RootMotion\Demos\AnimationWarping.cs" />
+    <Compile Include="RootMotion\Demos\AnimatorController3rdPerson.cs" />
+    <Compile Include="RootMotion\Demos\AnimatorController3rdPersonIK.cs" />
+    <Compile Include="RootMotion\Demos\ApplicationQuit.cs" />
+    <Compile Include="RootMotion\Demos\BendGoal.cs" />
+    <Compile Include="RootMotion\Demos\BipedIKvsAnimatorIK.cs" />
+    <Compile Include="RootMotion\Demos\CharacterAnimationBase.cs" />
+    <Compile Include="RootMotion\Demos\CharacterAnimationSimple.cs" />
+    <Compile Include="RootMotion\Demos\CharacterAnimationThirdPerson.cs" />
+    <Compile Include="RootMotion\Demos\CharacterAnimationThirdPersonIK.cs" />
+    <Compile Include="RootMotion\Demos\CharacterBase.cs" />
+    <Compile Include="RootMotion\Demos\CharacterController3rdPerson.cs" />
+    <Compile Include="RootMotion\Demos\CharacterThirdPerson.cs" />
+    <Compile Include="RootMotion\Demos\EffectorOffset.cs" />
+    <Compile Include="RootMotion\Demos\ExplosionDemo.cs" />
+    <Compile Include="RootMotion\Demos\FBBIKSettings.cs" />
+    <Compile Include="RootMotion\Demos\FBIKBendGoal.cs" />
+    <Compile Include="RootMotion\Demos\FBIKBoxing.cs" />
+    <Compile Include="RootMotion\Demos\FBIKHandsOnProp.cs" />
+    <Compile Include="RootMotion\Demos\FKOffset.cs" />
+    <Compile Include="RootMotion\Demos\FPSAiming.cs" />
+    <Compile Include="RootMotion\Demos\FPSCharacter.cs" />
+    <Compile Include="RootMotion\Demos\GrounderDemo.cs" />
+    <Compile Include="RootMotion\Demos\HitReactionTrigger.cs" />
+    <Compile Include="RootMotion\Demos\HitReactionVRIKTrigger.cs" />
+    <Compile Include="RootMotion\Demos\HoldingHands.cs" />
+    <Compile Include="RootMotion\Demos\InteractionC2CDemo.cs" />
+    <Compile Include="RootMotion\Demos\InteractionDemo.cs" />
+    <Compile Include="RootMotion\Demos\InteractionSystemTestGUI.cs" />
+    <Compile Include="RootMotion\Demos\KissingRig.cs" />
+    <Compile Include="RootMotion\Demos\MechSpider.cs" />
+    <Compile Include="RootMotion\Demos\MechSpiderController.cs" />
+    <Compile Include="RootMotion\Demos\MechSpiderLeg.cs" />
+    <Compile Include="RootMotion\Demos\MechSpiderParticles.cs" />
+    <Compile Include="RootMotion\Demos\MotionAbsorb.cs" />
+    <Compile Include="RootMotion\Demos\MotionAbsorbCharacter.cs" />
+    <Compile Include="RootMotion\Demos\Navigator.cs" />
+    <Compile Include="RootMotion\Demos\OffsetEffector.cs" />
+    <Compile Include="RootMotion\Demos\PendulumExample.cs" />
+    <Compile Include="RootMotion\Demos\PickUp2Handed.cs" />
+    <Compile Include="RootMotion\Demos\PickUpBox.cs" />
+    <Compile Include="RootMotion\Demos\PickUpSphere.cs" />
+    <Compile Include="RootMotion\Demos\PlatformRotator.cs" />
+    <Compile Include="RootMotion\Demos\RagdollUtilityDemo.cs" />
+    <Compile Include="RootMotion\Demos\RecoilTest.cs" />
+    <Compile Include="RootMotion\Demos\ResetInteractionObject.cs" />
+    <Compile Include="RootMotion\Demos\SecondHandOnGun.cs" />
+    <Compile Include="RootMotion\Demos\SimpleAimingSystem.cs" />
+    <Compile Include="RootMotion\Demos\SimpleLocomotion.cs" />
+    <Compile Include="RootMotion\Demos\SlowMo.cs" />
+    <Compile Include="RootMotion\Demos\SoccerDemo.cs" />
+    <Compile Include="RootMotion\Demos\TerrainOffset.cs" />
+    <Compile Include="RootMotion\Demos\TouchWalls.cs" />
+    <Compile Include="RootMotion\Demos\TransferMotion.cs" />
+    <Compile Include="RootMotion\Demos\Turret.cs" />
+    <Compile Include="RootMotion\Demos\TwoHandedProp.cs" />
+    <Compile Include="RootMotion\Demos\UserControlAI.cs" />
+    <Compile Include="RootMotion\Demos\UserControlInteractions.cs" />
+    <Compile Include="RootMotion\Demos\UserControlThirdPerson.cs" />
+    <Compile Include="RootMotion\Demos\VRIKCalibrationBasic.cs" />
+    <Compile Include="RootMotion\Demos\VRIKCalibrationController.cs" />
+    <Compile Include="RootMotion\Demos\VRIKPlatform.cs" />
+    <Compile Include="RootMotion\Demos\VRIKPlatformController.cs" />
+    <Compile Include="RootMotion\FinalIK\AimController.cs" />
+    <Compile Include="RootMotion\FinalIK\AimIK.cs" />
+    <Compile Include="RootMotion\FinalIK\AimPoser.cs" />
+    <Compile Include="RootMotion\FinalIK\Amplifier.cs" />
+    <Compile Include="RootMotion\FinalIK\ArmIK.cs" />
+    <Compile Include="RootMotion\FinalIK\BipedIK.cs" />
+    <Compile Include="RootMotion\FinalIK\BipedIKSolvers.cs" />
+    <Compile Include="RootMotion\FinalIK\BodyTilt.cs" />
+    <Compile Include="RootMotion\FinalIK\CCDBendGoal.cs" />
+    <Compile Include="RootMotion\FinalIK\CCDIK.cs" />
+    <Compile Include="RootMotion\FinalIK\Constraint.cs" />
+    <Compile Include="RootMotion\FinalIK\ConstraintPosition.cs" />
+    <Compile Include="RootMotion\FinalIK\ConstraintPositionOffset.cs" />
+    <Compile Include="RootMotion\FinalIK\ConstraintRotation.cs" />
+    <Compile Include="RootMotion\FinalIK\ConstraintRotationOffset.cs" />
+    <Compile Include="RootMotion\FinalIK\Constraints.cs" />
+    <Compile Include="RootMotion\FinalIK\EditorIK.cs" />
+    <Compile Include="RootMotion\FinalIK\EditorIKPose.cs" />
+    <Compile Include="RootMotion\FinalIK\FABRIK.cs" />
+    <Compile Include="RootMotion\FinalIK\FABRIKChain.cs" />
+    <Compile Include="RootMotion\FinalIK\FABRIKRoot.cs" />
+    <Compile Include="RootMotion\FinalIK\FBBIKArmBending.cs" />
+    <Compile Include="RootMotion\FinalIK\FBBIKHeadEffector.cs" />
+    <Compile Include="RootMotion\FinalIK\FBIKChain.cs" />
+    <Compile Include="RootMotion\FinalIK\Finger.cs" />
+    <Compile Include="RootMotion\FinalIK\FingerRig.cs" />
+    <Compile Include="RootMotion\FinalIK\FullBodyBipedChain.cs" />
+    <Compile Include="RootMotion\FinalIK\FullBodyBipedEffector.cs" />
+    <Compile Include="RootMotion\FinalIK\FullBodyBipedIK.cs" />
+    <Compile Include="RootMotion\FinalIK\GenericPoser.cs" />
+    <Compile Include="RootMotion\FinalIK\Grounder.cs" />
+    <Compile Include="RootMotion\FinalIK\GrounderBipedIK.cs" />
+    <Compile Include="RootMotion\FinalIK\GrounderFBBIK.cs" />
+    <Compile Include="RootMotion\FinalIK\GrounderIK.cs" />
+    <Compile Include="RootMotion\FinalIK\GrounderQuadruped.cs" />
+    <Compile Include="RootMotion\FinalIK\GrounderVRIK.cs" />
+    <Compile Include="RootMotion\FinalIK\Grounding.cs" />
+    <Compile Include="RootMotion\FinalIK\HandPoser.cs" />
+    <Compile Include="RootMotion\FinalIK\HitReaction.cs" />
+    <Compile Include="RootMotion\FinalIK\HitReactionVRIK.cs" />
+    <Compile Include="RootMotion\FinalIK\IK.cs" />
+    <Compile Include="RootMotion\FinalIK\IKConstraintBend.cs" />
+    <Compile Include="RootMotion\FinalIK\IKEffector.cs" />
+    <Compile Include="RootMotion\FinalIK\IKExecutionOrder.cs" />
+    <Compile Include="RootMotion\FinalIK\IKMapping.cs" />
+    <Compile Include="RootMotion\FinalIK\IKMappingBone.cs" />
+    <Compile Include="RootMotion\FinalIK\IKMappingLimb.cs" />
+    <Compile Include="RootMotion\FinalIK\IKMappingSpine.cs" />
+    <Compile Include="RootMotion\FinalIK\IKSolver.cs" />
+    <Compile Include="RootMotion\FinalIK\IKSolverAim.cs" />
+    <Compile Include="RootMotion\FinalIK\IKSolverArm.cs" />
+    <Compile Include="RootMotion\FinalIK\IKSolverCCD.cs" />
+    <Compile Include="RootMotion\FinalIK\IKSolverFABRIK.cs" />
+    <Compile Include="RootMotion\FinalIK\IKSolverFABRIKRoot.cs" />
+    <Compile Include="RootMotion\FinalIK\IKSolverFullBody.cs" />
+    <Compile Include="RootMotion\FinalIK\IKSolverFullBodyBiped.cs" />
+    <Compile Include="RootMotion\FinalIK\IKSolverHeuristic.cs" />
+    <Compile Include="RootMotion\FinalIK\IKSolverLeg.cs" />
+    <Compile Include="RootMotion\FinalIK\IKSolverLimb.cs" />
+    <Compile Include="RootMotion\FinalIK\IKSolverLookAt.cs" />
+    <Compile Include="RootMotion\FinalIK\IKSolverTrigonometric.cs" />
+    <Compile Include="RootMotion\FinalIK\IKSolverVR.cs" />
+    <Compile Include="RootMotion\FinalIK\Inertia.cs" />
+    <Compile Include="RootMotion\FinalIK\InteractionEffector.cs" />
+    <Compile Include="RootMotion\FinalIK\InteractionLookAt.cs" />
+    <Compile Include="RootMotion\FinalIK\InteractionObject.cs" />
+    <Compile Include="RootMotion\FinalIK\InteractionSystem.cs" />
+    <Compile Include="RootMotion\FinalIK\InteractionTarget.cs" />
+    <Compile Include="RootMotion\FinalIK\InteractionTrigger.cs" />
+    <Compile Include="RootMotion\FinalIK\LegIK.cs" />
+    <Compile Include="RootMotion\FinalIK\LimbIK.cs" />
+    <Compile Include="RootMotion\FinalIK\LookAtController.cs" />
+    <Compile Include="RootMotion\FinalIK\LookAtIK.cs" />
+    <Compile Include="RootMotion\FinalIK\OffsetModifier.cs" />
+    <Compile Include="RootMotion\FinalIK\OffsetModifierVRIK.cs" />
+    <Compile Include="RootMotion\FinalIK\OffsetPose.cs" />
+    <Compile Include="RootMotion\FinalIK\PenetrationAvoidance.cs" />
+    <Compile Include="RootMotion\FinalIK\Poser.cs" />
+    <Compile Include="RootMotion\FinalIK\RagdollUtility.cs" />
+    <Compile Include="RootMotion\FinalIK\Recoil.cs" />
+    <Compile Include="RootMotion\FinalIK\RotationLimit.cs" />
+    <Compile Include="RootMotion\FinalIK\RotationLimitAngle.cs" />
+    <Compile Include="RootMotion\FinalIK\RotationLimitHinge.cs" />
+    <Compile Include="RootMotion\FinalIK\RotationLimitPolygonal.cs" />
+    <Compile Include="RootMotion\FinalIK\RotationLimitSpline.cs" />
+    <Compile Include="RootMotion\FinalIK\ShoulderRotator.cs" />
+    <Compile Include="RootMotion\FinalIK\TrigonometricIK.cs" />
+    <Compile Include="RootMotion\FinalIK\TwistRelaxer.cs" />
+    <Compile Include="RootMotion\FinalIK\TwistSolver.cs" />
+    <Compile Include="RootMotion\FinalIK\VRIK.cs" />
+    <Compile Include="RootMotion\FinalIK\VRIKCalibrator.cs" />
+    <Compile Include="RootMotion\FinalIK\VRIKLODController.cs" />
+    <Compile Include="RootMotion\FinalIK\VRIKRootController.cs" />
+    <Compile Include="RootMotion\GenericBaker.cs" />
+    <Compile Include="RootMotion\Hierarchy.cs" />
+    <Compile Include="RootMotion\HumanoidBaker.cs" />
+    <Compile Include="RootMotion\InspectorComment.cs" />
+    <Compile Include="RootMotion\Interp.cs" />
+    <Compile Include="RootMotion\InterpolationMode.cs" />
+    <Compile Include="RootMotion\LargeHeader.cs" />
+    <Compile Include="RootMotion\LayerMaskExtensions.cs" />
+    <Compile Include="RootMotion\QuaTools.cs" />
+    <Compile Include="RootMotion\Singleton.cs" />
+    <Compile Include="RootMotion\SolverManager.cs" />
+    <Compile Include="RootMotion\TQ.cs" />
+    <Compile Include="RootMotion\TriggerEventBroadcaster.cs" />
+    <Compile Include="RootMotion\V2Tools.cs" />
+    <Compile Include="RootMotion\V3Tools.cs" />
+    <Compile Include="RootMotion\Warning.cs" />
+    <Compile Include="VolumetricLightsDemo\CubeGen.cs" />
+    <Compile Include="VolumetricLightsDemo\FenceGen.cs" />
+    <Compile Include="VolumetricLights\AttenuationMode.cs" />
+    <Compile Include="VolumetricLights\BlendMode.cs" />
+    <Compile Include="VolumetricLights\DirectLightBlendMode.cs" />
+    <Compile Include="VolumetricLights\PropertiesChangedEvent.cs" />
+    <Compile Include="VolumetricLights\RaymarchPresets.cs" />
+    <Compile Include="VolumetricLights\ShadowBakeInterval.cs" />
+    <Compile Include="VolumetricLights\ShadowBakeMode.cs" />
+    <Compile Include="VolumetricLights\ShadowOrientation.cs" />
+    <Compile Include="VolumetricLights\ShadowResolution.cs" />
+    <Compile Include="VolumetricLights\VolumetricLight.cs" />
+    <Compile Include="VolumetricLights\VolumetricLightDirectionalSync.cs" />
+    <Compile Include="VolumetricLights\VolumetricLightProfile.cs" />
+    <Compile Include="VolumetricLights\VolumetricLightsPostProcess.cs" />
+    <Compile Include="VolumetricLights\VolumetricLightsPostProcessBase.cs" />
+    <Compile Include="VolumetricLights\VolumetricLightsPostProcessBeforeTransparents.cs" />
+    <Compile Include="VolumetricLights\VolumetricLightsTranslucency.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\mscorlib\mscorlib.csproj">
+      <Project>{60fc5a84-174b-460f-af7d-e4245a6f5968}</Project>
+      <Name>mscorlib</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\System.Core\System.Core.csproj">
+      <Project>{60fc5a84-174b-460f-af7d-e4245a6f597d}</Project>
+      <Name>System.Core</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\System\System.csproj">
+      <Project>{60fc5a84-174b-460f-af7d-e4245a6f5980}</Project>
+      <Name>System</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Unity.TextMeshPro\Unity.TextMeshPro.csproj">
+      <Project>{60fc5a84-174b-460f-af7d-e4245a6f599f}</Project>
+      <Name>Unity.TextMeshPro</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\UnityEngine.AIModule\UnityEngine.AIModule.csproj">
+      <Project>{60fc5a84-174b-460f-af7d-e4245a6f59a1}</Project>
+      <Name>UnityEngine.AIModule</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\UnityEngine.AnimationModule\UnityEngine.AnimationModule.csproj">
+      <Project>{60fc5a84-174b-460f-af7d-e4245a6f59a3}</Project>
+      <Name>UnityEngine.AnimationModule</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\UnityEngine.CoreModule\UnityEngine.CoreModule.csproj">
+      <Project>{60fc5a84-174b-460f-af7d-e4245a6f59aa}</Project>
+      <Name>UnityEngine.CoreModule</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\UnityEngine.DirectorModule\UnityEngine.DirectorModule.csproj">
+      <Project>{60fc5a84-174b-460f-af7d-e4245a6f59ac}</Project>
+      <Name>UnityEngine.DirectorModule</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\UnityEngine.IMGUIModule\UnityEngine.IMGUIModule.csproj">
+      <Project>{60fc5a84-174b-460f-af7d-e4245a6f59b4}</Project>
+      <Name>UnityEngine.IMGUIModule</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\UnityEngine.InputLegacyModule\UnityEngine.InputLegacyModule.csproj">
+      <Project>{60fc5a84-174b-460f-af7d-e4245a6f59b5}</Project>
+      <Name>UnityEngine.InputLegacyModule</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\UnityEngine.ParticleSystemModule\UnityEngine.ParticleSystemModule.csproj">
+      <Project>{60fc5a84-174b-460f-af7d-e4245a6f59ba}</Project>
+      <Name>UnityEngine.ParticleSystemModule</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\UnityEngine.Physics2DModule\UnityEngine.Physics2DModule.csproj">
+      <Project>{60fc5a84-174b-460f-af7d-e4245a6f59bc}</Project>
+      <Name>UnityEngine.Physics2DModule</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\UnityEngine.PhysicsModule\UnityEngine.PhysicsModule.csproj">
+      <Project>{60fc5a84-174b-460f-af7d-e4245a6f59bd}</Project>
+      <Name>UnityEngine.PhysicsModule</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\UnityEngine.TerrainModule\UnityEngine.TerrainModule.csproj">
+      <Project>{60fc5a84-174b-460f-af7d-e4245a6f59c7}</Project>
+      <Name>UnityEngine.TerrainModule</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\UnityEngine.TerrainPhysicsModule\UnityEngine.TerrainPhysicsModule.csproj">
+      <Project>{60fc5a84-174b-460f-af7d-e4245a6f59c8}</Project>
+      <Name>UnityEngine.TerrainPhysicsModule</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\UnityEngine.TextRenderingModule\UnityEngine.TextRenderingModule.csproj">
+      <Project>{60fc5a84-174b-460f-af7d-e4245a6f59cb}</Project>
+      <Name>UnityEngine.TextRenderingModule</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\UnityEngine.TilemapModule\UnityEngine.TilemapModule.csproj">
+      <Project>{60fc5a84-174b-460f-af7d-e4245a6f59cc}</Project>
+      <Name>UnityEngine.TilemapModule</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\UnityEngine.UIModule\UnityEngine.UIModule.csproj">
+      <Project>{60fc5a84-174b-460f-af7d-e4245a6f59d1}</Project>
+      <Name>UnityEngine.UIModule</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\UnityEngine.UI\UnityEngine.UI.csproj">
+      <Project>{60fc5a84-174b-460f-af7d-e4245a6f59ce}</Project>
+      <Name>UnityEngine.UI</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\UnityEngine.WindModule\UnityEngine.WindModule.csproj">
+      <Project>{60fc5a84-174b-460f-af7d-e4245a6f59e3}</Project>
+      <Name>UnityEngine.WindModule</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>

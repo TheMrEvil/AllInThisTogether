@@ -1,0 +1,139 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{60FC5A84-174B-460F-AF7D-E4245A6F5979}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <RootNamespace>SCPE</RootNamespace>
+    <AssemblyName>sc.posteffects.runtime</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <NoStdLib>true</NoStdLib>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <NoStdLib>true</NoStdLib>
+  </PropertyGroup>
+  <ItemGroup />
+  <ItemGroup>
+    <AppDesigner Include="Properties\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AmbientOcclusion2D.cs" />
+    <Compile Include="AmbientOcclusion2DRenderer.cs" />
+    <Compile Include="BlackBars.cs" />
+    <Compile Include="BlackBarsRenderer.cs" />
+    <Compile Include="Blur.cs" />
+    <Compile Include="BlurRenderer.cs" />
+    <Compile Include="Caustics.cs" />
+    <Compile Include="CausticsRenderer.cs" />
+    <Compile Include="CloudShadows.cs" />
+    <Compile Include="CloudShadowsRenderer.cs" />
+    <Compile Include="Colorize.cs" />
+    <Compile Include="ColorizeRenderer.cs" />
+    <Compile Include="ColorSplit.cs" />
+    <Compile Include="ColorSplitRenderer.cs" />
+    <Compile Include="Danger.cs" />
+    <Compile Include="DangerRenderer.cs" />
+    <Compile Include="Dithering.cs" />
+    <Compile Include="DitheringRenderer.cs" />
+    <Compile Include="DoubleVision.cs" />
+    <Compile Include="DoubleVisionRenderer.cs" />
+    <Compile Include="EdgeDetection.cs" />
+    <Compile Include="EdgeDetectionRenderer.cs" />
+    <Compile Include="Fog.cs" />
+    <Compile Include="FogLightSource.cs" />
+    <Compile Include="FogRenderer.cs" />
+    <Compile Include="Gradient.cs" />
+    <Compile Include="GradientRenderer.cs" />
+    <Compile Include="HueShift3D.cs" />
+    <Compile Include="HueShift3DRenderer.cs" />
+    <Compile Include="Kaleidoscope.cs" />
+    <Compile Include="KaleidoscopeRenderer.cs" />
+    <Compile Include="Kuwahara.cs" />
+    <Compile Include="KuwaharaRenderer.cs" />
+    <Compile Include="LensFlares.cs" />
+    <Compile Include="LensFlaresRenderer.cs" />
+    <Compile Include="LightStreaks.cs" />
+    <Compile Include="LightStreaksRenderer.cs" />
+    <Compile Include="LUT.cs" />
+    <Compile Include="LUTRenderer.cs" />
+    <Compile Include="Mosaic.cs" />
+    <Compile Include="MosaicRenderer.cs" />
+    <Compile Include="Overlay.cs" />
+    <Compile Include="OverlayAnimated.cs" />
+    <Compile Include="OverlayAnimatedRenderer.cs" />
+    <Compile Include="OverlayRenderer.cs" />
+    <Compile Include="Pixelize.cs" />
+    <Compile Include="PixelizeRenderer.cs" />
+    <Compile Include="Posterize.cs" />
+    <Compile Include="PosterizeRenderer.cs" />
+    <Compile Include="PostProcessingVolumeTrigger.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="RadialBlur.cs" />
+    <Compile Include="RadialBlurRenderer.cs" />
+    <Compile Include="Refraction.cs" />
+    <Compile Include="RefractionRenderer.cs" />
+    <Compile Include="RenderScreenSpaceSkybox.cs" />
+    <Compile Include="Ripples.cs" />
+    <Compile Include="RipplesRenderer.cs" />
+    <Compile Include="Scanlines.cs" />
+    <Compile Include="ScanlinesRenderer.cs" />
+    <Compile Include="ShaderKeywords.cs" />
+    <Compile Include="ShaderNames.cs" />
+    <Compile Include="Sharpen.cs" />
+    <Compile Include="SharpenRenderer.cs" />
+    <Compile Include="Sketch.cs" />
+    <Compile Include="SketchRenderer.cs" />
+    <Compile Include="SpeedLines.cs" />
+    <Compile Include="SpeedLinesRenderer.cs" />
+    <Compile Include="SunshaftCaster.cs" />
+    <Compile Include="Sunshafts.cs" />
+    <Compile Include="SunshaftsBase.cs" />
+    <Compile Include="SunshaftsRenderer.cs" />
+    <Compile Include="TextureNames.cs" />
+    <Compile Include="TiltShift.cs" />
+    <Compile Include="TiltShiftRenderer.cs" />
+    <Compile Include="Transition.cs" />
+    <Compile Include="TransitionRenderer.cs" />
+    <Compile Include="TubeDistortion.cs" />
+    <Compile Include="TubeDistortionRenderer.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\mscorlib\mscorlib.csproj">
+      <Project>{60fc5a84-174b-460f-af7d-e4245a6f5968}</Project>
+      <Name>mscorlib</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Unity.Postprocessing.Runtime\Unity.Postprocessing.Runtime.csproj">
+      <Project>{60fc5a84-174b-460f-af7d-e4245a6f5996}</Project>
+      <Name>Unity.Postprocessing.Runtime</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\UnityEngine.CoreModule\UnityEngine.CoreModule.csproj">
+      <Project>{60fc5a84-174b-460f-af7d-e4245a6f59aa}</Project>
+      <Name>UnityEngine.CoreModule</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\UnityEngine.PhysicsModule\UnityEngine.PhysicsModule.csproj">
+      <Project>{60fc5a84-174b-460f-af7d-e4245a6f59bd}</Project>
+      <Name>UnityEngine.PhysicsModule</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>

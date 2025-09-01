@@ -1,0 +1,62 @@
+﻿using System;
+using System.Runtime.CompilerServices;
+using System.Runtime.InteropServices;
+
+// Token: 0x02000159 RID: 345
+[CompilerGenerated]
+internal sealed class <PrivateImplementationDetails>
+{
+	// Token: 0x06000F29 RID: 3881 RVA: 0x00022ACC File Offset: 0x00020CCC
+	internal static uint ComputeStringHash(string s)
+	{
+		uint num;
+		if (s != null)
+		{
+			num = 2166136261U;
+			for (int i = 0; i < s.Length; i++)
+			{
+				num = ((uint)s[i] ^ num) * 16777619U;
+			}
+		}
+		return num;
+	}
+
+	// Token: 0x04000B79 RID: 2937 RVA: 0x00028E1C File Offset: 0x0002701C
+	internal static readonly long 137B9FD2DFDE5A0EE08BB46096774F565E95ABF9E0F91649F43E64335661E374;
+
+	// Token: 0x04000B7A RID: 2938 RVA: 0x00028E24 File Offset: 0x00027024
+	internal static readonly long 312E00DA847C79F325400F522AA34E6D58A0BBF34CC701B6F2C26AA12AFEA8E1;
+
+	// Token: 0x04000B7B RID: 2939 RVA: 0x00028E2C File Offset: 0x0002702C
+	internal static readonly long 4312F4F3D050C411F4B21DC4FED05AD952529F47639CCEF0F0C1EAFADC1A5377;
+
+	// Token: 0x04000B7C RID: 2940 RVA: 0x00028E34 File Offset: 0x00027034
+	internal static readonly long 60F5748E2D1248702CAD3237DEB1D5EB7224A9FB110FE0369588705BF497D1F1;
+
+	// Token: 0x04000B7D RID: 2941 RVA: 0x00028E3C File Offset: 0x0002703C
+	internal static readonly long 6407C101207D4D08884A122DCC1BFCF1AC6970E57EA10FFB0E7EE6CFDA4C85BE;
+
+	// Token: 0x04000B7E RID: 2942 RVA: 0x00028E44 File Offset: 0x00027044
+	internal static readonly long 7404407B9F78BED0607B3D9EECA45D7F69D2D2BBB683949B8F2EC0E187590AB4;
+
+	// Token: 0x04000B7F RID: 2943 RVA: 0x00028E4C File Offset: 0x0002704C
+	internal static readonly <PrivateImplementationDetails>.__StaticArrayInitTypeSize=700 7A1837B08D0C95615A3CC9DCD8C9DC780D3981435B096F4F1F0C20781A6C5678;
+
+	// Token: 0x04000B80 RID: 2944 RVA: 0x00029108 File Offset: 0x00027308
+	internal static readonly long 88B2F5C7C6649161329D4953D32AFAA8DD043EEF0D0387B87F4F871204ACFE39;
+
+	// Token: 0x04000B81 RID: 2945 RVA: 0x00029110 File Offset: 0x00027310
+	internal static readonly long B932B1D02A848BDA475170652872094FB4546776BC3D45B831C59F857B43FB7E;
+
+	// Token: 0x04000B82 RID: 2946 RVA: 0x00029118 File Offset: 0x00027318
+	internal static readonly long D93EF6A7529C925639F78A7C545B59151D9DB9D5B5389FDF11AE3391A9478045;
+
+	// Token: 0x04000B83 RID: 2947 RVA: 0x00029120 File Offset: 0x00027320
+	internal static readonly long FA465CF3210ED31872DDB9219EC75402B523846620CD190D60B9459511E24FA8;
+
+	// Token: 0x0200015A RID: 346
+	[StructLayout(LayoutKind.Explicit, Pack = 1, Size = 700)]
+	private struct __StaticArrayInitTypeSize=700
+	{
+	}
+}

@@ -1,0 +1,148 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{60FC5A84-174B-460F-AF7D-E4245A6F595C}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <RootNamespace>Febucci.UI</RootNamespace>
+    <AssemblyName>Febucci.TextAnimator.Runtime</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <NoStdLib>true</NoStdLib>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <NoStdLib>true</NoStdLib>
+  </PropertyGroup>
+  <ItemGroup />
+  <ItemGroup>
+    <AppDesigner Include="Properties\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Actions\ActionDatabase.cs" />
+    <Compile Include="Actions\ActionScriptableBase.cs" />
+    <Compile Include="Actions\SpeedAction.cs" />
+    <Compile Include="Actions\WaitAnyInputAction.cs" />
+    <Compile Include="Actions\WaitForAction.cs" />
+    <Compile Include="AnimationLoop.cs" />
+    <Compile Include="Core\CharacterData.cs" />
+    <Compile Include="Core\CharacterEvent.cs" />
+    <Compile Include="Core\CharInfo.cs" />
+    <Compile Include="Core\Database.cs" />
+    <Compile Include="Core\DefaultValueAttribute.cs" />
+    <Compile Include="Core\EffectCategory.cs" />
+    <Compile Include="Core\EffectInfoAttribute.cs" />
+    <Compile Include="Core\FormatUtils.cs" />
+    <Compile Include="Core\ITagProvider.cs" />
+    <Compile Include="Core\MeshData.cs" />
+    <Compile Include="Core\MessageEvent.cs" />
+    <Compile Include="Core\Parsing\ActionMarker.cs" />
+    <Compile Include="Core\Parsing\ActionParser.cs" />
+    <Compile Include="Core\Parsing\AnimationParser.cs" />
+    <Compile Include="Core\Parsing\AnimationRegion.cs" />
+    <Compile Include="Core\Parsing\EventMarker.cs" />
+    <Compile Include="Core\Parsing\EventParser.cs" />
+    <Compile Include="Core\Parsing\MarkerBase.cs" />
+    <Compile Include="Core\Parsing\RegionBase.cs" />
+    <Compile Include="Core\Parsing\TagParserBase.cs" />
+    <Compile Include="Core\Parsing\TagRange.cs" />
+    <Compile Include="Core\Parsing\TextParser.cs" />
+    <Compile Include="Core\Parsing\VisibilityMode.cs" />
+    <Compile Include="Core\TagInfoAttribute.cs" />
+    <Compile Include="Core\TAnimCore.cs" />
+    <Compile Include="Core\TextUtilities.cs" />
+    <Compile Include="Core\TypewriterCore.cs" />
+    <Compile Include="Core\TypingInfo.cs" />
+    <Compile Include="Core\WordInfo.cs" />
+    <Compile Include="Effects\AnimationData.cs" />
+    <Compile Include="Effects\AnimationScriptableBase.cs" />
+    <Compile Include="Effects\AnimationsDatabase.cs" />
+    <Compile Include="Effects\AppearanceScriptableBase.cs" />
+    <Compile Include="Effects\BehaviorScriptableBase.cs" />
+    <Compile Include="Effects\BehaviorScriptableSine.cs" />
+    <Compile Include="Effects\BounceBehavior.cs" />
+    <Compile Include="Effects\ColorCurve.cs" />
+    <Compile Include="Effects\ColorCurveProperty.cs" />
+    <Compile Include="Effects\CompositeAnimation.cs" />
+    <Compile Include="Effects\CompositeWithEmission.cs" />
+    <Compile Include="Effects\DangleBehavior.cs" />
+    <Compile Include="Effects\DiagonalExpandAppearance.cs" />
+    <Compile Include="Effects\EmissionCurve.cs" />
+    <Compile Include="Effects\EmissionCurveProperty.cs" />
+    <Compile Include="Effects\FadeAppearance.cs" />
+    <Compile Include="Effects\FadeBehavior.cs" />
+    <Compile Include="Effects\FloatCurve.cs" />
+    <Compile Include="Effects\FloatCurveProperty.cs" />
+    <Compile Include="Effects\HorizontalExpandAppearance.cs" />
+    <Compile Include="Effects\OffsetAppearance.cs" />
+    <Compile Include="Effects\PendulumBehavior.cs" />
+    <Compile Include="Effects\RainbowBehavior.cs" />
+    <Compile Include="Effects\RandomDirectionAppearance.cs" />
+    <Compile Include="Effects\RotatingAppearance.cs" />
+    <Compile Include="Effects\RotationBehavior.cs" />
+    <Compile Include="Effects\ShakeBehavior.cs" />
+    <Compile Include="Effects\SizeAppearance.cs" />
+    <Compile Include="Effects\SizeBehavior.cs" />
+    <Compile Include="Effects\SlideBehavior.cs" />
+    <Compile Include="Effects\SwingBehavior.cs" />
+    <Compile Include="Effects\TimeMode.cs" />
+    <Compile Include="Effects\Tween.cs" />
+    <Compile Include="Effects\UniformCurveAnimation.cs" />
+    <Compile Include="Effects\VertexCurveAnimation.cs" />
+    <Compile Include="Effects\VerticalExpandAppearance.cs" />
+    <Compile Include="Effects\WaveBehavior.cs" />
+    <Compile Include="Effects\WiggleBehavior.cs" />
+    <Compile Include="ModifierInfo.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="TextAnimatorSettings.cs" />
+    <Compile Include="TimeData.cs" />
+    <Compile Include="TimeScale.cs" />
+    <Compile Include="TypewriterByCharacter.cs" />
+    <Compile Include="TypewriterByWord.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Febucci.Attributes.Runtime\Febucci.Attributes.Runtime.csproj">
+      <Project>{60fc5a84-174b-460f-af7d-e4245a6f595b}</Project>
+      <Name>Febucci.Attributes.Runtime</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\mscorlib\mscorlib.csproj">
+      <Project>{60fc5a84-174b-460f-af7d-e4245a6f5968}</Project>
+      <Name>mscorlib</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\System.Core\System.Core.csproj">
+      <Project>{60fc5a84-174b-460f-af7d-e4245a6f597d}</Project>
+      <Name>System.Core</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\UnityEngine.CoreModule\UnityEngine.CoreModule.csproj">
+      <Project>{60fc5a84-174b-460f-af7d-e4245a6f59aa}</Project>
+      <Name>UnityEngine.CoreModule</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\UnityEngine.InputLegacyModule\UnityEngine.InputLegacyModule.csproj">
+      <Project>{60fc5a84-174b-460f-af7d-e4245a6f59b5}</Project>
+      <Name>UnityEngine.InputLegacyModule</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\UnityEngine.UIModule\UnityEngine.UIModule.csproj">
+      <Project>{60fc5a84-174b-460f-af7d-e4245a6f59d1}</Project>
+      <Name>UnityEngine.UIModule</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>

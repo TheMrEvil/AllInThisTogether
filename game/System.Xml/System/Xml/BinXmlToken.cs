@@ -1,0 +1,141 @@
+﻿using System;
+
+namespace System.Xml
+{
+	// Token: 0x0200001D RID: 29
+	internal enum BinXmlToken
+	{
+		// Token: 0x04000512 RID: 1298
+		Error,
+		// Token: 0x04000513 RID: 1299
+		NotImpl = -2,
+		// Token: 0x04000514 RID: 1300
+		EOF,
+		// Token: 0x04000515 RID: 1301
+		XmlDecl = 254,
+		// Token: 0x04000516 RID: 1302
+		Encoding = 253,
+		// Token: 0x04000517 RID: 1303
+		DocType = 252,
+		// Token: 0x04000518 RID: 1304
+		System = 251,
+		// Token: 0x04000519 RID: 1305
+		Public = 250,
+		// Token: 0x0400051A RID: 1306
+		Subset = 249,
+		// Token: 0x0400051B RID: 1307
+		Element = 248,
+		// Token: 0x0400051C RID: 1308
+		EndElem = 247,
+		// Token: 0x0400051D RID: 1309
+		Attr = 246,
+		// Token: 0x0400051E RID: 1310
+		EndAttrs = 245,
+		// Token: 0x0400051F RID: 1311
+		PI = 244,
+		// Token: 0x04000520 RID: 1312
+		Comment = 243,
+		// Token: 0x04000521 RID: 1313
+		CData = 242,
+		// Token: 0x04000522 RID: 1314
+		EndCData = 241,
+		// Token: 0x04000523 RID: 1315
+		Name = 240,
+		// Token: 0x04000524 RID: 1316
+		QName = 239,
+		// Token: 0x04000525 RID: 1317
+		XmlText = 237,
+		// Token: 0x04000526 RID: 1318
+		Nest = 236,
+		// Token: 0x04000527 RID: 1319
+		EndNest = 235,
+		// Token: 0x04000528 RID: 1320
+		Extn = 234,
+		// Token: 0x04000529 RID: 1321
+		NmFlush = 233,
+		// Token: 0x0400052A RID: 1322
+		SQL_BIT = 6,
+		// Token: 0x0400052B RID: 1323
+		SQL_TINYINT,
+		// Token: 0x0400052C RID: 1324
+		SQL_SMALLINT = 1,
+		// Token: 0x0400052D RID: 1325
+		SQL_INT,
+		// Token: 0x0400052E RID: 1326
+		SQL_BIGINT = 8,
+		// Token: 0x0400052F RID: 1327
+		SQL_REAL = 3,
+		// Token: 0x04000530 RID: 1328
+		SQL_FLOAT,
+		// Token: 0x04000531 RID: 1329
+		SQL_MONEY,
+		// Token: 0x04000532 RID: 1330
+		SQL_SMALLMONEY = 20,
+		// Token: 0x04000533 RID: 1331
+		SQL_DATETIME = 18,
+		// Token: 0x04000534 RID: 1332
+		SQL_SMALLDATETIME,
+		// Token: 0x04000535 RID: 1333
+		SQL_DECIMAL = 10,
+		// Token: 0x04000536 RID: 1334
+		SQL_NUMERIC,
+		// Token: 0x04000537 RID: 1335
+		SQL_UUID = 9,
+		// Token: 0x04000538 RID: 1336
+		SQL_VARBINARY = 15,
+		// Token: 0x04000539 RID: 1337
+		SQL_BINARY = 12,
+		// Token: 0x0400053A RID: 1338
+		SQL_IMAGE = 23,
+		// Token: 0x0400053B RID: 1339
+		SQL_CHAR = 13,
+		// Token: 0x0400053C RID: 1340
+		SQL_VARCHAR = 16,
+		// Token: 0x0400053D RID: 1341
+		SQL_TEXT = 22,
+		// Token: 0x0400053E RID: 1342
+		SQL_NVARCHAR = 17,
+		// Token: 0x0400053F RID: 1343
+		SQL_NCHAR = 14,
+		// Token: 0x04000540 RID: 1344
+		SQL_NTEXT = 24,
+		// Token: 0x04000541 RID: 1345
+		SQL_UDT = 27,
+		// Token: 0x04000542 RID: 1346
+		XSD_KATMAI_DATE = 127,
+		// Token: 0x04000543 RID: 1347
+		XSD_KATMAI_DATETIME = 126,
+		// Token: 0x04000544 RID: 1348
+		XSD_KATMAI_TIME = 125,
+		// Token: 0x04000545 RID: 1349
+		XSD_KATMAI_DATEOFFSET = 124,
+		// Token: 0x04000546 RID: 1350
+		XSD_KATMAI_DATETIMEOFFSET = 123,
+		// Token: 0x04000547 RID: 1351
+		XSD_KATMAI_TIMEOFFSET = 122,
+		// Token: 0x04000548 RID: 1352
+		XSD_BOOLEAN = 134,
+		// Token: 0x04000549 RID: 1353
+		XSD_TIME = 129,
+		// Token: 0x0400054A RID: 1354
+		XSD_DATETIME,
+		// Token: 0x0400054B RID: 1355
+		XSD_DATE,
+		// Token: 0x0400054C RID: 1356
+		XSD_BINHEX,
+		// Token: 0x0400054D RID: 1357
+		XSD_BASE64,
+		// Token: 0x0400054E RID: 1358
+		XSD_DECIMAL = 135,
+		// Token: 0x0400054F RID: 1359
+		XSD_BYTE,
+		// Token: 0x04000550 RID: 1360
+		XSD_UNSIGNEDSHORT,
+		// Token: 0x04000551 RID: 1361
+		XSD_UNSIGNEDINT,
+		// Token: 0x04000552 RID: 1362
+		XSD_UNSIGNEDLONG,
+		// Token: 0x04000553 RID: 1363
+		XSD_QNAME
+	}
+}

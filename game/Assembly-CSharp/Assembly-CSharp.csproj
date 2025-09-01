@@ -1,0 +1,1216 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{60FC5A84-174B-460F-AF7D-E4245A6F594E}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <RootNamespace>Assembly-CSharp</RootNamespace>
+    <AssemblyName>Assembly-CSharp</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <NoStdLib>true</NoStdLib>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <NoStdLib>true</NoStdLib>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+  </PropertyGroup>
+  <ItemGroup />
+  <ItemGroup>
+    <AppDesigner Include="Properties\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="-PrivateImplementationDetails-.cs" />
+    <Compile Include="Ability.cs" />
+    <Compile Include="AbilityAnimEventNode.cs" />
+    <Compile Include="AbilityAnimNode.cs" />
+    <Compile Include="AbilityBoxUI.cs" />
+    <Compile Include="AbilityCancelActionNode.cs" />
+    <Compile Include="AbilityCancelTimedNode.cs" />
+    <Compile Include="AbilityChanceNode.cs" />
+    <Compile Include="AbilityChanger.cs" />
+    <Compile Include="AbilityDelayNode.cs" />
+    <Compile Include="AbilityDurationNode.cs" />
+    <Compile Include="AbilityFeature.cs" />
+    <Compile Include="AbilityGroupBar.cs" />
+    <Compile Include="AbilityMoveMod.cs" />
+    <Compile Include="AbilityMoveNode.cs" />
+    <Compile Include="AbilityNode.cs" />
+    <Compile Include="AbilityOnceNode.cs" />
+    <Compile Include="AbilityOverrideNode.cs" />
+    <Compile Include="AbilityPanel.cs" />
+    <Compile Include="AbilityPassive.cs" />
+    <Compile Include="AbilityRepeatNode.cs" />
+    <Compile Include="AbilityRootNode.cs" />
+    <Compile Include="AbilitySelectorNode.cs" />
+    <Compile Include="AbilityState.cs" />
+    <Compile Include="AbilityStopAnimNode.cs" />
+    <Compile Include="AbilityTree.cs" />
+    <Compile Include="AbilityType.cs" />
+    <Compile Include="AchievementManager.cs" />
+    <Compile Include="AchievementRootNode.cs" />
+    <Compile Include="AchievementToast.cs" />
+    <Compile Include="AchievementTree.cs" />
+    <Compile Include="ActionCollider.cs" />
+    <Compile Include="ActionEffect.cs" />
+    <Compile Include="ActionEnabler.cs" />
+    <Compile Include="ActionIndicator.cs" />
+    <Compile Include="ActionLocation.cs" />
+    <Compile Include="ActionMaterial.cs" />
+    <Compile Include="ActionPool.cs" />
+    <Compile Include="ActionPrefab.cs" />
+    <Compile Include="ActionRigidbody.cs" />
+    <Compile Include="ActionRootNode.cs" />
+    <Compile Include="ActionScaleCurves.cs" />
+    <Compile Include="ActionScaler.cs" />
+    <Compile Include="ActionSource.cs" />
+    <Compile Include="ActionThresholdNode.cs" />
+    <Compile Include="ActionTree.cs" />
+    <Compile Include="ActivateDelayed.cs" />
+    <Compile Include="ActivateKeywordNode.cs" />
+    <Compile Include="AddAugmentEffectNode.cs" />
+    <Compile Include="AddMeshFXNode.cs" />
+    <Compile Include="AddNumberNode.cs" />
+    <Compile Include="AIAbilityCheck.cs" />
+    <Compile Include="AIActionNode.cs" />
+    <Compile Include="AIAddTag.cs" />
+    <Compile Include="AIAudio.cs" />
+    <Compile Include="AICancelAbilityNode.cs" />
+    <Compile Include="AIChangeBrainNode.cs" />
+    <Compile Include="AICheckNode.cs" />
+    <Compile Include="AIControl.cs" />
+    <Compile Include="AICooldownNode.cs" />
+    <Compile Include="AIDangerCheck.cs" />
+    <Compile Include="AIData.cs" />
+    <Compile Include="AIDetatchBone.cs" />
+    <Compile Include="AIDiageticInteraction.cs" />
+    <Compile Include="AIDisplay.cs" />
+    <Compile Include="AIDistanceFrom.cs" />
+    <Compile Include="AIDropTargetNode.cs" />
+    <Compile Include="AIEffectNode.cs" />
+    <Compile Include="AIEventNode.cs" />
+    <Compile Include="AIFireActionNode.cs" />
+    <Compile Include="AIFlyingMovement.cs" />
+    <Compile Include="AIGroundMovement.cs" />
+    <Compile Include="AIHealthCheckNode.cs" />
+    <Compile Include="AIInstantMovement.cs" />
+    <Compile Include="AIInterruptableNode.cs" />
+    <Compile Include="AILayout.cs" />
+    <Compile Include="AILayoutRef.cs" />
+    <Compile Include="AILocationCheck.cs" />
+    <Compile Include="AILogicNode.cs" />
+    <Compile Include="AILogicState.cs" />
+    <Compile Include="AIManager.cs" />
+    <Compile Include="AIModifierCheck.cs" />
+    <Compile Include="AIMovement.cs" />
+    <Compile Include="AIMovementCheck.cs" />
+    <Compile Include="AINavPath.cs" />
+    <Compile Include="AINetworked.cs" />
+    <Compile Include="AINetworkedLight.cs" />
+    <Compile Include="AINode.cs" />
+    <Compile Include="AIParallelNode.cs" />
+    <Compile Include="AIPhysicsMovement.cs" />
+    <Compile Include="AIPlayerCountCheck.cs" />
+    <Compile Include="AIRandomNode.cs" />
+    <Compile Include="AIRemoveTag.cs" />
+    <Compile Include="AIRootNode.cs" />
+    <Compile Include="AIRotateNode.cs" />
+    <Compile Include="AISelectorNode.cs" />
+    <Compile Include="AISequenceNode.cs" />
+    <Compile Include="AISimpleControl.cs" />
+    <Compile Include="AIStatCheck.cs" />
+    <Compile Include="AIStationaryMovement.cs" />
+    <Compile Include="AIStatusCheck.cs" />
+    <Compile Include="AIStatusNode.cs" />
+    <Compile Include="AISubActionNode.cs" />
+    <Compile Include="AISubtreeNode.cs" />
+    <Compile Include="AITagCheck.cs" />
+    <Compile Include="AITargetCheck.cs" />
+    <Compile Include="AITestNode.cs" />
+    <Compile Include="AITest_And.cs" />
+    <Compile Include="AITest_Not.cs" />
+    <Compile Include="AITest_Or.cs" />
+    <Compile Include="AITimeSince.cs" />
+    <Compile Include="AITransformNode.cs" />
+    <Compile Include="AITree.cs" />
+    <Compile Include="AITrivialControl.cs" />
+    <Compile Include="AIVisionGraph.cs" />
+    <Compile Include="AIWaitNode.cs" />
+    <Compile Include="Amplitude.cs" />
+    <Compile Include="AmplitudeEvent.cs" />
+    <Compile Include="Analytics.cs" />
+    <Compile Include="AnimateLinear.cs" />
+    <Compile Include="AnimBoneScaler.cs" />
+    <Compile Include="AnimEvents.cs" />
+    <Compile Include="AoEApplicationNode.cs" />
+    <Compile Include="AoENode.cs" />
+    <Compile Include="AoEOverrideNode.cs" />
+    <Compile Include="AoEShape.cs" />
+    <Compile Include="ApplyDamageNode.cs" />
+    <Compile Include="ApplyForceNode.cs" />
+    <Compile Include="ApplyMaterialNode.cs" />
+    <Compile Include="ApplyMoveEffect.cs" />
+    <Compile Include="ApplyOn.cs" />
+    <Compile Include="ApplyOnNode.cs" />
+    <Compile Include="ApplyStatusNode.cs" />
+    <Compile Include="ApplyTagNode.cs" />
+    <Compile Include="ArachnaphobiaSwapper.cs" />
+    <Compile Include="AreaFeature.cs" />
+    <Compile Include="AreaOfEffect.cs" />
+    <Compile Include="ArmAim.cs" />
+    <Compile Include="AtlasTurret.cs" />
+    <Compile Include="AudioButton.cs" />
+    <Compile Include="AudioEffectNode.cs" />
+    <Compile Include="AudioFader.cs" />
+    <Compile Include="AudioManager.cs" />
+    <Compile Include="AudioOccluder.cs" />
+    <Compile Include="AudioOneShot.cs" />
+    <Compile Include="AudioPlayer.cs" />
+    <Compile Include="AudioRandomizer.cs" />
+    <Compile Include="AugmentAwardOverrideNode.cs" />
+    <Compile Include="AugmentBookBarItem.cs" />
+    <Compile Include="AugmentBook_Bindings.cs" />
+    <Compile Include="AugmentBook_Fountain.cs" />
+    <Compile Include="AugmentBook_Map.cs" />
+    <Compile Include="AugmentBook_Map_Item.cs" />
+    <Compile Include="AugmentBook_Player.cs" />
+    <Compile Include="AugmentDetailBox.cs" />
+    <Compile Include="AugmentExtensions.cs" />
+    <Compile Include="AugmentFilter.cs" />
+    <Compile Include="AugmentInfoBox.cs" />
+    <Compile Include="AugmentQuality.cs" />
+    <Compile Include="AugmentRewardItem.cs" />
+    <Compile Include="AugmentRootNode.cs" />
+    <Compile Include="Augments.cs" />
+    <Compile Include="AugmentsPanel.cs" />
+    <Compile Include="AugmentsTabElement.cs" />
+    <Compile Include="Augments_GameStartInfo.cs" />
+    <Compile Include="AugmentTree.cs" />
+    <Compile Include="AuraArrayController.cs" />
+    <Compile Include="AuraController.cs" />
+    <Compile Include="AutoDestroyPS.cs" />
+    <Compile Include="AutoScrollRect.cs" />
+    <Compile Include="Beam.cs" />
+    <Compile Include="BeamFeature.cs" />
+    <Compile Include="BeamNode.cs" />
+    <Compile Include="BindingAllyAttunementTargetDisplay.cs" />
+    <Compile Include="BindingBarUI.cs" />
+    <Compile Include="BindingGlobalNode.cs" />
+    <Compile Include="BindingProgressAreaUI.cs" />
+    <Compile Include="BindingRankUI.cs" />
+    <Compile Include="BindingRewardDisplay.cs" />
+    <Compile Include="BindingsPanel.cs" />
+    <Compile Include="BonusRewardType.cs" />
+    <Compile Include="BonusUI.cs" />
+    <Compile Include="BookClubPanel.cs" />
+    <Compile Include="BookFollow.cs" />
+    <Compile Include="BookMesh.cs" />
+    <Compile Include="BookMeshInteraction.cs" />
+    <Compile Include="BookMesh_AutoGenerator.cs" />
+    <Compile Include="Bookshelf.cs" />
+    <Compile Include="BookshelfData.cs" />
+    <Compile Include="BossHealthbar.cs" />
+    <Compile Include="BossRewardPanel.cs" />
+    <Compile Include="BossRewardTrigger.cs" />
+    <Compile Include="ButtonGroupFader.cs" />
+    <Compile Include="CachedNumberNode.cs" />
+    <Compile Include="CacheNumberNode.cs" />
+    <Compile Include="CameraControllerInput.cs" />
+    <Compile Include="CameraDepth.cs" />
+    <Compile Include="CameraEffectNode.cs" />
+    <Compile Include="CameraFOV.cs" />
+    <Compile Include="CameraFOVNode.cs" />
+    <Compile Include="CancelAbilityNode.cs" />
+    <Compile Include="CancelExplicitNode.cs" />
+    <Compile Include="CancelMovementNode.cs" />
+    <Compile Include="CanvasController.cs" />
+    <Compile Include="CastFailedReason.cs" />
+    <Compile Include="CeilingDetector.cs" />
+    <Compile Include="CenteredOn.cs" />
+    <Compile Include="CFX_LightCurves.cs" />
+    <Compile Include="CFX_ParticleSystemScaler.cs" />
+    <Compile Include="ChallengeItemDisplay.cs" />
+    <Compile Include="ChanceEffectNode.cs" />
+    <Compile Include="CharacterNetworkInput.cs" />
+    <Compile Include="ChatAPI.cs" />
+    <Compile Include="ChestFollow.cs" />
+    <Compile Include="Choice.cs" />
+    <Compile Include="ChoiceOption.cs" />
+    <Compile Include="ChoiceType.cs" />
+    <Compile Include="ClampNumberNode.cs" />
+    <Compile Include="ClickToMoveController.cs" />
+    <Compile Include="Cmd_AI.cs" />
+    <Compile Include="Cmd_Game.cs" />
+    <Compile Include="Cmd_Network.cs" />
+    <Compile Include="Cmd_Player.cs" />
+    <Compile Include="Cmd_Spectator.cs" />
+    <Compile Include="CMD_Unlock.cs" />
+    <Compile Include="Cmd_Util.cs" />
+    <Compile Include="CMF\AdvancedWalkerController.cs" />
+    <Compile Include="CMF\AnimationControl.cs" />
+    <Compile Include="CMF\AudioControl.cs" />
+    <Compile Include="CMF\CameraController.cs" />
+    <Compile Include="CMF\CameraDistanceRaycaster.cs" />
+    <Compile Include="CMF\CameraInput.cs" />
+    <Compile Include="CMF\CameraJoystickInput.cs" />
+    <Compile Include="CMF\CameraMouseInput.cs" />
+    <Compile Include="CMF\CharacterInput.cs" />
+    <Compile Include="CMF\CharacterJoystickInput.cs" />
+    <Compile Include="CMF\CharacterKeyboardInput.cs" />
+    <Compile Include="CMF\Controller.cs" />
+    <Compile Include="CMF\FlipAtRightAngle.cs" />
+    <Compile Include="CMF\GravityTunnel.cs" />
+    <Compile Include="CMF\Mover.cs" />
+    <Compile Include="CMF\MovingPlatform.cs" />
+    <Compile Include="CMF\Sensor.cs" />
+    <Compile Include="CMF\SidescrollerController.cs" />
+    <Compile Include="CMF\SimpleWalkerController.cs" />
+    <Compile Include="CMF\SmoothPosition.cs" />
+    <Compile Include="CMF\SmoothRotation.cs" />
+    <Compile Include="CMF\TriggerArea.cs" />
+    <Compile Include="CMF\TurnTowardCameraDirection.cs" />
+    <Compile Include="CMF\TurnTowardControllerVelocity.cs" />
+    <Compile Include="CMF\TurnTowardTransformDirection.cs" />
+    <Compile Include="CMF\VectorMath.cs" />
+    <Compile Include="CodexCategorySelector.cs" />
+    <Compile Include="CodexEnemyAbilityItem.cs" />
+    <Compile Include="CodexEnemyListCategory.cs" />
+    <Compile Include="CodexEnemyListItem.cs" />
+    <Compile Include="CodexEnemyPanel.cs" />
+    <Compile Include="CodexGridItem.cs" />
+    <Compile Include="CodexGridView.cs" />
+    <Compile Include="CodexLorePageSelector.cs" />
+    <Compile Include="CodexLorePanel.cs" />
+    <Compile Include="CodexPanel.cs" />
+    <Compile Include="CodexStatsPanel.cs" />
+    <Compile Include="CodexStats_History.cs" />
+    <Compile Include="CodexStats_Overview.cs" />
+    <Compile Include="CodexStats_Signatures.cs" />
+    <Compile Include="Codex_GlobalStatsDisplay.cs" />
+    <Compile Include="Codex_RunEntry.cs" />
+    <Compile Include="Codex_RunStatBar.cs" />
+    <Compile Include="Colorizer.cs" />
+    <Compile Include="CombatTextController.cs" />
+    <Compile Include="CommonColors.cs" />
+    <Compile Include="CompareNumberNode.cs" />
+    <Compile Include="CompleteAchievementNode.cs" />
+    <Compile Include="CompleteObjectiveNode.cs" />
+    <Compile Include="CompleteQuestNode.cs" />
+    <Compile Include="ConditionalAbilityNode.cs" />
+    <Compile Include="ConditionalEffectNode.cs" />
+    <Compile Include="ConditionalLocationNode.cs" />
+    <Compile Include="ConditionalNumber.cs" />
+    <Compile Include="ConfirmationPrompt.cs" />
+    <Compile Include="ControllerFocusDisplay.cs" />
+    <Compile Include="ControllerWarningPanel.cs" />
+    <Compile Include="Cosmetic.cs" />
+    <Compile Include="CosmeticDB.cs" />
+    <Compile Include="CosmeticDisplay.cs" />
+    <Compile Include="CosmeticSet.cs" />
+    <Compile Include="CosmeticsPanel.cs" />
+    <Compile Include="CosmeticsUIControl.cs" />
+    <Compile Include="CosmeticType.cs" />
+    <Compile Include="CosmeticUIListItem.cs" />
+    <Compile Include="Cosmetic_Book.cs" />
+    <Compile Include="Cosmetic_Emote.cs" />
+    <Compile Include="Cosmetic_Head.cs" />
+    <Compile Include="Cosmetic_Signature.cs" />
+    <Compile Include="Cosmetic_Skin.cs" />
+    <Compile Include="Crosshair.cs" />
+    <Compile Include="Currency.cs" />
+    <Compile Include="DailyQuestPanel.cs" />
+    <Compile Include="DailyQuestUIBox.cs" />
+    <Compile Include="DamageIndicator.cs" />
+    <Compile Include="DamageInfo.cs" />
+    <Compile Include="DangerIndicator.cs" />
+    <Compile Include="DangerIndicatorManager.cs" />
+    <Compile Include="DateEvent.cs" />
+    <Compile Include="Date_Enabler.cs" />
+    <Compile Include="DeathRecap.cs" />
+    <Compile Include="DebugAnimator.cs" />
+    <Compile Include="DebugDraw.cs" />
+    <Compile Include="DebugVisionPoint.cs" />
+    <Compile Include="DelayEffectNode.cs" />
+    <Compile Include="DemoUpsellPanel.cs" />
+    <Compile Include="DestroyTimed.cs" />
+    <Compile Include="DiageticOption.cs" />
+    <Compile Include="DiageticPanel.cs" />
+    <Compile Include="DiageticSelector.cs" />
+    <Compile Include="Diagetic_AugmentUI.cs" />
+    <Compile Include="Diagetic_PortalUI.cs" />
+    <Compile Include="Diagetic_StatusUI.cs" />
+    <Compile Include="Diagetic_VignetteUI.cs" />
+    <Compile Include="DirMode.cs" />
+    <Compile Include="DiscordJoinEvent.cs" />
+    <Compile Include="DiscordJoinRequestEvent.cs" />
+    <Compile Include="DiscordManager.cs" />
+    <Compile Include="DiscordSpectateEvent.cs" />
+    <Compile Include="DNumType.cs" />
+    <Compile Include="DPSMeterEntryUI.cs" />
+    <Compile Include="DPSMeterUI.cs" />
+    <Compile Include="DynamicDecal.cs" />
+    <Compile Include="EffectBase.cs" />
+    <Compile Include="EffectGroupNode.cs" />
+    <Compile Include="EffectInteractsWith.cs" />
+    <Compile Include="EffectLight.cs" />
+    <Compile Include="EffectNode.cs" />
+    <Compile Include="EffectProperties.cs" />
+    <Compile Include="EffectPropsNumberNode.cs" />
+    <Compile Include="EffectSource.cs" />
+    <Compile Include="EmoteSelector.cs" />
+    <Compile Include="EndGameAnim.cs" />
+    <Compile Include="EndlessVotePanel.cs" />
+    <Compile Include="EndRunButton.cs" />
+    <Compile Include="EnemyChapterProgressItem.cs" />
+    <Compile Include="EnemyChoiceUI.cs" />
+    <Compile Include="EnemyLevel.cs" />
+    <Compile Include="EnemyModCheckNode.cs" />
+    <Compile Include="EnemyModTag.cs" />
+    <Compile Include="EnemyScalingData.cs" />
+    <Compile Include="EnemySelectionPanel.cs" />
+    <Compile Include="EnemyType.cs" />
+    <Compile Include="EnemyTypeUtil.cs" />
+    <Compile Include="EnemyUIDisplay.cs" />
+    <Compile Include="EnemyUIDisplayManager.cs" />
+    <Compile Include="EntityAudio.cs" />
+    <Compile Include="EntityControl.cs" />
+    <Compile Include="EntityCountNumberNode.cs" />
+    <Compile Include="EntityDisplay.cs" />
+    <Compile Include="EntityEventNode.cs" />
+    <Compile Include="EntityHealth.cs" />
+    <Compile Include="EntityIndicator.cs" />
+    <Compile Include="EntityLocation.cs" />
+    <Compile Include="EntityMovement.cs" />
+    <Compile Include="EntityNetworked.cs" />
+    <Compile Include="EntityNumberNode.cs" />
+    <Compile Include="EntityPassive.cs" />
+    <Compile Include="EntityStatExtensions.cs" />
+    <Compile Include="EntityStats.cs" />
+    <Compile Include="EnvFollow.cs" />
+    <Compile Include="EnvOutlineEffect.cs" />
+    <Compile Include="Env_AudioPlayer.cs" />
+    <Compile Include="EProp.cs" />
+    <Compile Include="ErrorPrompt.cs" />
+    <Compile Include="ES3CreateSlot.cs" />
+    <Compile Include="ES3Slot.cs" />
+    <Compile Include="ES3SlotDialog.cs" />
+    <Compile Include="ES3SlotManager.cs" />
+    <Compile Include="EStat.cs" />
+    <Compile Include="EventTrigger.cs" />
+    <Compile Include="EventTriggerExtension.cs" />
+    <Compile Include="ExtensionMethods.cs" />
+    <Compile Include="ExtensionsAILayout.cs" />
+    <Compile Include="ExtensionsEnum.cs" />
+    <Compile Include="EZCameraShake\CameraShakeInstance.cs" />
+    <Compile Include="EZCameraShake\CameraShakePresets.cs" />
+    <Compile Include="EZCameraShake\CameraShaker.cs" />
+    <Compile Include="EZCameraShake\CameraShakeState.cs" />
+    <Compile Include="EZCameraShake\CameraUtilities.cs" />
+    <Compile Include="Fishing.cs" />
+    <Compile Include="FishingRod.cs" />
+    <Compile Include="FishingUIControl.cs" />
+    <Compile Include="FlatNumberNode.cs" />
+    <Compile Include="FloatHolder.cs" />
+    <Compile Include="FluidParticles.cs" />
+    <Compile Include="FluxyButton.cs" />
+    <Compile Include="FluxyCanvasContainer.cs" />
+    <Compile Include="FluxyTrail.cs" />
+    <Compile Include="FlyingConfig.cs" />
+    <Compile Include="FlyingNavmesh.cs" />
+    <Compile Include="FlynavNode.cs" />
+    <Compile Include="FogMaterialNode.cs" />
+    <Compile Include="FollowMode.cs" />
+    <Compile Include="ForceDirection.cs" />
+    <Compile Include="ForceFeature.cs" />
+    <Compile Include="Fountain.cs" />
+    <Compile Include="FountainIndicator.cs" />
+    <Compile Include="FountainInteraction.cs" />
+    <Compile Include="FountainStoreItemUI.cs" />
+    <Compile Include="FountainStoreLayerUI.cs" />
+    <Compile Include="FountainStoreUI.cs" />
+    <Compile Include="FountainUIAllyPoints.cs" />
+    <Compile Include="FountainUIInvestPoint.cs" />
+    <Compile Include="FountainWorldUI.cs" />
+    <Compile Include="FPSCounter.cs" />
+    <Compile Include="FriendList.cs" />
+    <Compile Include="FriendListItem.cs" />
+    <Compile Include="FXGrounder.cs" />
+    <Compile Include="GameDB.cs" />
+    <Compile Include="GameHUD.cs" />
+    <Compile Include="GameMap.cs" />
+    <Compile Include="GameMapFilter.cs" />
+    <Compile Include="GameplayManager.cs" />
+    <Compile Include="GameplayUI.cs" />
+    <Compile Include="GameRecord.cs" />
+    <Compile Include="GameSetting.cs" />
+    <Compile Include="GameState.cs" />
+    <Compile Include="GameStats.cs" />
+    <Compile Include="GameUIState.cs" />
+    <Compile Include="GenereProgressPoint.cs" />
+    <Compile Include="GenreBarPathSegment.cs" />
+    <Compile Include="GenreBookOption.cs" />
+    <Compile Include="GenreFountainNode.cs" />
+    <Compile Include="GenreGoalNode.cs" />
+    <Compile Include="GenreGoal_Eliminate.cs" />
+    <Compile Include="GenreGoal_SurviveNum.cs" />
+    <Compile Include="GenreGoal_SurviveTime.cs" />
+    <Compile Include="GenreGoal_Zones.cs" />
+    <Compile Include="GenreMapNode.cs" />
+    <Compile Include="GenrePanel.cs" />
+    <Compile Include="GenreProgressBar.cs" />
+    <Compile Include="GenreRewardNode.cs" />
+    <Compile Include="GenreRewardOptionNode.cs" />
+    <Compile Include="GenreRootNode.cs" />
+    <Compile Include="GenreSpawnGroupNode.cs" />
+    <Compile Include="GenreSpawnNode.cs" />
+    <Compile Include="GenreTree.cs" />
+    <Compile Include="GenreUIBook.cs" />
+    <Compile Include="GenreUIControl.cs" />
+    <Compile Include="GenreVignetteNode.cs" />
+    <Compile Include="GenreWaveNode.cs" />
+    <Compile Include="GenreWorldNode.cs" />
+    <Compile Include="GenreWorldUI.cs" />
+    <Compile Include="GhostLoadout.cs" />
+    <Compile Include="GhostPlayerDisplay.cs" />
+    <Compile Include="GlobalSetup.cs" />
+    <Compile Include="GoalManager.cs" />
+    <Compile Include="GraphDB.cs" />
+    <Compile Include="GraphTree.cs" />
+    <Compile Include="GreyArea.cs" />
+    <Compile Include="GreyAreaRenderer.cs" />
+    <Compile Include="GreyPulseVFX.cs" />
+    <Compile Include="GreyscaleAreas.cs" />
+    <Compile Include="GreyscaleTester.cs" />
+    <Compile Include="HeadAim.cs" />
+    <Compile Include="HealNode.cs" />
+    <Compile Include="HitMarker.cs" />
+    <Compile Include="HitReaction.cs" />
+    <Compile Include="IgnoreDisplayCollect.cs" />
+    <Compile Include="Indicatable.cs" />
+    <Compile Include="InfoArea.cs" />
+    <Compile Include="InfoDisplay.cs" />
+    <Compile Include="InfoTooltip.cs" />
+    <Compile Include="InkCoresPanel.cs" />
+    <Compile Include="InkDiagetic.cs" />
+    <Compile Include="InkLevel_Item.cs" />
+    <Compile Include="InkManager.cs" />
+    <Compile Include="InkRow.cs" />
+    <Compile Include="InkTalent.cs" />
+    <Compile Include="InkTalentColorSelector.cs" />
+    <Compile Include="InkTalentItemUI.cs" />
+    <Compile Include="InkTalentLevelupUI.cs" />
+    <Compile Include="InkTalentRowUI.cs" />
+    <Compile Include="InkTalentsPanel.cs" />
+    <Compile Include="InkTrigger.cs" />
+    <Compile Include="InkUI.cs" />
+    <Compile Include="InputActions.cs" />
+    <Compile Include="InputManager.cs" />
+    <Compile Include="InputPort.cs" />
+    <Compile Include="IntHolder.cs" />
+    <Compile Include="InvokeDelayed.cs" />
+    <Compile Include="JoinCodeInput.cs" />
+    <Compile Include="JumpPad.cs" />
+    <Compile Include="KeybindSetting.cs" />
+    <Compile Include="Keyword.cs" />
+    <Compile Include="KeywordBoxUI.cs" />
+    <Compile Include="KeywordOverrideNode.cs" />
+    <Compile Include="KeywordPassive.cs" />
+    <Compile Include="KillEntityNode.cs" />
+    <Compile Include="LibraryEnabler.cs" />
+    <Compile Include="LibraryInfoWidget.cs" />
+    <Compile Include="LibraryInteractivePage.cs" />
+    <Compile Include="LibraryJumpPuzzle.cs" />
+    <Compile Include="LibraryManager.cs" />
+    <Compile Include="LibraryMoteManager.cs" />
+    <Compile Include="LibraryMotePickup.cs" />
+    <Compile Include="LibraryMPStarter.cs" />
+    <Compile Include="LibraryMPStartZone.cs" />
+    <Compile Include="LibraryObelisk.cs" />
+    <Compile Include="LibraryObjectEnabler.cs" />
+    <Compile Include="LibraryRaceEntry.cs" />
+    <Compile Include="LibraryRaces.cs" />
+    <Compile Include="LibrarySecretRoom.cs" />
+    <Compile Include="LibraryStarter.cs" />
+    <Compile Include="LibraryTutorial.cs" />
+    <Compile Include="Library_BallTrigger.cs" />
+    <Compile Include="Library_Dice.cs" />
+    <Compile Include="Library_DiceGame.cs" />
+    <Compile Include="Library_Dice_Reward.cs" />
+    <Compile Include="Library_LorePages.cs" />
+    <Compile Include="Library_RaidControl.cs" />
+    <Compile Include="Library_TargetPractice.cs" />
+    <Compile Include="Library_TornCracks.cs" />
+    <Compile Include="Library_Weather.cs" />
+    <Compile Include="LibTalentItemUI.cs" />
+    <Compile Include="LibTalentRow.cs" />
+    <Compile Include="LibTalentsPanel.cs" />
+    <Compile Include="LoadoutEntry.cs" />
+    <Compile Include="LoadoutPanel.cs" />
+    <Compile Include="LoadoutUI.cs" />
+    <Compile Include="LobbyPanelPrompt.cs" />
+    <Compile Include="LocalRunRecord.cs" />
+    <Compile Include="Location.cs" />
+    <Compile Include="LocationNode.cs" />
+    <Compile Include="LocationNumberNode.cs" />
+    <Compile Include="LocationOffsetNode.cs" />
+    <Compile Include="LocationType.cs" />
+    <Compile Include="LockFollow.cs" />
+    <Compile Include="LockRotation.cs" />
+    <Compile Include="LocOffset.cs" />
+    <Compile Include="LogicFilterNode.cs" />
+    <Compile Include="LogicFilter_Conditional.cs" />
+    <Compile Include="LogicFilter_SortDistance.cs" />
+    <Compile Include="LogicFilter_SortNumber.cs" />
+    <Compile Include="LogicFilter_SortRandom.cs" />
+    <Compile Include="LogicNode.cs" />
+    <Compile Include="Logic_Ability.cs" />
+    <Compile Include="Logic_And.cs" />
+    <Compile Include="Logic_Augment.cs" />
+    <Compile Include="Logic_EffectProps.cs" />
+    <Compile Include="Logic_EntityHas.cs" />
+    <Compile Include="Logic_EntityIs.cs" />
+    <Compile Include="Logic_Genre.cs" />
+    <Compile Include="Logic_InputNode.cs" />
+    <Compile Include="Logic_Location.cs" />
+    <Compile Include="Logic_Not.cs" />
+    <Compile Include="Logic_Numbers.cs" />
+    <Compile Include="Logic_Or.cs" />
+    <Compile Include="Logic_Status.cs" />
+    <Compile Include="Logic_Team.cs" />
+    <Compile Include="Logic_Unlocked.cs" />
+    <Compile Include="Logic_World.cs" />
+    <Compile Include="LogNode.cs" />
+    <Compile Include="LookAtPlayerCam.cs" />
+    <Compile Include="LookAtTarget.cs" />
+    <Compile Include="LoreDB.cs" />
+    <Compile Include="LorePage.cs" />
+    <Compile Include="LorePageUIDisplay.cs" />
+    <Compile Include="LorePanel.cs" />
+    <Compile Include="MagicColor.cs" />
+    <Compile Include="MainPanel.cs" />
+    <Compile Include="Mana.cs" />
+    <Compile Include="ManaDisplay.cs" />
+    <Compile Include="ManaFeature.cs" />
+    <Compile Include="ManaGroup.cs" />
+    <Compile Include="ManaPip.cs" />
+    <Compile Include="MapLevelHelper.cs" />
+    <Compile Include="MapManager.cs" />
+    <Compile Include="MathHelper.cs" />
+    <Compile Include="MathNumberNode.cs" />
+    <Compile Include="MeshFX.cs" />
+    <Compile Include="MeshMaterialDisplay.cs" />
+    <Compile Include="MeshMaterialLimit.cs" />
+    <Compile Include="MetaDB.cs" />
+    <Compile Include="Microsoft\CodeAnalysis\EmbeddedAttribute.cs" />
+    <Compile Include="MimicSpace\CylinderMesh.cs" />
+    <Compile Include="MimicSpace\Leg.cs" />
+    <Compile Include="MimicSpace\Mimic.cs" />
+    <Compile Include="MimicSpace\Movement.cs" />
+    <Compile Include="ModDifficultyNode.cs" />
+    <Compile Include="ModFilter.cs" />
+    <Compile Include="ModFilterList.cs" />
+    <Compile Include="ModifyCooldownNode.cs" />
+    <Compile Include="ModifyInkNode.cs" />
+    <Compile Include="ModifyManaNode.cs" />
+    <Compile Include="ModifyMaterialNode.cs" />
+    <Compile Include="ModifyPropsNode.cs" />
+    <Compile Include="ModifyShieldNode.cs" />
+    <Compile Include="ModManaCheckNode.cs" />
+    <Compile Include="ModOverrideNode.cs" />
+    <Compile Include="ModPassiveNode.cs" />
+    <Compile Include="ModRequirementNode.cs" />
+    <Compile Include="ModSnippetNode.cs" />
+    <Compile Include="ModTag.cs" />
+    <Compile Include="ModTagAndNode.cs" />
+    <Compile Include="ModTagCheckNode.cs" />
+    <Compile Include="ModTagDetail.cs" />
+    <Compile Include="ModTagExactNode.cs" />
+    <Compile Include="ModTagNode.cs" />
+    <Compile Include="ModTagNotNode.cs" />
+    <Compile Include="ModTagOrNode.cs" />
+    <Compile Include="ModTagPlayerCountNode.cs" />
+    <Compile Include="ModTagTeamCheck.cs" />
+    <Compile Include="ModType.cs" />
+    <Compile Include="MouseSelector.cs" />
+    <Compile Include="MovementOverrideNode.cs" />
+    <Compile Include="MoveToPositionNode.cs" />
+    <Compile Include="MultiEffectNode.cs" />
+    <Compile Include="MultiplayerUI.cs" />
+    <Compile Include="MultiplyNumberNode.cs" />
+    <Compile Include="MysticArsenal\MysticButtonScript.cs" />
+    <Compile Include="MysticArsenal\MysticFireProjectile.cs" />
+    <Compile Include="MysticArsenal\MysticLightFade.cs" />
+    <Compile Include="MysticArsenal\MysticLoopScript.cs" />
+    <Compile Include="MysticArsenal\MysticRotation.cs" />
+    <Compile Include="MysticLightFlicker.cs" />
+    <Compile Include="MysticOrbit.cs" />
+    <Compile Include="MysticProjectileScript.cs" />
+    <Compile Include="MysticSceneSelect.cs" />
+    <Compile Include="NavmeshLinkGenerator.cs" />
+    <Compile Include="NavVisionPoint.cs" />
+    <Compile Include="NetStats.cs" />
+    <Compile Include="NetworkManager.cs" />
+    <Compile Include="Network_OnlineToggle.cs" />
+    <Compile Include="NewBehaviourScript.cs" />
+    <Compile Include="NextWaveUI.cs" />
+    <Compile Include="Node.cs" />
+    <Compile Include="NodeState.cs" />
+    <Compile Include="NookDB.cs" />
+    <Compile Include="NookEditor.cs" />
+    <Compile Include="NookItem.cs" />
+    <Compile Include="NookManager.cs" />
+    <Compile Include="NookNetItem.cs" />
+    <Compile Include="NookPanel.cs" />
+    <Compile Include="NookPanelItem.cs" />
+    <Compile Include="NookRewardSpawn.cs" />
+    <Compile Include="NookSurface.cs" />
+    <Compile Include="NoPool.cs" />
+    <Compile Include="NoteNode.cs" />
+    <Compile Include="NumberNode.cs" />
+    <Compile Include="NumberTest.cs" />
+    <Compile Include="NumericTest.cs" />
+    <Compile Include="ObjectToggler.cs" />
+    <Compile Include="OneOverNumberNode.cs" />
+    <Compile Include="OutputPort.cs" />
+    <Compile Include="PageFlip.cs" />
+    <Compile Include="PagePreset.cs" />
+    <Compile Include="PanelManager.cs" />
+    <Compile Include="PanelType.cs" />
+    <Compile Include="ParseManager.cs" />
+    <Compile Include="ParticleLOD.cs" />
+    <Compile Include="Passive.cs" />
+    <Compile Include="PathPoint.cs" />
+    <Compile Include="PauseLobbyControl.cs" />
+    <Compile Include="PauseLobbyItem.cs" />
+    <Compile Include="PausePanel.cs" />
+    <Compile Include="PauseQuotes.cs" />
+    <Compile Include="PickupManager.cs" />
+    <Compile Include="PickupObj.cs" />
+    <Compile Include="PingIndicator.cs" />
+    <Compile Include="PingUISelector.cs" />
+    <Compile Include="PI\NGSS\NGSS_Directional.cs" />
+    <Compile Include="PI\NGSS\NGSS_FrustumShadows.cs" />
+    <Compile Include="PI\NGSS\NGSS_Local.cs" />
+    <Compile Include="PlatformSetup.cs" />
+    <Compile Include="PlayAnimEffectNode.cs" />
+    <Compile Include="PlayerAbilityInfo.cs" />
+    <Compile Include="PlayerAbilityType.cs" />
+    <Compile Include="PlayerActions.cs" />
+    <Compile Include="PlayerAudio.cs" />
+    <Compile Include="PlayerBookDisplay.cs" />
+    <Compile Include="PlayerCamera.cs" />
+    <Compile Include="PlayerChangeAbilityNode.cs" />
+    <Compile Include="PlayerChoicePanel.cs" />
+    <Compile Include="PlayerControl.cs" />
+    <Compile Include="PlayerDB.cs" />
+    <Compile Include="PlayerDisplay.cs" />
+    <Compile Include="PlayerGameStats.cs" />
+    <Compile Include="PlayerHealth.cs" />
+    <Compile Include="PlayerHealthUI.cs" />
+    <Compile Include="PlayerIndicator.cs" />
+    <Compile Include="PlayerInput.cs" />
+    <Compile Include="PlayerMana.cs" />
+    <Compile Include="PlayerModSubset.cs" />
+    <Compile Include="PlayerMovement.cs" />
+    <Compile Include="PlayerNavManager.cs" />
+    <Compile Include="PlayerNetwork.cs" />
+    <Compile Include="PlayerNook.cs" />
+    <Compile Include="PlayerNookHud.cs" />
+    <Compile Include="PlayerPing.cs" />
+    <Compile Include="PlayerStat.cs" />
+    <Compile Include="PlayerStatAbilityUIGroup.cs" />
+    <Compile Include="PlayerStatUIBox.cs" />
+    <Compile Include="PlayerTrigger.cs" />
+    <Compile Include="PlayerWorldUI.cs" />
+    <Compile Include="PlayRandom.cs" />
+    <Compile Include="Plexus.cs" />
+    <Compile Include="PlexusFast.cs" />
+    <Compile Include="PoolReleaseTrigger.cs" />
+    <Compile Include="PortalTrigger.cs" />
+    <Compile Include="PortalType.cs" />
+    <Compile Include="PortLocation.cs" />
+    <Compile Include="Pose.cs" />
+    <Compile Include="PoseNode.cs" />
+    <Compile Include="PositionalInteraction.cs" />
+    <Compile Include="PositionFeature.cs" />
+    <Compile Include="PositionFilterNode.cs" />
+    <Compile Include="PositionFilter_Distance.cs" />
+    <Compile Include="PositionFilter_SpecificPoint.cs" />
+    <Compile Include="PositionFilter_TargetVisible.cs" />
+    <Compile Include="PositionSort_Distance.cs" />
+    <Compile Include="PositionSort_Random.cs" />
+    <Compile Include="PostFXManager.cs" />
+    <Compile Include="PostFXSetting.cs" />
+    <Compile Include="PostGamePanel.cs" />
+    <Compile Include="PostGame_CurrencyRewards.cs" />
+    <Compile Include="PostGame_RaidEncounter.cs" />
+    <Compile Include="PostGame_Reward_LineItem.cs" />
+    <Compile Include="PostGame_StatEntry.cs" />
+    <Compile Include="PostGame_Stats_Display.cs" />
+    <Compile Include="PostProcessNode.cs" />
+    <Compile Include="PotentialNavPoint.cs" />
+    <Compile Include="PrefabSpawner.cs" />
+    <Compile Include="PrestigeUIIndicator.cs" />
+    <Compile Include="PriorityQueue.cs" />
+    <Compile Include="Progression.cs" />
+    <Compile Include="ProgressionPanel.cs" />
+    <Compile Include="ProgressUI.cs" />
+    <Compile Include="Projectile.cs" />
+    <Compile Include="ProjectileFeature.cs" />
+    <Compile Include="ProjectileInteractionNode.cs" />
+    <Compile Include="ProjectileLifetimeProps.cs" />
+    <Compile Include="ProjectileMoveModuleNode.cs" />
+    <Compile Include="ProjectileMoveProps.cs" />
+    <Compile Include="ProjectileMoveProps_Arc.cs" />
+    <Compile Include="ProjectileMoveProps_Gravity.cs" />
+    <Compile Include="ProjectileMoveProps_Homing.cs" />
+    <Compile Include="ProjectileMoveProps_Random.cs" />
+    <Compile Include="ProjectileNode.cs" />
+    <Compile Include="ProjectileOverrideNode.cs" />
+    <Compile Include="ProjectileTrigger.cs" />
+    <Compile Include="ProjectorScale.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="QualitySelector.cs" />
+    <Compile Include="Questboard.cs" />
+    <Compile Include="QuestboardPanel.cs" />
+    <Compile Include="Questboard_Background.cs" />
+    <Compile Include="RagdollUnparent.cs" />
+    <Compile Include="RaidBossIntroUI.cs" />
+    <Compile Include="RaidCodex.cs" />
+    <Compile Include="RaidDB.cs" />
+    <Compile Include="RaidDifficultyUI.cs" />
+    <Compile Include="RaidHUDInfo.cs" />
+    <Compile Include="RaidIslandComp.cs" />
+    <Compile Include="RaidManager.cs" />
+    <Compile Include="RaidRecord.cs" />
+    <Compile Include="RaidScene.cs" />
+    <Compile Include="RaidSceneEventNode.cs" />
+    <Compile Include="RaidScrollTrigger.cs" />
+    <Compile Include="RaidStickers.cs" />
+    <Compile Include="RandomNumberNode.cs" />
+    <Compile Include="RandomRotation.cs" />
+    <Compile Include="Random_Activator.cs" />
+    <Compile Include="Rarity.cs" />
+    <Compile Include="RectExtensions.cs" />
+    <Compile Include="ReleaseFogNode.cs" />
+    <Compile Include="RemapNumberNode.cs" />
+    <Compile Include="RemoveMaterialNode.cs" />
+    <Compile Include="RemoveMeshFXNode.cs" />
+    <Compile Include="RemoveStatusNode.cs" />
+    <Compile Include="RemoveTagNode.cs" />
+    <Compile Include="ResolutionSelector.cs" />
+    <Compile Include="ReviveEntityNode.cs" />
+    <Compile Include="ReviveWorldUI.cs" />
+    <Compile Include="RewardItem.cs" />
+    <Compile Include="RewardManager.cs" />
+    <Compile Include="RewardScrollNode.cs" />
+    <Compile Include="RezBar.cs" />
+    <Compile Include="RoadmapPanel.cs" />
+    <Compile Include="RoomSetting.cs" />
+    <Compile Include="RootBoneTransfer.cs" />
+    <Compile Include="RootNode.cs" />
+    <Compile Include="RotateNode.cs" />
+    <Compile Include="RotateTimed.cs" />
+    <Compile Include="RotationOffsetNode.cs" />
+    <Compile Include="RotOffset.cs" />
+    <Compile Include="SaveLocationNode.cs" />
+    <Compile Include="ScaleOverTime.cs" />
+    <Compile Include="ScaleValueNode.cs" />
+    <Compile Include="SceneControl.cs" />
+    <Compile Include="SceneField.cs" />
+    <Compile Include="Scene_Settings.cs" />
+    <Compile Include="ScreenKeyboard.cs" />
+    <Compile Include="Scriptorium_PrestigeArea.cs" />
+    <Compile Include="Scriptorium_PrestigeRewardItem.cs" />
+    <Compile Include="ScrollIndicator.cs" />
+    <Compile Include="ScrollManager.cs" />
+    <Compile Include="ScrollPickup.cs" />
+    <Compile Include="ScrollSpawner.cs" />
+    <Compile Include="ScrollTrigger.cs" />
+    <Compile Include="SelectableFader.cs" />
+    <Compile Include="SelectorSetting.cs" />
+    <Compile Include="SelectTargetNode.cs" />
+    <Compile Include="SettingElement.cs" />
+    <Compile Include="SettingHeader.cs" />
+    <Compile Include="Settings.cs" />
+    <Compile Include="SettingsCredits.cs" />
+    <Compile Include="SettingsPanel.cs" />
+    <Compile Include="SettingsTab.cs" />
+    <Compile Include="SettingType.cs" />
+    <Compile Include="ShowPort.cs" />
+    <Compile Include="SignatureChallengePanel.cs" />
+    <Compile Include="SignatureInkUIControl.cs" />
+    <Compile Include="SignatureUnlocker.cs" />
+    <Compile Include="SimpleBob.cs" />
+    <Compile Include="SimpleDestroy.cs" />
+    <Compile Include="SimpleDiagetic.cs" />
+    <Compile Include="SimpleJSON\JSON.cs" />
+    <Compile Include="SimpleJSON\JSONArray.cs" />
+    <Compile Include="SimpleJSON\JSONBool.cs" />
+    <Compile Include="SimpleJSON\JSONLazyCreator.cs" />
+    <Compile Include="SimpleJSON\JSONNode.cs" />
+    <Compile Include="SimpleJSON\JSONNodeType.cs" />
+    <Compile Include="SimpleJSON\JSONNull.cs" />
+    <Compile Include="SimpleJSON\JSONNumber.cs" />
+    <Compile Include="SimpleJSON\JSONObject.cs" />
+    <Compile Include="SimpleJSON\JSONString.cs" />
+    <Compile Include="SimpleJSON\JSONTextMode.cs" />
+    <Compile Include="SimpleMoveAndLoop.cs" />
+    <Compile Include="SimpleRotate.cs" />
+    <Compile Include="SliderSetting.cs" />
+    <Compile Include="SpawnAINode.cs" />
+    <Compile Include="SpawnAoENode.cs" />
+    <Compile Include="SpawnBeamNode.cs" />
+    <Compile Include="SpawnExtensions.cs" />
+    <Compile Include="SpawnGameObjectNode.cs" />
+    <Compile Include="SpawnPickupNode.cs" />
+    <Compile Include="SpawnPoint.cs" />
+    <Compile Include="SpawnProjectileEffectNode.cs" />
+    <Compile Include="SpawnType.cs" />
+    <Compile Include="SpawnVFXNode.cs" />
+    <Compile Include="SpawnZone.cs" />
+    <Compile Include="SpecialLocation.cs" />
+    <Compile Include="SpectatorCam.cs" />
+    <Compile Include="Splashscreen.cs" />
+    <Compile Include="SpringFollow.cs" />
+    <Compile Include="StateControl.cs" />
+    <Compile Include="StateManager.cs" />
+    <Compile Include="StateType.cs" />
+    <Compile Include="StatNumberNode.cs" />
+    <Compile Include="StatusBar.cs" />
+    <Compile Include="StatusBoxUI.cs" />
+    <Compile Include="StatusFeature.cs" />
+    <Compile Include="StatusKeyword.cs" />
+    <Compile Include="StatusModNode.cs" />
+    <Compile Include="StatusOverrideNode.cs" />
+    <Compile Include="StatusPickup.cs" />
+    <Compile Include="StatusRootNode.cs" />
+    <Compile Include="StatusSurface.cs" />
+    <Compile Include="StatusTree.cs" />
+    <Compile Include="SteamManager.cs" />
+    <Compile Include="StopAbilityNode.cs" />
+    <Compile Include="StopAnimEffectNode.cs" />
+    <Compile Include="SubActionNode.cs" />
+    <Compile Include="SubtractNumberNode.cs" />
+    <Compile Include="Sun.cs" />
+    <Compile Include="Symphony_Harp.cs" />
+    <Compile Include="SystemSetting.cs" />
+    <Compile Include="System\Runtime\CompilerServices\IsUnmanagedAttribute.cs" />
+    <Compile Include="TargetDummy.cs" />
+    <Compile Include="TeammateUI.cs" />
+    <Compile Include="TeleportEffectNode.cs" />
+    <Compile Include="TempFXProfile.cs" />
+    <Compile Include="TerrainObject.cs" />
+    <Compile Include="TestButton.cs" />
+    <Compile Include="TextParser.cs" />
+    <Compile Include="ThresholdOffsetNode.cs" />
+    <Compile Include="TimeSince.cs" />
+    <Compile Include="ToggleSetting.cs" />
+    <Compile Include="TomeProgressSmall.cs" />
+    <Compile Include="TomeRewardItemUI.cs" />
+    <Compile Include="TomeTerrain.cs" />
+    <Compile Include="Tooltip.cs" />
+    <Compile Include="TrailerEventHelper.cs" />
+    <Compile Include="TrailGravity.cs" />
+    <Compile Include="TransitionScene.cs" />
+    <Compile Include="TriggerAbilityActionNode.cs" />
+    <Compile Include="TubeMesh.cs" />
+    <Compile Include="TutorialCorePickup.cs" />
+    <Compile Include="TutorialManager.cs" />
+    <Compile Include="TutorialMapControl.cs" />
+    <Compile Include="TutorialStep.cs" />
+    <Compile Include="TutorialStepTrigger.cs" />
+    <Compile Include="TutorialTextTrigger.cs" />
+    <Compile Include="Tutorial_CoreSelect.cs" />
+    <Compile Include="UIActions.cs" />
+    <Compile Include="UIBindingDisplay.cs" />
+    <Compile Include="UIDirection.cs" />
+    <Compile Include="UIFluidManager.cs" />
+    <Compile Include="UIFluidType.cs" />
+    <Compile Include="UIFollowMouse.cs" />
+    <Compile Include="UIIndicator.cs" />
+    <Compile Include="UIMeshRenderer.cs" />
+    <Compile Include="UINavReceiver.cs" />
+    <Compile Include="UIPanel.cs" />
+    <Compile Include="UIPing.cs" />
+    <Compile Include="UIPingable.cs" />
+    <Compile Include="UIPingFeedItem.cs" />
+    <Compile Include="UIPlayerScroll.cs" />
+    <Compile Include="UIPlayerVoteDisplay.cs" />
+    <Compile Include="UISelector.cs" />
+    <Compile Include="UITransitionHelper.cs" />
+    <Compile Include="UITutorial.cs" />
+    <Compile Include="UnityEngine\UI\UIDropShadow.cs" />
+    <Compile Include="UnityMainThreadDispatcher.cs" />
+    <Compile Include="UnityWebRequestAwaiter.cs" />
+    <Compile Include="Unlockable.cs" />
+    <Compile Include="UnlockCategory.cs" />
+    <Compile Include="UnlockDB.cs" />
+    <Compile Include="UnlockManager.cs" />
+    <Compile Include="UnstuckButton.cs" />
+    <Compile Include="UpdateObjectiveTextNode.cs" />
+    <Compile Include="UpdateRaidInfoNode.cs" />
+    <Compile Include="UpdateStatNode.cs" />
+    <Compile Include="UpgradeLayout.cs" />
+    <Compile Include="URLButton.cs" />
+    <Compile Include="UseAbilityNode.cs" />
+    <Compile Include="Util_DisableRigidbodies.cs" />
+    <Compile Include="ValueSource.cs" />
+    <Compile Include="VellumMusicSystem\VMS_AudioSource.cs" />
+    <Compile Include="VellumMusicSystem\VMS_AudioSourceController.cs" />
+    <Compile Include="VellumMusicSystem\VMS_ClipSet.cs" />
+    <Compile Include="VellumMusicSystem\VMS_ClipSetInfo.cs" />
+    <Compile Include="VellumMusicSystem\VMS_Debugger.cs" />
+    <Compile Include="VellumMusicSystem\VMS_EventList.cs" />
+    <Compile Include="VellumMusicSystem\VMS_GetClipEvent.cs" />
+    <Compile Include="VellumMusicSystem\VMS_Loader.cs" />
+    <Compile Include="VellumMusicSystem\VMS_Player.cs" />
+    <Compile Include="VellumMusicSystem\VMS_SceneData.cs" />
+    <Compile Include="VellumMusicSystem\VMS_Sequencer.cs" />
+    <Compile Include="VellumMusicSystem\VMS_SequencerEvent.cs" />
+    <Compile Include="VellumMusicSystem\VMS_SequencerSettings.cs" />
+    <Compile Include="VellumMusicSystem\VMS_StemEvent.cs" />
+    <Compile Include="VellumMusicSystem\VMS_StemPlayStatus.cs" />
+    <Compile Include="VellumMusicSystem\VMS_StemProbability.cs" />
+    <Compile Include="VellumMusicSystem\VMS_StemType.cs" />
+    <Compile Include="VellumMusicSystem\VMS_TimeCalculationEvent.cs" />
+    <Compile Include="VellumMusicSystem\VMS_UI_CombatStateButtonDIsplay.cs" />
+    <Compile Include="VellumMusicSystem\VMS_UI_DisableButton.cs" />
+    <Compile Include="VellumMusicSystem\VMS_UI_PlayStateButtonDIsplay.cs" />
+    <Compile Include="VellumMusicSystem\VMS_UI_ProgressSlider.cs" />
+    <Compile Include="VellumMusicSystem\VMS_UI_StemDisplay.cs" />
+    <Compile Include="VellumMusicSystem\VMS_VolumeProfileSet.cs" />
+    <Compile Include="VelocityFollow.cs" />
+    <Compile Include="VFXSpawnRef.cs" />
+    <Compile Include="Vignette.cs" />
+    <Compile Include="VignetteActionNode.cs" />
+    <Compile Include="VignetteControl.cs" />
+    <Compile Include="VignetteInfoDisplay.cs" />
+    <Compile Include="VignetteTrigger.cs" />
+    <Compile Include="VignetteTriggerArea.cs" />
+    <Compile Include="Vignette_StoreTrigger.cs" />
+    <Compile Include="VisionSpawns.cs" />
+    <Compile Include="VisualDB.cs" />
+    <Compile Include="VolumeProfile.cs" />
+    <Compile Include="VoteIcon.cs" />
+    <Compile Include="VoteManager.cs" />
+    <Compile Include="VoteState.cs" />
+    <Compile Include="WaveDB.cs" />
+    <Compile Include="WaveManager.cs" />
+    <Compile Include="WaveProgressBar.cs" />
+    <Compile Include="WaveProgressPoint.cs" />
+    <Compile Include="Wave_PlayerValues.cs" />
+    <Compile Include="Weakspot.cs" />
+    <Compile Include="WorldIndicators.cs" />
+    <Compile Include="WorldNumberNode.cs" />
+    <Compile Include="WorldOverrideNode.cs" />
+    <Compile Include="WorldPingNode.cs" />
+    <Compile Include="XGraphCollector.cs" />
+    <Compile Include="ZoneArea.cs" />
+    <Compile Include="ZoneManager.cs" />
+    <Compile Include="ZoneProperties.cs" />
+    <Compile Include="ZoneSpawns.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\AimAssistAssembly\AimAssistAssembly.csproj">
+      <Project>{60fc5a84-174b-460f-af7d-e4245a6f594c}</Project>
+      <Name>AimAssistAssembly</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Assembly-CSharp-firstpass\Assembly-CSharp-firstpass.csproj">
+      <Project>{60fc5a84-174b-460f-af7d-e4245a6f594d}</Project>
+      <Name>Assembly-CSharp-firstpass</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\BMeshUnity\BMeshUnity.csproj">
+      <Project>{60fc5a84-174b-460f-af7d-e4245a6f5950}</Project>
+      <Name>BMeshUnity</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Boxophobic.AtmosphericHeightFog.Runtime\Boxophobic.AtmosphericHeightFog.Runtime.csproj">
+      <Project>{60fc5a84-174b-460f-af7d-e4245a6f5951}</Project>
+      <Name>Boxophobic.AtmosphericHeightFog.Runtime</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\com.rlabrecque.steamworks.net\com.rlabrecque.steamworks.net.csproj">
+      <Project>{60fc5a84-174b-460f-af7d-e4245a6f5953}</Project>
+      <Name>com.rlabrecque.steamworks.net</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\com.thenakeddev.fsr.Runtime\com.thenakeddev.fsr.Runtime.csproj">
+      <Project>{60fc5a84-174b-460f-af7d-e4245a6f5955}</Project>
+      <Name>com.thenakeddev.fsr.Runtime</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\DamageNumbersPro\DamageNumbersPro.csproj">
+      <Project>{60fc5a84-174b-460f-af7d-e4245a6f5957}</Project>
+      <Name>DamageNumbersPro</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\EasySave3\EasySave3.csproj">
+      <Project>{60fc5a84-174b-460f-af7d-e4245a6f5958}</Project>
+      <Name>EasySave3</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Febucci.TextAnimator.Runtime\Febucci.TextAnimator.Runtime.csproj">
+      <Project>{60fc5a84-174b-460f-af7d-e4245a6f595c}</Project>
+      <Name>Febucci.TextAnimator.Runtime</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Febucci.TextAnimator.TMP.Runtime\Febucci.TextAnimator.TMP.Runtime.csproj">
+      <Project>{60fc5a84-174b-460f-af7d-e4245a6f595d}</Project>
+      <Name>Febucci.TextAnimator.TMP.Runtime</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\fluxy\fluxy.csproj">
+      <Project>{60fc5a84-174b-460f-af7d-e4245a6f595e}</Project>
+      <Name>fluxy</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\HBAO.Runtime\HBAO.Runtime.csproj">
+      <Project>{60fc5a84-174b-460f-af7d-e4245a6f595f}</Project>
+      <Name>HBAO.Runtime</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\InControl\InControl.csproj">
+      <Project>{60fc5a84-174b-460f-af7d-e4245a6f5960}</Project>
+      <Name>InControl</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\MagicaClothV2\MagicaClothV2.csproj">
+      <Project>{60fc5a84-174b-460f-af7d-e4245a6f5963}</Project>
+      <Name>MagicaClothV2</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\mscorlib\mscorlib.csproj">
+      <Project>{60fc5a84-174b-460f-af7d-e4245a6f5968}</Project>
+      <Name>mscorlib</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\OEBIF\OEBIF.csproj">
+      <Project>{60fc5a84-174b-460f-af7d-e4245a6f596a}</Project>
+      <Name>OEBIF</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Parse\Parse.csproj">
+      <Project>{60fc5a84-174b-460f-af7d-e4245a6f596b}</Project>
+      <Name>Parse</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Photon3Unity3D\Photon3Unity3D.csproj">
+      <Project>{60fc5a84-174b-460f-af7d-e4245a6f596c}</Project>
+      <Name>Photon3Unity3D</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\PhotonRealtime\PhotonRealtime.csproj">
+      <Project>{60fc5a84-174b-460f-af7d-e4245a6f596d}</Project>
+      <Name>PhotonRealtime</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\PhotonUnityNetworking\PhotonUnityNetworking.csproj">
+      <Project>{60fc5a84-174b-460f-af7d-e4245a6f596e}</Project>
+      <Name>PhotonUnityNetworking</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\QFSW.QC\QFSW.QC.csproj">
+      <Project>{60fc5a84-174b-460f-af7d-e4245a6f5970}</Project>
+      <Name>QFSW.QC</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\sc.posteffects.runtime\sc.posteffects.runtime.csproj">
+      <Project>{60fc5a84-174b-460f-af7d-e4245a6f5979}</Project>
+      <Name>sc.posteffects.runtime</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Sirenix.OdinInspector.Attributes\Sirenix.OdinInspector.Attributes.csproj">
+      <Project>{60fc5a84-174b-460f-af7d-e4245a6f597a}</Project>
+      <Name>Sirenix.OdinInspector.Attributes</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\System.Core\System.Core.csproj">
+      <Project>{60fc5a84-174b-460f-af7d-e4245a6f597d}</Project>
+      <Name>System.Core</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\System.IO.Compression\System.IO.Compression.csproj">
+      <Project>{60fc5a84-174b-460f-af7d-e4245a6f5983}</Project>
+      <Name>System.IO.Compression</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\System\System.csproj">
+      <Project>{60fc5a84-174b-460f-af7d-e4245a6f5980}</Project>
+      <Name>System</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Unity.AI.Navigation\Unity.AI.Navigation.csproj">
+      <Project>{60fc5a84-174b-460f-af7d-e4245a6f598f}</Project>
+      <Name>Unity.AI.Navigation</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Unity.Collections\Unity.Collections.csproj">
+      <Project>{60fc5a84-174b-460f-af7d-e4245a6f5992}</Project>
+      <Name>Unity.Collections</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Unity.Postprocessing.Runtime\Unity.Postprocessing.Runtime.csproj">
+      <Project>{60fc5a84-174b-460f-af7d-e4245a6f5996}</Project>
+      <Name>Unity.Postprocessing.Runtime</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Unity.TextMeshPro\Unity.TextMeshPro.csproj">
+      <Project>{60fc5a84-174b-460f-af7d-e4245a6f599f}</Project>
+      <Name>Unity.TextMeshPro</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\UnityEngine.AIModule\UnityEngine.AIModule.csproj">
+      <Project>{60fc5a84-174b-460f-af7d-e4245a6f59a1}</Project>
+      <Name>UnityEngine.AIModule</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\UnityEngine.AnimationModule\UnityEngine.AnimationModule.csproj">
+      <Project>{60fc5a84-174b-460f-af7d-e4245a6f59a3}</Project>
+      <Name>UnityEngine.AnimationModule</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\UnityEngine.AudioModule\UnityEngine.AudioModule.csproj">
+      <Project>{60fc5a84-174b-460f-af7d-e4245a6f59a6}</Project>
+      <Name>UnityEngine.AudioModule</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\UnityEngine.CoreModule\UnityEngine.CoreModule.csproj">
+      <Project>{60fc5a84-174b-460f-af7d-e4245a6f59aa}</Project>
+      <Name>UnityEngine.CoreModule</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\UnityEngine.IMGUIModule\UnityEngine.IMGUIModule.csproj">
+      <Project>{60fc5a84-174b-460f-af7d-e4245a6f59b4}</Project>
+      <Name>UnityEngine.IMGUIModule</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\UnityEngine.InputLegacyModule\UnityEngine.InputLegacyModule.csproj">
+      <Project>{60fc5a84-174b-460f-af7d-e4245a6f59b5}</Project>
+      <Name>UnityEngine.InputLegacyModule</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\UnityEngine.ParticleSystemModule\UnityEngine.ParticleSystemModule.csproj">
+      <Project>{60fc5a84-174b-460f-af7d-e4245a6f59ba}</Project>
+      <Name>UnityEngine.ParticleSystemModule</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\UnityEngine.PhysicsModule\UnityEngine.PhysicsModule.csproj">
+      <Project>{60fc5a84-174b-460f-af7d-e4245a6f59bd}</Project>
+      <Name>UnityEngine.PhysicsModule</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\UnityEngine.TerrainModule\UnityEngine.TerrainModule.csproj">
+      <Project>{60fc5a84-174b-460f-af7d-e4245a6f59c7}</Project>
+      <Name>UnityEngine.TerrainModule</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\UnityEngine.TextRenderingModule\UnityEngine.TextRenderingModule.csproj">
+      <Project>{60fc5a84-174b-460f-af7d-e4245a6f59cb}</Project>
+      <Name>UnityEngine.TextRenderingModule</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\UnityEngine.UIModule\UnityEngine.UIModule.csproj">
+      <Project>{60fc5a84-174b-460f-af7d-e4245a6f59d1}</Project>
+      <Name>UnityEngine.UIModule</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\UnityEngine.UI\UnityEngine.UI.csproj">
+      <Project>{60fc5a84-174b-460f-af7d-e4245a6f59ce}</Project>
+      <Name>UnityEngine.UI</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\UnityEngine.UnityWebRequestModule\UnityEngine.UnityWebRequestModule.csproj">
+      <Project>{60fc5a84-174b-460f-af7d-e4245a6f59db}</Project>
+      <Name>UnityEngine.UnityWebRequestModule</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\UnityEngine.VideoModule\UnityEngine.VideoModule.csproj">
+      <Project>{60fc5a84-174b-460f-af7d-e4245a6f59e0}</Project>
+      <Name>UnityEngine.VideoModule</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\UnityEngine.WindModule\UnityEngine.WindModule.csproj">
+      <Project>{60fc5a84-174b-460f-af7d-e4245a6f59e3}</Project>
+      <Name>UnityEngine.WindModule</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>

@@ -1,0 +1,23 @@
+﻿using System;
+
+namespace ECE
+{
+	// Token: 0x02000071 RID: 113
+	public enum CREATE_COLLIDER_TYPE
+	{
+		// Token: 0x0400042A RID: 1066
+		BOX,
+		// Token: 0x0400042B RID: 1067
+		ROTATED_BOX,
+		// Token: 0x0400042C RID: 1068
+		SPHERE,
+		// Token: 0x0400042D RID: 1069
+		CAPSULE,
+		// Token: 0x0400042E RID: 1070
+		ROTATED_CAPSULE,
+		// Token: 0x0400042F RID: 1071
+		CONVEX_MESH,
+		// Token: 0x04000430 RID: 1072
+		CYLINDER
+	}
+}

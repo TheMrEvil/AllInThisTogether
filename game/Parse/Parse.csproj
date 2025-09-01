@@ -1,0 +1,212 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{60FC5A84-174B-460F-AF7D-E4245A6F596B}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <RootNamespace>Parse</RootNamespace>
+    <AssemblyName>Parse</AssemblyName>
+    <TargetFrameworkVersion>v2.0</TargetFrameworkVersion>
+    <TargetFrameworkIdentifier>.NETStandard</TargetFrameworkIdentifier>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <NoStdLib>true</NoStdLib>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <NoStdLib>true</NoStdLib>
+  </PropertyGroup>
+  <ItemGroup />
+  <ItemGroup>
+    <AppDesigner Include="Properties\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="--f__AnonymousType0.cs" />
+    <Compile Include="--f__AnonymousType1.cs" />
+    <Compile Include="--f__AnonymousType2.cs" />
+    <Compile Include="-PrivateImplementationDetails-.cs" />
+    <Compile Include="Abstractions\Infrastructure\Control\IParseFieldOperation.cs" />
+    <Compile Include="Abstractions\Infrastructure\CustomServiceHub.cs" />
+    <Compile Include="Abstractions\Infrastructure\Data\IParseDataDecoder.cs" />
+    <Compile Include="Abstractions\Infrastructure\Execution\IParseCommandRunner.cs" />
+    <Compile Include="Abstractions\Infrastructure\Execution\IWebClient.cs" />
+    <Compile Include="Abstractions\Infrastructure\ICacheController.cs" />
+    <Compile Include="Abstractions\Infrastructure\ICustomServiceHub.cs" />
+    <Compile Include="Abstractions\Infrastructure\IDataCache.cs" />
+    <Compile Include="Abstractions\Infrastructure\IDataTransferLevel.cs" />
+    <Compile Include="Abstractions\Infrastructure\IDiskFileCacheController.cs" />
+    <Compile Include="Abstractions\Infrastructure\IEnvironmentData.cs" />
+    <Compile Include="Abstractions\Infrastructure\IHostManifestData.cs" />
+    <Compile Include="Abstractions\Infrastructure\IJsonConvertible.cs" />
+    <Compile Include="Abstractions\Infrastructure\IMetadataController.cs" />
+    <Compile Include="Abstractions\Infrastructure\IMutableServiceHub.cs" />
+    <Compile Include="Abstractions\Infrastructure\IRelativeCacheLocationGenerator.cs" />
+    <Compile Include="Abstractions\Infrastructure\IServerConnectionData.cs" />
+    <Compile Include="Abstractions\Infrastructure\IServiceHub.cs" />
+    <Compile Include="Abstractions\Infrastructure\IServiceHubCloner.cs" />
+    <Compile Include="Abstractions\Infrastructure\IServiceHubComposer.cs" />
+    <Compile Include="Abstractions\Infrastructure\IServiceHubMutator.cs" />
+    <Compile Include="Abstractions\Internal\ParseFileExtensions.cs" />
+    <Compile Include="Abstractions\Internal\ParseQueryExtensions.cs" />
+    <Compile Include="Abstractions\Internal\ParseRelationExtensions.cs" />
+    <Compile Include="Abstractions\Internal\ParseUserExtensions.cs" />
+    <Compile Include="Abstractions\Platform\Analytics\IParseAnalyticsController.cs" />
+    <Compile Include="Abstractions\Platform\Authentication\IParseAuthenticationProvider.cs" />
+    <Compile Include="Abstractions\Platform\Cloud\IParseCloudCodeController.cs" />
+    <Compile Include="Abstractions\Platform\Configuration\IParseConfigurationController.cs" />
+    <Compile Include="Abstractions\Platform\Configuration\IParseCurrentConfigurationController.cs" />
+    <Compile Include="Abstractions\Platform\Files\IParseFileController.cs" />
+    <Compile Include="Abstractions\Platform\Installations\IParseCurrentInstallationController.cs" />
+    <Compile Include="Abstractions\Platform\Installations\IParseInstallationCoder.cs" />
+    <Compile Include="Abstractions\Platform\Installations\IParseInstallationController.cs" />
+    <Compile Include="Abstractions\Platform\Installations\IParseInstallationDataFinalizer.cs" />
+    <Compile Include="Abstractions\Platform\Objects\IObjectState.cs" />
+    <Compile Include="Abstractions\Platform\Objects\IParseObjectClassController.cs" />
+    <Compile Include="Abstractions\Platform\Objects\IParseObjectController.cs" />
+    <Compile Include="Abstractions\Platform\Objects\IParseObjectCurrentController.cs" />
+    <Compile Include="Abstractions\Platform\Push\IParsePushChannelsController.cs" />
+    <Compile Include="Abstractions\Platform\Push\IParsePushController.cs" />
+    <Compile Include="Abstractions\Platform\Push\IPushState.cs" />
+    <Compile Include="Abstractions\Platform\Queries\IParseQueryController.cs" />
+    <Compile Include="Abstractions\Platform\Sessions\IParseSessionController.cs" />
+    <Compile Include="Abstractions\Platform\Users\IParseCurrentUserController.cs" />
+    <Compile Include="Abstractions\Platform\Users\IParseUserController.cs" />
+    <Compile Include="AnalyticsServiceExtensions.cs" />
+    <Compile Include="CloudCodeServiceExtensions.cs" />
+    <Compile Include="ConfigurationServiceExtensions.cs" />
+    <Compile Include="FileServiceExtensions.cs" />
+    <Compile Include="Infrastructure\AbsoluteCacheLocationMutator.cs" />
+    <Compile Include="Infrastructure\CacheController.cs" />
+    <Compile Include="Infrastructure\ConcurrentUserServiceHubCloner.cs" />
+    <Compile Include="Infrastructure\Control\ParseAddOperation.cs" />
+    <Compile Include="Infrastructure\Control\ParseAddUniqueOperation.cs" />
+    <Compile Include="Infrastructure\Control\ParseDeleteOperation.cs" />
+    <Compile Include="Infrastructure\Control\ParseFieldOperations.cs" />
+    <Compile Include="Infrastructure\Control\ParseIncrementOperation.cs" />
+    <Compile Include="Infrastructure\Control\ParseObjectIdComparer.cs" />
+    <Compile Include="Infrastructure\Control\ParseRelationOperation.cs" />
+    <Compile Include="Infrastructure\Control\ParseRemoveOperation.cs" />
+    <Compile Include="Infrastructure\Control\ParseSetOperation.cs" />
+    <Compile Include="Infrastructure\DataTransferLevel.cs" />
+    <Compile Include="Infrastructure\Data\NoObjectsEncoder.cs" />
+    <Compile Include="Infrastructure\Data\ParseDataDecoder.cs" />
+    <Compile Include="Infrastructure\Data\ParseDataEncoder.cs" />
+    <Compile Include="Infrastructure\Data\ParseObjectCoder.cs" />
+    <Compile Include="Infrastructure\Data\PointerOrLocalIdEncoder.cs" />
+    <Compile Include="Infrastructure\EnvironmentData.cs" />
+    <Compile Include="Infrastructure\Execution\ParseCommand.cs" />
+    <Compile Include="Infrastructure\Execution\ParseCommandRunner.cs" />
+    <Compile Include="Infrastructure\Execution\UniversalWebClient.cs" />
+    <Compile Include="Infrastructure\Execution\WebRequest.cs" />
+    <Compile Include="Infrastructure\HostManifestData.cs" />
+    <Compile Include="Infrastructure\IdentifierBasedRelativeCacheLocationGenerator.cs" />
+    <Compile Include="Infrastructure\LateInitializedMutableServiceHub.cs" />
+    <Compile Include="Infrastructure\MetadataBasedRelativeCacheLocationGenerator.cs" />
+    <Compile Include="Infrastructure\MetadataController.cs" />
+    <Compile Include="Infrastructure\MetadataMutator.cs" />
+    <Compile Include="Infrastructure\MutableServiceHub.cs" />
+    <Compile Include="Infrastructure\OrchestrationServiceHub.cs" />
+    <Compile Include="Infrastructure\ParseFailureException.cs" />
+    <Compile Include="Infrastructure\RelativeCacheLocationMutator.cs" />
+    <Compile Include="Infrastructure\ServerConnectionData.cs" />
+    <Compile Include="Infrastructure\ServiceHub.cs" />
+    <Compile Include="Infrastructure\TransientCacheController.cs" />
+    <Compile Include="Infrastructure\Utilities\Conversion.cs" />
+    <Compile Include="Infrastructure\Utilities\FileUtilities.cs" />
+    <Compile Include="Infrastructure\Utilities\FlexibleDictionaryWrapper.cs" />
+    <Compile Include="Infrastructure\Utilities\FlexibleListWrapper.cs" />
+    <Compile Include="Infrastructure\Utilities\IdentityEqualityComparer.cs" />
+    <Compile Include="Infrastructure\Utilities\InternalExtensions.cs" />
+    <Compile Include="Infrastructure\Utilities\JsonUtilities.cs" />
+    <Compile Include="Infrastructure\Utilities\LateInitializer.cs" />
+    <Compile Include="Infrastructure\Utilities\LinkerSafeAttribute.cs" />
+    <Compile Include="Infrastructure\Utilities\Lister.cs" />
+    <Compile Include="Infrastructure\Utilities\LockSet.cs" />
+    <Compile Include="Infrastructure\Utilities\PreserveAttribute.cs" />
+    <Compile Include="Infrastructure\Utilities\PreserveWrapperTypes.cs" />
+    <Compile Include="Infrastructure\Utilities\ReflectionUtilities.cs" />
+    <Compile Include="Infrastructure\Utilities\SynchronizedEventHandler.cs" />
+    <Compile Include="Infrastructure\Utilities\TaskQueue.cs" />
+    <Compile Include="Infrastructure\Utilities\ThreadingUtilities.cs" />
+    <Compile Include="InstallationServiceExtensions.cs" />
+    <Compile Include="Microsoft\CodeAnalysis\EmbeddedAttribute.cs" />
+    <Compile Include="ObjectServiceExtensions.cs" />
+    <Compile Include="ParseACL.cs" />
+    <Compile Include="ParseClassNameAttribute.cs" />
+    <Compile Include="ParseClient.cs" />
+    <Compile Include="ParseExtensions.cs" />
+    <Compile Include="ParseFieldNameAttribute.cs" />
+    <Compile Include="ParseFile.cs" />
+    <Compile Include="ParseGeoDistance.cs" />
+    <Compile Include="ParseGeoPoint.cs" />
+    <Compile Include="ParseInstallation.cs" />
+    <Compile Include="ParseObject.cs" />
+    <Compile Include="ParsePush.cs" />
+    <Compile Include="ParseQuery.cs" />
+    <Compile Include="ParseRelation.cs" />
+    <Compile Include="ParseRelationBase.cs" />
+    <Compile Include="ParseRole.cs" />
+    <Compile Include="ParseSession.cs" />
+    <Compile Include="ParseUser.cs" />
+    <Compile Include="Platform\Analytics\ParseAnalyticsController.cs" />
+    <Compile Include="Platform\Cloud\ParseCloudCodeController.cs" />
+    <Compile Include="Platform\Configuration\ParseConfiguration.cs" />
+    <Compile Include="Platform\Configuration\ParseConfigurationController.cs" />
+    <Compile Include="Platform\Configuration\ParseCurrentConfigurationController.cs" />
+    <Compile Include="Platform\Files\FileState.cs" />
+    <Compile Include="Platform\Files\ParseFileController.cs" />
+    <Compile Include="Platform\Installations\ParseCurrentInstallationController.cs" />
+    <Compile Include="Platform\Installations\ParseInstallationCoder.cs" />
+    <Compile Include="Platform\Installations\ParseInstallationController.cs" />
+    <Compile Include="Platform\Installations\ParseInstallationDataFinalizer.cs" />
+    <Compile Include="Platform\Objects\MutableObjectState.cs" />
+    <Compile Include="Platform\Objects\ParseObjectClass.cs" />
+    <Compile Include="Platform\Objects\ParseObjectClassController.cs" />
+    <Compile Include="Platform\Objects\ParseObjectController.cs" />
+    <Compile Include="Platform\Push\MutablePushState.cs" />
+    <Compile Include="Platform\Push\ParsePushChannelsController.cs" />
+    <Compile Include="Platform\Push\ParsePushController.cs" />
+    <Compile Include="Platform\Push\ParsePushEncoder.cs" />
+    <Compile Include="Platform\Push\ParsePushNotificationEvent.cs" />
+    <Compile Include="Platform\Queries\ParseQueryController.cs" />
+    <Compile Include="Platform\Sessions\ParseSessionController.cs" />
+    <Compile Include="Platform\Users\ParseCurrentUserController.cs" />
+    <Compile Include="Platform\Users\ParseUserController.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="PushServiceExtensions.cs" />
+    <Compile Include="QueryServiceExtensions.cs" />
+    <Compile Include="RelationServiceExtensions.cs" />
+    <Compile Include="Resources.cs" />
+    <Compile Include="RoleServiceExtensions.cs" />
+    <Compile Include="SessionsServiceExtensions.cs" />
+    <Compile Include="System\Runtime\CompilerServices\IsReadOnlyAttribute.cs" />
+    <Compile Include="UserServiceExtensions.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Resources.resources" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\netstandard\netstandard.csproj">
+      <Project>{60fc5a84-174b-460f-af7d-e4245a6f5969}</Project>
+      <Name>netstandard</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>

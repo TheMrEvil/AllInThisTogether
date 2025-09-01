@@ -1,0 +1,149 @@
+﻿using System;
+using System.Collections.Generic;
+using System.Diagnostics;
+using System.Runtime.CompilerServices;
+
+// Token: 0x02000004 RID: 4
+[CompilerGenerated]
+internal sealed class <>f__AnonymousType2<<OperationId>j__TPar, <Operation>j__TPar, <ConnectionId>j__TPar, <Command>j__TPar, <Exception>j__TPar, <Timestamp>j__TPar>
+{
+	// Token: 0x1700000B RID: 11
+	// (get) Token: 0x06000013 RID: 19 RVA: 0x000024FC File Offset: 0x000006FC
+	public <OperationId>j__TPar OperationId
+	{
+		get
+		{
+			return this.<OperationId>i__Field;
+		}
+	}
+
+	// Token: 0x1700000C RID: 12
+	// (get) Token: 0x06000014 RID: 20 RVA: 0x00002504 File Offset: 0x00000704
+	public <Operation>j__TPar Operation
+	{
+		get
+		{
+			return this.<Operation>i__Field;
+		}
+	}
+
+	// Token: 0x1700000D RID: 13
+	// (get) Token: 0x06000015 RID: 21 RVA: 0x0000250C File Offset: 0x0000070C
+	public <ConnectionId>j__TPar ConnectionId
+	{
+		get
+		{
+			return this.<ConnectionId>i__Field;
+		}
+	}
+
+	// Token: 0x1700000E RID: 14
+	// (get) Token: 0x06000016 RID: 22 RVA: 0x00002514 File Offset: 0x00000714
+	public <Command>j__TPar Command
+	{
+		get
+		{
+			return this.<Command>i__Field;
+		}
+	}
+
+	// Token: 0x1700000F RID: 15
+	// (get) Token: 0x06000017 RID: 23 RVA: 0x0000251C File Offset: 0x0000071C
+	public <Exception>j__TPar Exception
+	{
+		get
+		{
+			return this.<Exception>i__Field;
+		}
+	}
+
+	// Token: 0x17000010 RID: 16
+	// (get) Token: 0x06000018 RID: 24 RVA: 0x00002524 File Offset: 0x00000724
+	public <Timestamp>j__TPar Timestamp
+	{
+		get
+		{
+			return this.<Timestamp>i__Field;
+		}
+	}
+
+	// Token: 0x06000019 RID: 25 RVA: 0x0000252C File Offset: 0x0000072C
+	[DebuggerHidden]
+	public <>f__AnonymousType2(<OperationId>j__TPar OperationId, <Operation>j__TPar Operation, <ConnectionId>j__TPar ConnectionId, <Command>j__TPar Command, <Exception>j__TPar Exception, <Timestamp>j__TPar Timestamp)
+	{
+		this.<OperationId>i__Field = OperationId;
+		this.<Operation>i__Field = Operation;
+		this.<ConnectionId>i__Field = ConnectionId;
+		this.<Command>i__Field = Command;
+		this.<Exception>i__Field = Exception;
+		this.<Timestamp>i__Field = Timestamp;
+	}
+
+	// Token: 0x0600001A RID: 26 RVA: 0x00002564 File Offset: 0x00000764
+	[DebuggerHidden]
+	public override bool Equals(object value)
+	{
+		var <>f__AnonymousType = value as <>f__AnonymousType2<<OperationId>j__TPar, <Operation>j__TPar, <ConnectionId>j__TPar, <Command>j__TPar, <Exception>j__TPar, <Timestamp>j__TPar>;
+		return <>f__AnonymousType != null && EqualityComparer<<OperationId>j__TPar>.Default.Equals(this.<OperationId>i__Field, <>f__AnonymousType.<OperationId>i__Field) && EqualityComparer<<Operation>j__TPar>.Default.Equals(this.<Operation>i__Field, <>f__AnonymousType.<Operation>i__Field) && EqualityComparer<<ConnectionId>j__TPar>.Default.Equals(this.<ConnectionId>i__Field, <>f__AnonymousType.<ConnectionId>i__Field) && EqualityComparer<<Command>j__TPar>.Default.Equals(this.<Command>i__Field, <>f__AnonymousType.<Command>i__Field) && EqualityComparer<<Exception>j__TPar>.Default.Equals(this.<Exception>i__Field, <>f__AnonymousType.<Exception>i__Field) && EqualityComparer<<Timestamp>j__TPar>.Default.Equals(this.<Timestamp>i__Field, <>f__AnonymousType.<Timestamp>i__Field);
+	}
+
+	// Token: 0x0600001B RID: 27 RVA: 0x00002610 File Offset: 0x00000810
+	[DebuggerHidden]
+	public override int GetHashCode()
+	{
+		return (((((-427048254 * -1521134295 + EqualityComparer<<OperationId>j__TPar>.Default.GetHashCode(this.<OperationId>i__Field)) * -1521134295 + EqualityComparer<<Operation>j__TPar>.Default.GetHashCode(this.<Operation>i__Field)) * -1521134295 + EqualityComparer<<ConnectionId>j__TPar>.Default.GetHashCode(this.<ConnectionId>i__Field)) * -1521134295 + EqualityComparer<<Command>j__TPar>.Default.GetHashCode(this.<Command>i__Field)) * -1521134295 + EqualityComparer<<Exception>j__TPar>.Default.GetHashCode(this.<Exception>i__Field)) * -1521134295 + EqualityComparer<<Timestamp>j__TPar>.Default.GetHashCode(this.<Timestamp>i__Field);
+	}
+
+	// Token: 0x0600001C RID: 28 RVA: 0x000026AC File Offset: 0x000008AC
+	[DebuggerHidden]
+	[return: Nullable(1)]
+	public override string ToString()
+	{
+		IFormatProvider provider = null;
+		string format = "{{ OperationId = {0}, Operation = {1}, ConnectionId = {2}, Command = {3}, Exception = {4}, Timestamp = {5} }}";
+		object[] array = new object[6];
+		int num = 0;
+		<OperationId>j__TPar <OperationId>j__TPar = this.<OperationId>i__Field;
+		array[num] = ((<OperationId>j__TPar != null) ? <OperationId>j__TPar.ToString() : null);
+		int num2 = 1;
+		<Operation>j__TPar <Operation>j__TPar = this.<Operation>i__Field;
+		array[num2] = ((<Operation>j__TPar != null) ? <Operation>j__TPar.ToString() : null);
+		int num3 = 2;
+		<ConnectionId>j__TPar <ConnectionId>j__TPar = this.<ConnectionId>i__Field;
+		array[num3] = ((<ConnectionId>j__TPar != null) ? <ConnectionId>j__TPar.ToString() : null);
+		int num4 = 3;
+		<Command>j__TPar <Command>j__TPar = this.<Command>i__Field;
+		array[num4] = ((<Command>j__TPar != null) ? <Command>j__TPar.ToString() : null);
+		int num5 = 4;
+		<Exception>j__TPar <Exception>j__TPar = this.<Exception>i__Field;
+		array[num5] = ((<Exception>j__TPar != null) ? <Exception>j__TPar.ToString() : null);
+		int num6 = 5;
+		<Timestamp>j__TPar <Timestamp>j__TPar = this.<Timestamp>i__Field;
+		array[num6] = ((<Timestamp>j__TPar != null) ? <Timestamp>j__TPar.ToString() : null);
+		return string.Format(provider, format, array);
+	}
+
+	// Token: 0x0400000B RID: 11
+	[DebuggerBrowsable(DebuggerBrowsableState.Never)]
+	private readonly <OperationId>j__TPar <OperationId>i__Field;
+
+	// Token: 0x0400000C RID: 12
+	[DebuggerBrowsable(DebuggerBrowsableState.Never)]
+	private readonly <Operation>j__TPar <Operation>i__Field;
+
+	// Token: 0x0400000D RID: 13
+	[DebuggerBrowsable(DebuggerBrowsableState.Never)]
+	private readonly <ConnectionId>j__TPar <ConnectionId>i__Field;
+
+	// Token: 0x0400000E RID: 14
+	[DebuggerBrowsable(DebuggerBrowsableState.Never)]
+	private readonly <Command>j__TPar <Command>i__Field;
+
+	// Token: 0x0400000F RID: 15
+	[DebuggerBrowsable(DebuggerBrowsableState.Never)]
+	private readonly <Exception>j__TPar <Exception>i__Field;
+
+	// Token: 0x04000010 RID: 16
+	[DebuggerBrowsable(DebuggerBrowsableState.Never)]
+	private readonly <Timestamp>j__TPar <Timestamp>i__Field;
+}

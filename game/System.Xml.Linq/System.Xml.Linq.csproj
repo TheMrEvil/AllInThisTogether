@@ -1,0 +1,117 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{60FC5A84-174B-460F-AF7D-E4245A6F598D}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <RootNamespace>System.Xml.Linq</RootNamespace>
+    <AssemblyName>System.Xml.Linq</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <NoStdLib>true</NoStdLib>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <NoStdLib>true</NoStdLib>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+  </PropertyGroup>
+  <ItemGroup />
+  <ItemGroup>
+    <AppDesigner Include="Properties\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="-PrivateImplementationDetails-.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="SR.cs" />
+    <Compile Include="System\Collections\Generic\ArrayBuilder.cs" />
+    <Compile Include="System\Collections\Generic\CopyPosition.cs" />
+    <Compile Include="System\Collections\Generic\EnumerableHelpers.cs" />
+    <Compile Include="System\Collections\Generic\LargeArrayBuilder.cs" />
+    <Compile Include="System\Runtime\CompilerServices\FriendAccessAllowedAttribute.cs" />
+    <Compile Include="System\Text\StringBuilderCache.cs" />
+    <Compile Include="System\Xml\Linq\BaseUriAnnotation.cs" />
+    <Compile Include="System\Xml\Linq\ElementWriter.cs" />
+    <Compile Include="System\Xml\Linq\Extensions.cs" />
+    <Compile Include="System\Xml\Linq\Inserter.cs" />
+    <Compile Include="System\Xml\Linq\LineInfoAnnotation.cs" />
+    <Compile Include="System\Xml\Linq\LineInfoEndElementAnnotation.cs" />
+    <Compile Include="System\Xml\Linq\LoadOptions.cs" />
+    <Compile Include="System\Xml\Linq\NamespaceCache.cs" />
+    <Compile Include="System\Xml\Linq\NamespaceResolver.cs" />
+    <Compile Include="System\Xml\Linq\ReaderOptions.cs" />
+    <Compile Include="System\Xml\Linq\SaveOptions.cs" />
+    <Compile Include="System\Xml\Linq\StreamingElementWriter.cs" />
+    <Compile Include="System\Xml\Linq\XAttribute.cs" />
+    <Compile Include="System\Xml\Linq\XCData.cs" />
+    <Compile Include="System\Xml\Linq\XComment.cs" />
+    <Compile Include="System\Xml\Linq\XContainer.cs" />
+    <Compile Include="System\Xml\Linq\XDeclaration.cs" />
+    <Compile Include="System\Xml\Linq\XDocument.cs" />
+    <Compile Include="System\Xml\Linq\XDocumentType.cs" />
+    <Compile Include="System\Xml\Linq\XElement.cs" />
+    <Compile Include="System\Xml\Linq\XHashtable.cs" />
+    <Compile Include="System\Xml\Linq\XHelper.cs" />
+    <Compile Include="System\Xml\Linq\XName.cs" />
+    <Compile Include="System\Xml\Linq\XNamespace.cs" />
+    <Compile Include="System\Xml\Linq\XNode.cs" />
+    <Compile Include="System\Xml\Linq\XNodeBuilder.cs" />
+    <Compile Include="System\Xml\Linq\XNodeDocumentOrderComparer.cs" />
+    <Compile Include="System\Xml\Linq\XNodeEqualityComparer.cs" />
+    <Compile Include="System\Xml\Linq\XNodeReader.cs" />
+    <Compile Include="System\Xml\Linq\XObject.cs" />
+    <Compile Include="System\Xml\Linq\XObjectChange.cs" />
+    <Compile Include="System\Xml\Linq\XObjectChangeAnnotation.cs" />
+    <Compile Include="System\Xml\Linq\XObjectChangeEventArgs.cs" />
+    <Compile Include="System\Xml\Linq\XProcessingInstruction.cs" />
+    <Compile Include="System\Xml\Linq\XStreamingElement.cs" />
+    <Compile Include="System\Xml\Linq\XText.cs" />
+    <Compile Include="System\Xml\Schema\Extensions.cs" />
+    <Compile Include="System\Xml\Schema\XmlSchemaInfoEqualityComparer.cs" />
+    <Compile Include="System\Xml\Schema\XNodeValidator.cs" />
+    <Compile Include="System\Xml\XPath\Extensions.cs" />
+    <Compile Include="System\Xml\XPath\XAttributeExtensions.cs" />
+    <Compile Include="System\Xml\XPath\XDocumentExtensions.cs" />
+    <Compile Include="System\Xml\XPath\XNodeNavigator.cs" />
+    <Compile Include="System\Xml\XPath\XObjectExtensions.cs" />
+    <Compile Include="System\Xml\XPath\XPathEvaluator.cs" />
+    <Compile Include="Unity\ThrowStub.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\mscorlib\mscorlib.csproj">
+      <Project>{60fc5a84-174b-460f-af7d-e4245a6f5968}</Project>
+      <Name>mscorlib</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\System.Core\System.Core.csproj">
+      <Project>{60fc5a84-174b-460f-af7d-e4245a6f597d}</Project>
+      <Name>System.Core</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\System.Xml\System.Xml.csproj">
+      <Project>{60fc5a84-174b-460f-af7d-e4245a6f598c}</Project>
+      <Name>System.Xml</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\System\System.csproj">
+      <Project>{60fc5a84-174b-460f-af7d-e4245a6f5980}</Project>
+      <Name>System</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>

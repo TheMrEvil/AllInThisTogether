@@ -1,0 +1,93 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{60FC5A84-174B-460F-AF7D-E4245A6F59C1}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <RootNamespace>UnityEngine</RootNamespace>
+    <AssemblyName>UnityEngine.SharedInternalsModule</AssemblyName>
+    <TargetFrameworkVersion>v2.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <NoStdLib>true</NoStdLib>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <NoStdLib>true</NoStdLib>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+  </PropertyGroup>
+  <ItemGroup>
+    <AppDesigner Include="Properties\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AssetFileNameExtensionAttribute.cs" />
+    <Compile Include="Bindings\CodegenOptions.cs" />
+    <Compile Include="Bindings\FreeFunctionAttribute.cs" />
+    <Compile Include="Bindings\IBindingsAttribute.cs" />
+    <Compile Include="Bindings\IBindingsGenerateMarshallingTypeAttribute.cs" />
+    <Compile Include="Bindings\IBindingsHeaderProviderAttribute.cs" />
+    <Compile Include="Bindings\IBindingsIsFreeFunctionProviderAttribute.cs" />
+    <Compile Include="Bindings\IBindingsIsThreadSafeProviderAttribute.cs" />
+    <Compile Include="Bindings\IBindingsNameProviderAttribute.cs" />
+    <Compile Include="Bindings\IBindingsPreventExecution.cs" />
+    <Compile Include="Bindings\IBindingsThrowsProviderAttribute.cs" />
+    <Compile Include="Bindings\IBindingsWritableSelfProviderAttribute.cs" />
+    <Compile Include="Bindings\IgnoreAttribute.cs" />
+    <Compile Include="Bindings\MarshalUnityObjectAs.cs" />
+    <Compile Include="Bindings\NativeAsStructAttribute.cs" />
+    <Compile Include="Bindings\NativeConditionalAttribute.cs" />
+    <Compile Include="Bindings\NativeHeaderAttribute.cs" />
+    <Compile Include="Bindings\NativeMethodAttribute.cs" />
+    <Compile Include="Bindings\NativeNameAttribute.cs" />
+    <Compile Include="Bindings\NativePropertyAttribute.cs" />
+    <Compile Include="Bindings\NativeThrowsAttribute.cs" />
+    <Compile Include="Bindings\NativeTypeAttribute.cs" />
+    <Compile Include="Bindings\NativeWritableSelfAttribute.cs" />
+    <Compile Include="Bindings\NotNullAttribute.cs" />
+    <Compile Include="Bindings\PreventExecutionInStateAttribute.cs" />
+    <Compile Include="Bindings\PreventExecutionSeverity.cs" />
+    <Compile Include="Bindings\PreventReadOnlyInstanceModificationAttribute.cs" />
+    <Compile Include="Bindings\StaticAccessorAttribute.cs" />
+    <Compile Include="Bindings\StaticAccessorType.cs" />
+    <Compile Include="Bindings\TargetType.cs" />
+    <Compile Include="Bindings\ThreadSafeAttribute.cs" />
+    <Compile Include="Bindings\UnityTypeAttribute.cs" />
+    <Compile Include="Bindings\UnmarshalledAttribute.cs" />
+    <Compile Include="Bindings\VisibleToOtherModulesAttribute.cs" />
+    <Compile Include="IL2CPPStructAlignmentAttribute.cs" />
+    <Compile Include="NativeClassAttribute.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="RejectDragAndDropMaterial.cs" />
+    <Compile Include="Scripting\RequiredByNativeCodeAttribute.cs" />
+    <Compile Include="Scripting\UsedByNativeCodeAttribute.cs" />
+    <Compile Include="ThreadAndSerializationSafeAttribute.cs" />
+    <Compile Include="UnityEngineModuleAssembly.cs" />
+    <Compile Include="UnityString.cs" />
+    <Compile Include="WritableAttribute.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\mscorlib\mscorlib.csproj">
+      <Project>{60fc5a84-174b-460f-af7d-e4245a6f5968}</Project>
+      <Name>mscorlib</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>

@@ -1,0 +1,335 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{60FC5A84-174B-460F-AF7D-E4245A6F5958}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <RootNamespace>EasySave3</RootNamespace>
+    <AssemblyName>EasySave3</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <NoStdLib>true</NoStdLib>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <NoStdLib>true</NoStdLib>
+  </PropertyGroup>
+  <ItemGroup />
+  <ItemGroup>
+    <AppDesigner Include="Properties\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="--f__AnonymousType0.cs" />
+    <Compile Include="-PrivateImplementationDetails-.cs" />
+    <Compile Include="ES3.cs" />
+    <Compile Include="ES3AutoSave.cs" />
+    <Compile Include="ES3AutoSaveMgr.cs" />
+    <Compile Include="ES3Cloud.cs" />
+    <Compile Include="ES3Defaults.cs" />
+    <Compile Include="ES3File.cs" />
+    <Compile Include="ES3GameObject.cs" />
+    <Compile Include="ES3GlobalManager.cs" />
+    <Compile Include="ES3InspectorInfo.cs" />
+    <Compile Include="ES3Internal\AESEncryptionAlgorithm.cs" />
+    <Compile Include="ES3Internal\EncryptionAlgorithm.cs" />
+    <Compile Include="ES3Internal\ES3Binary.cs" />
+    <Compile Include="ES3Internal\ES3CacheWriter.cs" />
+    <Compile Include="ES3Internal\ES3Data.cs" />
+    <Compile Include="ES3Internal\ES3Debug.cs" />
+    <Compile Include="ES3Internal\ES3DefaultSettings.cs" />
+    <Compile Include="ES3Internal\ES3FileMode.cs" />
+    <Compile Include="ES3Internal\ES3FileStream.cs" />
+    <Compile Include="ES3Internal\ES3GlobalReferences.cs" />
+    <Compile Include="ES3Internal\ES3Hash.cs" />
+    <Compile Include="ES3Internal\ES3IdRefDictionary.cs" />
+    <Compile Include="ES3Internal\ES3IO.cs" />
+    <Compile Include="ES3Internal\ES3JSONReader.cs" />
+    <Compile Include="ES3Internal\ES3JSONWriter.cs" />
+    <Compile Include="ES3Internal\ES3Member.cs" />
+    <Compile Include="ES3Internal\ES3PlayerPrefsStream.cs" />
+    <Compile Include="ES3Internal\ES3Prefab.cs" />
+    <Compile Include="ES3Internal\ES3ReferenceMgrBase.cs" />
+    <Compile Include="ES3Internal\ES3RefIdDictionary.cs" />
+    <Compile Include="ES3Internal\ES3Reflection.cs" />
+    <Compile Include="ES3Internal\ES3ResourcesStream.cs" />
+    <Compile Include="ES3Internal\ES3SerializableDictionary.cs" />
+    <Compile Include="ES3Internal\ES3SpecialByte.cs" />
+    <Compile Include="ES3Internal\ES3Stream.cs" />
+    <Compile Include="ES3Internal\ES3TypeMgr.cs" />
+    <Compile Include="ES3Internal\ES3WebClass.cs" />
+    <Compile Include="ES3Internal\UnbufferedCryptoStream.cs" />
+    <Compile Include="ES3NonSerializable.cs" />
+    <Compile Include="ES3Reader.cs" />
+    <Compile Include="ES3Ref.cs" />
+    <Compile Include="ES3ReferenceMgr.cs" />
+    <Compile Include="ES3Serializable.cs" />
+    <Compile Include="ES3SerializableSettings.cs" />
+    <Compile Include="ES3Settings.cs" />
+    <Compile Include="ES3Spreadsheet.cs" />
+    <Compile Include="ES3Types\ES32DArrayType.cs" />
+    <Compile Include="ES3Types\ES33DArrayType.cs" />
+    <Compile Include="ES3Types\ES3ArrayType.cs" />
+    <Compile Include="ES3Types\ES3CollectionType.cs" />
+    <Compile Include="ES3Types\ES3ComponentType.cs" />
+    <Compile Include="ES3Types\ES3ConcurrentDictionaryType.cs" />
+    <Compile Include="ES3Types\ES3DictionaryType.cs" />
+    <Compile Include="ES3Types\ES3GenericType.cs" />
+    <Compile Include="ES3Types\ES3HashSetType.cs" />
+    <Compile Include="ES3Types\ES3ListType.cs" />
+    <Compile Include="ES3Types\ES3NativeArrayType.cs" />
+    <Compile Include="ES3Types\ES3ObjectType.cs" />
+    <Compile Include="ES3Types\ES3PropertiesAttribute.cs" />
+    <Compile Include="ES3Types\ES3QueueType.cs" />
+    <Compile Include="ES3Types\ES3ReflectedComponentType.cs" />
+    <Compile Include="ES3Types\ES3ReflectedObjectType.cs" />
+    <Compile Include="ES3Types\ES3ReflectedScriptableObjectType.cs" />
+    <Compile Include="ES3Types\ES3ReflectedType.cs" />
+    <Compile Include="ES3Types\ES3ReflectedUnityObjectType.cs" />
+    <Compile Include="ES3Types\ES3ReflectedValueType.cs" />
+    <Compile Include="ES3Types\ES3ScriptableObjectType.cs" />
+    <Compile Include="ES3Types\ES3StackType.cs" />
+    <Compile Include="ES3Types\ES3TupleType.cs" />
+    <Compile Include="ES3Types\ES3Type.cs" />
+    <Compile Include="ES3Types\ES3Type_AnimationCurve.cs" />
+    <Compile Include="ES3Types\ES3Type_ArrayList.cs" />
+    <Compile Include="ES3Types\ES3Type_AudioClip.cs" />
+    <Compile Include="ES3Types\ES3Type_AudioClipArray.cs" />
+    <Compile Include="ES3Types\ES3Type_BigInteger.cs" />
+    <Compile Include="ES3Types\ES3Type_BigIntegerArray.cs" />
+    <Compile Include="ES3Types\ES3Type_BoneWeight.cs" />
+    <Compile Include="ES3Types\ES3Type_BoneWeightArray.cs" />
+    <Compile Include="ES3Types\ES3Type_bool.cs" />
+    <Compile Include="ES3Types\ES3Type_boolArray.cs" />
+    <Compile Include="ES3Types\ES3Type_Bounds.cs" />
+    <Compile Include="ES3Types\ES3Type_BoundsArray.cs" />
+    <Compile Include="ES3Types\ES3Type_BoxCollider.cs" />
+    <Compile Include="ES3Types\ES3Type_BoxCollider2D.cs" />
+    <Compile Include="ES3Types\ES3Type_Burst.cs" />
+    <Compile Include="ES3Types\ES3Type_BurstArray.cs" />
+    <Compile Include="ES3Types\ES3Type_byte.cs" />
+    <Compile Include="ES3Types\ES3Type_byteArray.cs" />
+    <Compile Include="ES3Types\ES3Type_Camera.cs" />
+    <Compile Include="ES3Types\ES3Type_CapsuleCollider.cs" />
+    <Compile Include="ES3Types\ES3Type_char.cs" />
+    <Compile Include="ES3Types\ES3Type_charArray.cs" />
+    <Compile Include="ES3Types\ES3Type_CollisionModule.cs" />
+    <Compile Include="ES3Types\ES3Type_Color.cs" />
+    <Compile Include="ES3Types\ES3Type_Color32.cs" />
+    <Compile Include="ES3Types\ES3Type_Color32Array.cs" />
+    <Compile Include="ES3Types\ES3Type_ColorArray.cs" />
+    <Compile Include="ES3Types\ES3Type_ColorBySpeedModule.cs" />
+    <Compile Include="ES3Types\ES3Type_ColorOverLifetimeModule.cs" />
+    <Compile Include="ES3Types\ES3Type_DateTime.cs" />
+    <Compile Include="ES3Types\ES3Type_DateTimeArray.cs" />
+    <Compile Include="ES3Types\ES3Type_decimal.cs" />
+    <Compile Include="ES3Types\ES3Type_decimalArray.cs" />
+    <Compile Include="ES3Types\ES3Type_double.cs" />
+    <Compile Include="ES3Types\ES3Type_doubleArray.cs" />
+    <Compile Include="ES3Types\ES3Type_EmissionModule.cs" />
+    <Compile Include="ES3Types\ES3Type_enum.cs" />
+    <Compile Include="ES3Types\ES3Type_ES3Prefab.cs" />
+    <Compile Include="ES3Types\ES3Type_ES3PrefabInternal.cs" />
+    <Compile Include="ES3Types\ES3Type_ES3Ref.cs" />
+    <Compile Include="ES3Types\ES3Type_ES3RefArray.cs" />
+    <Compile Include="ES3Types\ES3Type_ES3RefDictionary.cs" />
+    <Compile Include="ES3Types\ES3Type_EventSystem.cs" />
+    <Compile Include="ES3Types\ES3Type_ExternalForcesModule.cs" />
+    <Compile Include="ES3Types\ES3Type_Flare.cs" />
+    <Compile Include="ES3Types\ES3Type_FlareArray.cs" />
+    <Compile Include="ES3Types\ES3Type_float.cs" />
+    <Compile Include="ES3Types\ES3Type_floatArray.cs" />
+    <Compile Include="ES3Types\ES3Type_Font.cs" />
+    <Compile Include="ES3Types\ES3Type_FontArray.cs" />
+    <Compile Include="ES3Types\ES3Type_ForceOverLifetimeModule.cs" />
+    <Compile Include="ES3Types\ES3Type_GameObject.cs" />
+    <Compile Include="ES3Types\ES3Type_GameObjectArray.cs" />
+    <Compile Include="ES3Types\ES3Type_Gradient.cs" />
+    <Compile Include="ES3Types\ES3Type_GradientAlphaKey.cs" />
+    <Compile Include="ES3Types\ES3Type_GradientAlphaKeyArray.cs" />
+    <Compile Include="ES3Types\ES3Type_GradientColorKey.cs" />
+    <Compile Include="ES3Types\ES3Type_GradientColorKeyArray.cs" />
+    <Compile Include="ES3Types\ES3Type_Guid.cs" />
+    <Compile Include="ES3Types\ES3Type_GuidArray.cs" />
+    <Compile Include="ES3Types\ES3Type_Image.cs" />
+    <Compile Include="ES3Types\ES3Type_ImageArray.cs" />
+    <Compile Include="ES3Types\ES3Type_InheritVelocityModule.cs" />
+    <Compile Include="ES3Types\ES3Type_int.cs" />
+    <Compile Include="ES3Types\ES3Type_intArray.cs" />
+    <Compile Include="ES3Types\ES3Type_IntPtr.cs" />
+    <Compile Include="ES3Types\ES3Type_IntPtrArray.cs" />
+    <Compile Include="ES3Types\ES3Type_Keyframe.cs" />
+    <Compile Include="ES3Types\ES3Type_KeyframeArray.cs" />
+    <Compile Include="ES3Types\ES3Type_LayerMask.cs" />
+    <Compile Include="ES3Types\ES3Type_Light.cs" />
+    <Compile Include="ES3Types\ES3Type_LightsModule.cs" />
+    <Compile Include="ES3Types\ES3Type_LimitVelocityOverLifetimeModule.cs" />
+    <Compile Include="ES3Types\ES3Type_long.cs" />
+    <Compile Include="ES3Types\ES3Type_longArray.cs" />
+    <Compile Include="ES3Types\ES3Type_MainModule.cs" />
+    <Compile Include="ES3Types\ES3Type_Material.cs" />
+    <Compile Include="ES3Types\ES3Type_MaterialArray.cs" />
+    <Compile Include="ES3Types\ES3Type_Matrix4x4.cs" />
+    <Compile Include="ES3Types\ES3Type_Matrix4x4Array.cs" />
+    <Compile Include="ES3Types\ES3Type_Mesh.cs" />
+    <Compile Include="ES3Types\ES3Type_MeshCollider.cs" />
+    <Compile Include="ES3Types\ES3Type_MeshColliderArray.cs" />
+    <Compile Include="ES3Types\ES3Type_MeshFilter.cs" />
+    <Compile Include="ES3Types\ES3Type_MeshFilterArray.cs" />
+    <Compile Include="ES3Types\ES3Type_MeshRenderer.cs" />
+    <Compile Include="ES3Types\ES3Type_MeshRendererArray.cs" />
+    <Compile Include="ES3Types\ES3Type_MinMaxCurve.cs" />
+    <Compile Include="ES3Types\ES3Type_MinMaxGradient.cs" />
+    <Compile Include="ES3Types\ES3Type_NoiseModule.cs" />
+    <Compile Include="ES3Types\ES3Type_Nullable.cs" />
+    <Compile Include="ES3Types\ES3Type_ParticleSystem.cs" />
+    <Compile Include="ES3Types\ES3Type_PhysicMaterial.cs" />
+    <Compile Include="ES3Types\ES3Type_PhysicMaterialArray.cs" />
+    <Compile Include="ES3Types\ES3Type_PhysicsMaterial2D.cs" />
+    <Compile Include="ES3Types\ES3Type_PhysicsMaterial2DArray.cs" />
+    <Compile Include="ES3Types\ES3Type_PolygonCollider2D.cs" />
+    <Compile Include="ES3Types\ES3Type_PolygonCollider2DArray.cs" />
+    <Compile Include="ES3Types\ES3Type_Quaternion.cs" />
+    <Compile Include="ES3Types\ES3Type_QuaternionArray.cs" />
+    <Compile Include="ES3Types\ES3Type_RawImage.cs" />
+    <Compile Include="ES3Types\ES3Type_RawImageArray.cs" />
+    <Compile Include="ES3Types\ES3Type_Rect.cs" />
+    <Compile Include="ES3Types\ES3Type_RectTransform.cs" />
+    <Compile Include="ES3Types\ES3Type_RenderTexture.cs" />
+    <Compile Include="ES3Types\ES3Type_RenderTextureArray.cs" />
+    <Compile Include="ES3Types\ES3Type_Rigidbody.cs" />
+    <Compile Include="ES3Types\ES3Type_RotationBySpeedModule.cs" />
+    <Compile Include="ES3Types\ES3Type_RotationOverLifetimeModule.cs" />
+    <Compile Include="ES3Types\ES3Type_sbyte.cs" />
+    <Compile Include="ES3Types\ES3Type_sbyteArray.cs" />
+    <Compile Include="ES3Types\ES3Type_Shader.cs" />
+    <Compile Include="ES3Types\ES3Type_ShaderArray.cs" />
+    <Compile Include="ES3Types\ES3Type_ShapeModule.cs" />
+    <Compile Include="ES3Types\ES3Type_short.cs" />
+    <Compile Include="ES3Types\ES3Type_shortArray.cs" />
+    <Compile Include="ES3Types\ES3Type_SizeBySpeedModule.cs" />
+    <Compile Include="ES3Types\ES3Type_SizeOverLifetimeModule.cs" />
+    <Compile Include="ES3Types\ES3Type_SkinnedMeshRenderer.cs" />
+    <Compile Include="ES3Types\ES3Type_SkinnedMeshRendererArray.cs" />
+    <Compile Include="ES3Types\ES3Type_SphereCollider.cs" />
+    <Compile Include="ES3Types\ES3Type_Sprite.cs" />
+    <Compile Include="ES3Types\ES3Type_SpriteRenderer.cs" />
+    <Compile Include="ES3Types\ES3Type_SpriteRendererArray.cs" />
+    <Compile Include="ES3Types\ES3Type_string.cs" />
+    <Compile Include="ES3Types\ES3Type_StringArray.cs" />
+    <Compile Include="ES3Types\ES3Type_SubEmittersModule.cs" />
+    <Compile Include="ES3Types\ES3Type_Text.cs" />
+    <Compile Include="ES3Types\ES3Type_Texture.cs" />
+    <Compile Include="ES3Types\ES3Type_Texture2D.cs" />
+    <Compile Include="ES3Types\ES3Type_Texture2DArray.cs" />
+    <Compile Include="ES3Types\ES3Type_TextureArray.cs" />
+    <Compile Include="ES3Types\ES3Type_TextureSheetAnimationModule.cs" />
+    <Compile Include="ES3Types\ES3Type_TrailModule.cs" />
+    <Compile Include="ES3Types\ES3Type_Transform.cs" />
+    <Compile Include="ES3Types\ES3Type_TriggerModule.cs" />
+    <Compile Include="ES3Types\ES3Type_Type.cs" />
+    <Compile Include="ES3Types\ES3Type_uint.cs" />
+    <Compile Include="ES3Types\ES3Type_uintArray.cs" />
+    <Compile Include="ES3Types\ES3Type_UIntPtr.cs" />
+    <Compile Include="ES3Types\ES3Type_UIntPtrArray.cs" />
+    <Compile Include="ES3Types\ES3Type_ulong.cs" />
+    <Compile Include="ES3Types\ES3Type_ulongArray.cs" />
+    <Compile Include="ES3Types\ES3Type_ushort.cs" />
+    <Compile Include="ES3Types\ES3Type_ushortArray.cs" />
+    <Compile Include="ES3Types\ES3Type_Vector2.cs" />
+    <Compile Include="ES3Types\ES3Type_Vector2Array.cs" />
+    <Compile Include="ES3Types\ES3Type_Vector2Int.cs" />
+    <Compile Include="ES3Types\ES3Type_Vector2IntArray.cs" />
+    <Compile Include="ES3Types\ES3Type_Vector3.cs" />
+    <Compile Include="ES3Types\ES3Type_Vector3Array.cs" />
+    <Compile Include="ES3Types\ES3Type_Vector3Int.cs" />
+    <Compile Include="ES3Types\ES3Type_Vector3IntArray.cs" />
+    <Compile Include="ES3Types\ES3Type_Vector4.cs" />
+    <Compile Include="ES3Types\ES3Type_Vector4Array.cs" />
+    <Compile Include="ES3Types\ES3Type_VelocityOverLifetimeModule.cs" />
+    <Compile Include="ES3Types\ES3UnityObjectType.cs" />
+    <Compile Include="ES3Types\ES3UserType_ArrayListArray.cs" />
+    <Compile Include="ES3Types\ES3UserType_RigidbodyArray.cs" />
+    <Compile Include="ES3Writer.cs" />
+    <Compile Include="ES3XMLReader.cs" />
+    <Compile Include="ES3XMLWriter.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="UnityObjectType.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\mscorlib\mscorlib.csproj">
+      <Project>{60fc5a84-174b-460f-af7d-e4245a6f5968}</Project>
+      <Name>mscorlib</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\System.Core\System.Core.csproj">
+      <Project>{60fc5a84-174b-460f-af7d-e4245a6f597d}</Project>
+      <Name>System.Core</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\System.Numerics\System.Numerics.csproj">
+      <Project>{60fc5a84-174b-460f-af7d-e4245a6f5986}</Project>
+      <Name>System.Numerics</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\System\System.csproj">
+      <Project>{60fc5a84-174b-460f-af7d-e4245a6f5980}</Project>
+      <Name>System</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\UnityEngine.AudioModule\UnityEngine.AudioModule.csproj">
+      <Project>{60fc5a84-174b-460f-af7d-e4245a6f59a6}</Project>
+      <Name>UnityEngine.AudioModule</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\UnityEngine.CoreModule\UnityEngine.CoreModule.csproj">
+      <Project>{60fc5a84-174b-460f-af7d-e4245a6f59aa}</Project>
+      <Name>UnityEngine.CoreModule</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\UnityEngine.ImageConversionModule\UnityEngine.ImageConversionModule.csproj">
+      <Project>{60fc5a84-174b-460f-af7d-e4245a6f59b3}</Project>
+      <Name>UnityEngine.ImageConversionModule</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\UnityEngine.ParticleSystemModule\UnityEngine.ParticleSystemModule.csproj">
+      <Project>{60fc5a84-174b-460f-af7d-e4245a6f59ba}</Project>
+      <Name>UnityEngine.ParticleSystemModule</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\UnityEngine.Physics2DModule\UnityEngine.Physics2DModule.csproj">
+      <Project>{60fc5a84-174b-460f-af7d-e4245a6f59bc}</Project>
+      <Name>UnityEngine.Physics2DModule</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\UnityEngine.PhysicsModule\UnityEngine.PhysicsModule.csproj">
+      <Project>{60fc5a84-174b-460f-af7d-e4245a6f59bd}</Project>
+      <Name>UnityEngine.PhysicsModule</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\UnityEngine.TextRenderingModule\UnityEngine.TextRenderingModule.csproj">
+      <Project>{60fc5a84-174b-460f-af7d-e4245a6f59cb}</Project>
+      <Name>UnityEngine.TextRenderingModule</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\UnityEngine.UI\UnityEngine.UI.csproj">
+      <Project>{60fc5a84-174b-460f-af7d-e4245a6f59ce}</Project>
+      <Name>UnityEngine.UI</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\UnityEngine.UnityWebRequestAudioModule\UnityEngine.UnityWebRequestAudioModule.csproj">
+      <Project>{60fc5a84-174b-460f-af7d-e4245a6f59da}</Project>
+      <Name>UnityEngine.UnityWebRequestAudioModule</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\UnityEngine.UnityWebRequestModule\UnityEngine.UnityWebRequestModule.csproj">
+      <Project>{60fc5a84-174b-460f-af7d-e4245a6f59db}</Project>
+      <Name>UnityEngine.UnityWebRequestModule</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>

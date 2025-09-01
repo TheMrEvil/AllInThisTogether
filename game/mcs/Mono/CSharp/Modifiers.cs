@@ -1,0 +1,64 @@
+﻿using System;
+
+namespace Mono.CSharp
+{
+	// Token: 0x02000257 RID: 599
+	[Flags]
+	public enum Modifiers
+	{
+		// Token: 0x04000AF9 RID: 2809
+		PROTECTED = 1,
+		// Token: 0x04000AFA RID: 2810
+		PUBLIC = 2,
+		// Token: 0x04000AFB RID: 2811
+		PRIVATE = 4,
+		// Token: 0x04000AFC RID: 2812
+		INTERNAL = 8,
+		// Token: 0x04000AFD RID: 2813
+		NEW = 16,
+		// Token: 0x04000AFE RID: 2814
+		ABSTRACT = 32,
+		// Token: 0x04000AFF RID: 2815
+		SEALED = 64,
+		// Token: 0x04000B00 RID: 2816
+		STATIC = 128,
+		// Token: 0x04000B01 RID: 2817
+		READONLY = 256,
+		// Token: 0x04000B02 RID: 2818
+		VIRTUAL = 512,
+		// Token: 0x04000B03 RID: 2819
+		OVERRIDE = 1024,
+		// Token: 0x04000B04 RID: 2820
+		EXTERN = 2048,
+		// Token: 0x04000B05 RID: 2821
+		VOLATILE = 4096,
+		// Token: 0x04000B06 RID: 2822
+		UNSAFE = 8192,
+		// Token: 0x04000B07 RID: 2823
+		ASYNC = 16384,
+		// Token: 0x04000B08 RID: 2824
+		TOP = 32768,
+		// Token: 0x04000B09 RID: 2825
+		PROPERTY_CUSTOM = 65536,
+		// Token: 0x04000B0A RID: 2826
+		PARTIAL = 131072,
+		// Token: 0x04000B0B RID: 2827
+		DEFAULT_ACCESS_MODIFIER = 262144,
+		// Token: 0x04000B0C RID: 2828
+		METHOD_EXTENSION = 524288,
+		// Token: 0x04000B0D RID: 2829
+		COMPILER_GENERATED = 1048576,
+		// Token: 0x04000B0E RID: 2830
+		BACKING_FIELD = 2097152,
+		// Token: 0x04000B0F RID: 2831
+		DEBUGGER_HIDDEN = 4194304,
+		// Token: 0x04000B10 RID: 2832
+		DEBUGGER_STEP_THROUGH = 8388608,
+		// Token: 0x04000B11 RID: 2833
+		AutoProperty = 16777216,
+		// Token: 0x04000B12 RID: 2834
+		AccessibilityMask = 15,
+		// Token: 0x04000B13 RID: 2835
+		AllowedExplicitImplFlags = 10240
+	}
+}

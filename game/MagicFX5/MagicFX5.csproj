@@ -1,0 +1,109 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{60FC5A84-174B-460F-AF7D-E4245A6F5964}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <RootNamespace>MagicFX5</RootNamespace>
+    <AssemblyName>MagicFX5</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <NoStdLib>true</NoStdLib>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <NoStdLib>true</NoStdLib>
+  </PropertyGroup>
+  <ItemGroup />
+  <ItemGroup>
+    <AppDesigner Include="Properties\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="MagicFX5_AnimatorSpeedCurve.cs" />
+    <Compile Include="MagicFX5_AudioCurve.cs" />
+    <Compile Include="MagicFX5_CanUseProxyVolume.cs" />
+    <Compile Include="MagicFX5_ChainEffect.cs" />
+    <Compile Include="MagicFX5_CinemachineImpulseTrigger.cs" />
+    <Compile Include="MagicFX5_ColliderTrigger.cs" />
+    <Compile Include="MagicFX5_CollisionImpactEffect.cs" />
+    <Compile Include="MagicFX5_CommandBufferDistortion.cs" />
+    <Compile Include="MagicFX5_CoreUtils.cs" />
+    <Compile Include="MagicFX5_CutoutVolume.cs" />
+    <Compile Include="MagicFX5_Decal.cs" />
+    <Compile Include="MagicFX5_DelayActivation.cs" />
+    <Compile Include="MagicFX5_EffectSettings.cs" />
+    <Compile Include="MagicFX5_FollowTarget.cs" />
+    <Compile Include="MagicFX5_FreezeRotation.cs" />
+    <Compile Include="MagicFX5_GlobalUpdate.cs" />
+    <Compile Include="MagicFX5_IScriptInstance.cs" />
+    <Compile Include="MagicFX5_Light.cs" />
+    <Compile Include="MagicFX5_ParticleGravity.cs" />
+    <Compile Include="MagicFX5_ParticleSystemChainLighting.cs" />
+    <Compile Include="MagicFX5_ParticleSystemTargetFollower.cs" />
+    <Compile Include="MagicFX5_PhysicsForce.cs" />
+    <Compile Include="MagicFX5_PositionCurve.cs" />
+    <Compile Include="MagicFX5_RagdollTrigger.cs" />
+    <Compile Include="MagicFX5_RopePhysics.cs" />
+    <Compile Include="MagicFX5_ShaderColorCurve.cs" />
+    <Compile Include="MagicFX5_ShaderFloatCurve.cs" />
+    <Compile Include="MagicFX5_SixWayLighting.cs" />
+    <Compile Include="MagicFX5_SizeCurve.cs" />
+    <Compile Include="MagicFX5_SkinnedMeshBonesAtractor.cs" />
+    <Compile Include="MagicFX5_SkinnedMeshClone.cs" />
+    <Compile Include="MagicFX5_Spawner.cs" />
+    <Compile Include="MagicFX5_StarParticleEmission.cs" />
+    <Compile Include="MagicFX5_TrailRendererFeatures.cs" />
+    <Compile Include="MagicFX5_TransformMotion.cs" />
+    <Compile Include="MagicFX5_TriggerAllCollisions.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\mscorlib\mscorlib.csproj">
+      <Project>{60fc5a84-174b-460f-af7d-e4245a6f5968}</Project>
+      <Name>mscorlib</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\System.Core\System.Core.csproj">
+      <Project>{60fc5a84-174b-460f-af7d-e4245a6f597d}</Project>
+      <Name>System.Core</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\UnityEngine.AnimationModule\UnityEngine.AnimationModule.csproj">
+      <Project>{60fc5a84-174b-460f-af7d-e4245a6f59a3}</Project>
+      <Name>UnityEngine.AnimationModule</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\UnityEngine.AudioModule\UnityEngine.AudioModule.csproj">
+      <Project>{60fc5a84-174b-460f-af7d-e4245a6f59a6}</Project>
+      <Name>UnityEngine.AudioModule</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\UnityEngine.CoreModule\UnityEngine.CoreModule.csproj">
+      <Project>{60fc5a84-174b-460f-af7d-e4245a6f59aa}</Project>
+      <Name>UnityEngine.CoreModule</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\UnityEngine.ParticleSystemModule\UnityEngine.ParticleSystemModule.csproj">
+      <Project>{60fc5a84-174b-460f-af7d-e4245a6f59ba}</Project>
+      <Name>UnityEngine.ParticleSystemModule</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\UnityEngine.PhysicsModule\UnityEngine.PhysicsModule.csproj">
+      <Project>{60fc5a84-174b-460f-af7d-e4245a6f59bd}</Project>
+      <Name>UnityEngine.PhysicsModule</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>

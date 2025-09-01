@@ -1,0 +1,33 @@
+﻿using System;
+
+namespace System.ComponentModel
+{
+	/// <summary>Provides functionality for containers. Containers are objects that logically contain zero or more components.</summary>
+	// Token: 0x0200036E RID: 878
+	public interface IContainer : IDisposable
+	{
+		/// <summary>Adds the specified <see cref="T:System.ComponentModel.IComponent" /> to the <see cref="T:System.ComponentModel.IContainer" /> at the end of the list.</summary>
+		/// <param name="component">The <see cref="T:System.ComponentModel.IComponent" /> to add.</param>
+		// Token: 0x06001D11 RID: 7441
+		void Add(IComponent component);
+
+		/// <summary>Adds the specified <see cref="T:System.ComponentModel.IComponent" /> to the <see cref="T:System.ComponentModel.IContainer" /> at the end of the list, and assigns a name to the component.</summary>
+		/// <param name="component">The <see cref="T:System.ComponentModel.IComponent" /> to add.</param>
+		/// <param name="name">The unique, case-insensitive name to assign to the component.  
+		///  -or-  
+		///  <see langword="null" /> that leaves the component unnamed.</param>
+		// Token: 0x06001D12 RID: 7442
+		void Add(IComponent component, string name);
+
+		/// <summary>Gets all the components in the <see cref="T:System.ComponentModel.IContainer" />.</summary>
+		/// <returns>A collection of <see cref="T:System.ComponentModel.IComponent" /> objects that represents all the components in the <see cref="T:System.ComponentModel.IContainer" />.</returns>
+		// Token: 0x170005DB RID: 1499
+		// (get) Token: 0x06001D13 RID: 7443
+		ComponentCollection Components { get; }
+
+		/// <summary>Removes a component from the <see cref="T:System.ComponentModel.IContainer" />.</summary>
+		/// <param name="component">The <see cref="T:System.ComponentModel.IComponent" /> to remove.</param>
+		// Token: 0x06001D14 RID: 7444
+		void Remove(IComponent component);
+	}
+}
